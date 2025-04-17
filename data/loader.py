@@ -5,22 +5,32 @@ This module handles historical stock data acquisition via the yfinance API.
 Includes functions to:
 - Download daily resolution data
 - Perform rolling updates of the last 7 days
-- Cache data locally in Parquet or HDF5 format
+- Cache data locally in HDF5 format
 """
 
 import os
 import pandas as pd
 import yfinance as yf
 from datetime import datetime, timedelta
-from config import BASE_DATABASE  # Ensure this is defined in your config.py
+import sys
+
+# Add the parent directory to the system path to import config
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from config import TICKER_FILE
+
+# Define the base directory for the database
+BASE_DATABASE = "dev_database"  # Change from "data" to "dev_database"
+
+# Data file name
+DATA_FILE = f"{TICKER_FILE}_raw.h5"
 
 # Ensure the folder exists
-LOG_DIR = "logs/loader"
-os.makedirs(LOG_DIR, exist_ok=True)
+RAW_DIR = os.path.join(BASE_DATABASE, "raw")
+os.makedirs(RAW_DIR, exist_ok=True)
 
 # Create the log file path
 LOG_FILE = os.path.join(
-    LOG_DIR,
+    "logs/loader",
     f"loader_log_{datetime.now().strftime('%Y%m%d_%H%M%S')}.txt"
 )
 
@@ -32,30 +42,28 @@ def log_message(message):
     with open(LOG_FILE, "a") as log_file:
         log_file.write(f"{datetime.now().strftime('%Y-%m-%d %H:%M:%S')} - {message}\n")
 
-def check_existing_data(ticker):
-    """
-    Check if data for the given ticker exists locally.
-    """
-    log_message(f"Checking if data for {ticker} exists locally...")
-    file_path = os.path.join(BASE_DATABASE, f"{ticker}.parquet")
-    if os.path.exists(file_path):
-        log_message(f"Data for {ticker} found locally.")
-        return pd.read_parquet(file_path)
-    log_message(f"No local data found for {ticker}.")
-    return None
 
 def check_existing_data_hdf5(ticker):
     """
-    Check if data for the given ticker exists locally in HDF5 format.
+    Check if data for the given ticker exists locally in HDF5 format within the 'raw' subdirectory.
     """
-    log_message(f"Checking if data for {ticker} exists locally in HDF5 format...")
-    file_path = os.path.join(BASE_DATABASE, "data.h5")
+    log_message(f"Checking if data for {ticker} exists locally in HDF5 format within 'raw' subdirectory...")
+    file_path = os.path.join(RAW_DIR, DATA_FILE)
     if os.path.exists(file_path):
-        with pd.HDFStore(file_path, mode="r") as store:
-            if ticker in store:
-                log_message(f"Data for {ticker} found locally.")
-                return store[ticker]
-    log_message(f"No local data found for {ticker}.")
+        try:
+            with pd.HDFStore(file_path, mode="r") as store:
+                if ticker in store:
+                    log_message(f"Data for {ticker} found locally in 'raw' subdirectory.")
+                    data = store[ticker]
+                    if isinstance(data, pd.DataFrame):
+                        return data
+                    else:
+                        log_message(f"Data for {ticker} is not a valid DataFrame.")
+                        return None
+        except Exception as e:
+            log_message(f"Error reading data for {ticker} from HDF5: {e}")
+            return None
+    log_message(f"No local data found for {ticker} in 'raw' subdirectory.")
     return None
 
 
@@ -72,123 +80,70 @@ def download_data(ticker, start_date, end_date):
         else:
             log_message(f"No data downloaded for {ticker}.")
             return None
-    except json.JSONDecodeError as e:
+    except Exception as e:
         log_message(f"Failed to download data for {ticker}: {e}")
         return None
 
-def save_data(ticker, data):
-    """
-    Save data locally in Parquet format.
-    """
-    log_message(f"Saving data for {ticker} locally...")
-    if not os.path.exists(BASE_DATABASE):
-        os.makedirs(BASE_DATABASE)
-        log_message(f"Created directory: {BASE_DATABASE}")
-    file_path = os.path.join(BASE_DATABASE, f"{ticker}.parquet")
-    data.to_parquet(file_path)
-    log_message(f"Data for {ticker} saved to {file_path}.")
 
 def save_data_hdf5(ticker, data):
     """
-    Save data locally in HDF5 format.
+    Save data locally in HDF5 format within the 'raw' subdirectory.
     """
-    log_message(f"Saving data for {ticker} locally in HDF5 format...")
-    if not os.path.exists(BASE_DATABASE):
-        os.makedirs(BASE_DATABASE)
-        log_message(f"Created directory: {BASE_DATABASE}")
-    file_path = os.path.join(BASE_DATABASE, "data.h5")
-    with pd.HDFStore(file_path, mode="a") as store:
-        store.put(ticker, data, format="table", data_columns=True)
-    log_message(f"Data for {ticker} saved to {file_path}.")
+    log_message(f"Saving data for {ticker} locally in HDF5 format within 'raw' subdirectory...")
+    file_path = os.path.join(RAW_DIR, DATA_FILE)
 
-def update_data(ticker):
-    """
-    Update the last 7 days of data for the given ticker.
-    """
-    log_message(f"Updating data for {ticker}...")
-    existing_data = check_existing_data(ticker)
-    if existing_data is not None:
-        last_date = existing_data.index[-1]
-        start_date = (last_date + timedelta(days=1)).strftime("%Y-%m-%d")
-        log_message(f"Existing data found. Updating from {start_date}.")
-    else:
-        start_date = (datetime.now() - timedelta(days=365)).strftime("%Y-%m-%d")  # Default to 1 year back
-        log_message(f"No existing data found. Downloading data from {start_date}.")
-    end_date = datetime.now().strftime("%Y-%m-%d")
-    new_data = download_data(ticker, start_date, end_date)
-    if existing_data is not None and not new_data.empty:
-        log_message(f"Combining existing data with newly downloaded data for {ticker}.")
-        updated_data = pd.concat([existing_data, new_data]).drop_duplicates()
-        save_data(ticker, updated_data)
-        return updated_data
-    elif not new_data.empty:
-        log_message(f"New data for {ticker} downloaded and saved.")
-    else:
-        log_message(f"No new data available for {ticker}.")
-    return new_data if not new_data.empty else existing_data
+    # Ensure the data is a valid DataFrame
+    if not isinstance(data, pd.DataFrame):
+        log_message(f"Data for {ticker} is not a valid DataFrame. Skipping save.")
+        return
+
+    # Flatten multi-index columns if present
+    if isinstance(data.columns, pd.MultiIndex):
+        log_message(f"Flattening multi-index columns for {ticker}.")
+        data.columns = ['_'.join(map(str, col)).strip() for col in data.columns]
+
+    try:
+        with pd.HDFStore(file_path, mode="a") as store:
+            store.put(ticker, data, format="table", data_columns=True)
+        log_message(f"Data for {ticker} saved to {file_path}.")
+    except Exception as e:
+        log_message(f"Error saving data for {ticker} to HDF5: {e}")
+
 
 def update_data_hdf5(ticker):
     """
     Update the last 7 days of data for the given ticker in HDF5 format.
+    If the data has been updated in the last 7 days, overwrite the old data for those days and append new data.
     """
     log_message(f"Updating data for {ticker}...")
     existing_data = check_existing_data_hdf5(ticker)
-    if existing_data is not None:
-        last_date = existing_data.index[-1]
-        start_date = (last_date + timedelta(days=1)).strftime("%Y-%m-%d")
-        log_message(f"Existing data found. Updating from {start_date}.")
-    else:
-        start_date = (datetime.now() - timedelta(days=365)).strftime("%Y-%m-%d")  # Default to 1 year back
-        log_message(f"No existing data found. Downloading data from {start_date}.")
     end_date = datetime.now().strftime("%Y-%m-%d")
-    new_data = download_data(ticker, start_date, end_date)
+    start_date = (datetime.now() - timedelta(days=7)).strftime("%Y-%m-%d")  # Always fetch the last 7 days
 
+    # Remove the last 7 days from the existing data if it exists
+    if existing_data is not None:
+        log_message(f"Existing data found for {ticker}. Removing the last 7 days to prepare for update.")
+        existing_data = existing_data[existing_data.index < start_date]
+
+    # Download new data for the last 7 days
+    log_message('debuggy')
+    new_data = download_data(ticker, start_date, end_date)
     if new_data is not None and not new_data.empty:
-        if existing_data is not None:
-            log_message(f"Combining existing data with newly downloaded data for {ticker}.")
-            updated_data = pd.concat([existing_data, new_data]).drop_duplicates()
-            save_data_hdf5(ticker, updated_data)
-            return updated_data
-        else:
-            log_message(f"New data for {ticker} downloaded and saved.")
-            save_data_hdf5(ticker, new_data)
-            return new_data
+        log_message(f"New data for {ticker} downloaded successfully. Combining with existing data.")
+        
+        if isinstance(new_data.columns, pd.MultiIndex):
+            log_message(f"Flattening multi-index columns for new data of {ticker}.")
+            new_data.columns = ['_'.join(map(str, col)).strip() for col in new_data.columns]
+        
+        # Combine the existing data (excluding the last 7 days) with the new data
+        updated_data = pd.concat([existing_data, new_data]).drop_duplicates() if existing_data is not None else new_data
+        save_data_hdf5(ticker, updated_data)
+        log_message(f"Data for {ticker} updated successfully.")
+        return updated_data
     else:
         log_message(f"No new data available for {ticker}.")
         return existing_data
 
-def fetch_and_update_data(tickers):
-    """
-    Fetch and update data for a list of tickers in one step.
-    Returns a dictionary of DataFrames for the tickers.
-    """
-    log_message(f"Starting data fetch and update for tickers: {tickers}")
-    data_dict = {}
-    unavailable_tickers = []
-
-    for ticker in tickers:
-        log_message(f"Processing ticker: {ticker}")
-        try:
-            data = update_data(ticker)
-            if data is not None:
-                data_dict[ticker] = data
-                log_message(f"Data for {ticker} is ready.")
-            else:
-                log_message(f"No data available for {ticker}. Adding to unavailable tickers.")
-                unavailable_tickers.append(ticker)
-        except Exception as e:
-            log_message(f"Error processing ticker {ticker}: {e}")
-            unavailable_tickers.append(ticker)
-
-    # Log unavailable tickers at the top of the log file
-    if unavailable_tickers:
-        with open(LOG_FILE, "r+") as log_file:
-            content = log_file.read()
-            log_file.seek(0, 0)
-            log_file.write(f"Unavailable tickers: {unavailable_tickers}\n\n" + content)
-
-    log_message("Data fetch and update completed.")
-    return data_dict
 
 def fetch_and_update_data_hdf5(tickers, start_date):
     """
@@ -208,24 +163,26 @@ def fetch_and_update_data_hdf5(tickers, start_date):
         try:
             existing_data = check_existing_data_hdf5(ticker)
             if existing_data is not None:
-                # Update only the last 7 days
-                last_date = existing_data.index[-1]
-                update_start_date = (last_date + timedelta(days=1)).strftime("%Y-%m-%d")
-                log_message(f"Existing data found for {ticker}. Updating from {update_start_date}.")
-                new_data = download_data(ticker, update_start_date, datetime.now().strftime("%Y-%m-%d"))
-                if new_data is not None and not new_data.empty:
-                    updated_data = pd.concat([existing_data, new_data]).drop_duplicates()
-                    save_data_hdf5(ticker, updated_data)
+                # Call the update_data_hdf5 function to handle the update logic
+                updated_data = update_data_hdf5(ticker)
+                if updated_data is not None:
                     data_dict[ticker] = updated_data
                     last_7_days_loaded.append(ticker)
                 else:
                     log_message(f"No new data available for {ticker}.")
+                    data_dict[ticker] = existing_data
             else:
                 # Load the full dataset starting from START_DATE
                 log_message(f"No existing data found for {ticker}. Downloading full dataset from {start_date}.")
                 new_data = download_data(ticker, start_date, datetime.now().strftime("%Y-%m-%d"))
                 if new_data is not None and not new_data.empty:
+                    
+                    if isinstance(new_data.columns, pd.MultiIndex):
+                        log_message(f"Flattening multi-index columns for new data of {ticker}.")
+                        new_data.columns = ['_'.join(map(str, col)).strip() for col in new_data.columns]
+                    
                     save_data_hdf5(ticker, new_data)
+                    log_message(f"Full dataset for {ticker} downloaded and saved.")
                     data_dict[ticker] = new_data
                     full_dataset_loaded.append(ticker)
                 else:

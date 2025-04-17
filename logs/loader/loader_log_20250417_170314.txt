@@ -1,0 +1,258 @@
+2025-04-17 17:03:14 - Starting data fetch and update for tickers: ['XOM', 'CVX', 'COP', 'OXY', 'PSX', 'MPC', 'VLO', 'EOG', 'DVN', 'HES', 'APA', 'MRO', 'MUR', 'FANG', 'EQT', 'RRC', 'GPOR', 'MTDR', 'SM', 'AR', 'WTI', 'CRC', 'CRK']
+2025-04-17 17:03:14 - Date range: 2020-01-01 to 2025-04-17
+2025-04-17 17:03:14 - Processing ticker: XOM
+2025-04-17 17:03:14 - Checking if data for XOM exists locally in HDF5 format within 'raw' subdirectory...
+2025-04-17 17:03:14 - Data for XOM found locally in 'raw' subdirectory.
+2025-04-17 17:03:14 - Error reading data for XOM from HDF5: cannot properly create the storer for: [_TABLE_MAP] [group->/XOM (Group) '',value-><class 'NoneType'>,format->None
+2025-04-17 17:03:14 - No existing data found for XOM. Downloading full dataset from 2020-01-01.
+2025-04-17 17:03:14 - Downloading data for XOM from 2020-01-01 to 2025-04-17...
+2025-04-17 17:03:15 - Data for XOM downloaded successfully.
+2025-04-17 17:03:15 - Saving data for XOM locally in HDF5 format within 'raw' subdirectory...
+2025-04-17 17:03:15 - Flattening multi-index columns for XOM.
+2025-04-17 17:03:15 - Data for XOM saved to dev_database\raw\dev_tickers1.csv_raw.h5.
+2025-04-17 17:03:15 - Full dataset for XOM downloaded and saved.
+2025-04-17 17:03:15 - Processing ticker: CVX
+2025-04-17 17:03:15 - Checking if data for CVX exists locally in HDF5 format within 'raw' subdirectory...
+2025-04-17 17:03:15 - Data for CVX found locally in 'raw' subdirectory.
+2025-04-17 17:03:15 - Error reading data for CVX from HDF5: cannot properly create the storer for: [_TABLE_MAP] [group->/CVX (Group) '',value-><class 'NoneType'>,format->None
+2025-04-17 17:03:15 - No existing data found for CVX. Downloading full dataset from 2020-01-01.
+2025-04-17 17:03:15 - Downloading data for CVX from 2020-01-01 to 2025-04-17...
+2025-04-17 17:03:16 - Data for CVX downloaded successfully.
+2025-04-17 17:03:16 - Saving data for CVX locally in HDF5 format within 'raw' subdirectory...
+2025-04-17 17:03:16 - Flattening multi-index columns for CVX.
+2025-04-17 17:03:16 - Data for CVX saved to dev_database\raw\dev_tickers1.csv_raw.h5.
+2025-04-17 17:03:16 - Full dataset for CVX downloaded and saved.
+2025-04-17 17:03:16 - Processing ticker: COP
+2025-04-17 17:03:16 - Checking if data for COP exists locally in HDF5 format within 'raw' subdirectory...
+2025-04-17 17:03:16 - Data for COP found locally in 'raw' subdirectory.
+2025-04-17 17:03:16 - Error reading data for COP from HDF5: cannot properly create the storer for: [_TABLE_MAP] [group->/COP (Group) '',value-><class 'NoneType'>,format->None
+2025-04-17 17:03:16 - No existing data found for COP. Downloading full dataset from 2020-01-01.
+2025-04-17 17:03:16 - Downloading data for COP from 2020-01-01 to 2025-04-17...
+2025-04-17 17:03:16 - Data for COP downloaded successfully.
+2025-04-17 17:03:16 - Saving data for COP locally in HDF5 format within 'raw' subdirectory...
+2025-04-17 17:03:16 - Flattening multi-index columns for COP.
+2025-04-17 17:03:16 - Data for COP saved to dev_database\raw\dev_tickers1.csv_raw.h5.
+2025-04-17 17:03:16 - Full dataset for COP downloaded and saved.
+2025-04-17 17:03:16 - Processing ticker: OXY
+2025-04-17 17:03:16 - Checking if data for OXY exists locally in HDF5 format within 'raw' subdirectory...
+2025-04-17 17:03:16 - Data for OXY found locally in 'raw' subdirectory.
+2025-04-17 17:03:16 - Error reading data for OXY from HDF5: cannot properly create the storer for: [_TABLE_MAP] [group->/OXY (Group) '',value-><class 'NoneType'>,format->None
+2025-04-17 17:03:16 - No existing data found for OXY. Downloading full dataset from 2020-01-01.
+2025-04-17 17:03:16 - Downloading data for OXY from 2020-01-01 to 2025-04-17...
+2025-04-17 17:03:16 - Data for OXY downloaded successfully.
+2025-04-17 17:03:16 - Saving data for OXY locally in HDF5 format within 'raw' subdirectory...
+2025-04-17 17:03:16 - Flattening multi-index columns for OXY.
+2025-04-17 17:03:16 - Data for OXY saved to dev_database\raw\dev_tickers1.csv_raw.h5.
+2025-04-17 17:03:16 - Full dataset for OXY downloaded and saved.
+2025-04-17 17:03:16 - Processing ticker: PSX
+2025-04-17 17:03:16 - Checking if data for PSX exists locally in HDF5 format within 'raw' subdirectory...
+2025-04-17 17:03:16 - Data for PSX found locally in 'raw' subdirectory.
+2025-04-17 17:03:16 - Error reading data for PSX from HDF5: cannot properly create the storer for: [_TABLE_MAP] [group->/PSX (Group) '',value-><class 'NoneType'>,format->None
+2025-04-17 17:03:16 - No existing data found for PSX. Downloading full dataset from 2020-01-01.
+2025-04-17 17:03:16 - Downloading data for PSX from 2020-01-01 to 2025-04-17...
+2025-04-17 17:03:16 - Data for PSX downloaded successfully.
+2025-04-17 17:03:16 - Saving data for PSX locally in HDF5 format within 'raw' subdirectory...
+2025-04-17 17:03:16 - Flattening multi-index columns for PSX.
+2025-04-17 17:03:16 - Data for PSX saved to dev_database\raw\dev_tickers1.csv_raw.h5.
+2025-04-17 17:03:16 - Full dataset for PSX downloaded and saved.
+2025-04-17 17:03:17 - Processing ticker: MPC
+2025-04-17 17:03:17 - Checking if data for MPC exists locally in HDF5 format within 'raw' subdirectory...
+2025-04-17 17:03:17 - Data for MPC found locally in 'raw' subdirectory.
+2025-04-17 17:03:17 - Error reading data for MPC from HDF5: cannot properly create the storer for: [_TABLE_MAP] [group->/MPC (Group) '',value-><class 'NoneType'>,format->None
+2025-04-17 17:03:17 - No existing data found for MPC. Downloading full dataset from 2020-01-01.
+2025-04-17 17:03:17 - Downloading data for MPC from 2020-01-01 to 2025-04-17...
+2025-04-17 17:03:17 - Data for MPC downloaded successfully.
+2025-04-17 17:03:17 - Saving data for MPC locally in HDF5 format within 'raw' subdirectory...
+2025-04-17 17:03:17 - Flattening multi-index columns for MPC.
+2025-04-17 17:03:17 - Data for MPC saved to dev_database\raw\dev_tickers1.csv_raw.h5.
+2025-04-17 17:03:17 - Full dataset for MPC downloaded and saved.
+2025-04-17 17:03:17 - Processing ticker: VLO
+2025-04-17 17:03:17 - Checking if data for VLO exists locally in HDF5 format within 'raw' subdirectory...
+2025-04-17 17:03:17 - Data for VLO found locally in 'raw' subdirectory.
+2025-04-17 17:03:17 - Error reading data for VLO from HDF5: cannot properly create the storer for: [_TABLE_MAP] [group->/VLO (Group) '',value-><class 'NoneType'>,format->None
+2025-04-17 17:03:17 - No existing data found for VLO. Downloading full dataset from 2020-01-01.
+2025-04-17 17:03:17 - Downloading data for VLO from 2020-01-01 to 2025-04-17...
+2025-04-17 17:03:17 - Data for VLO downloaded successfully.
+2025-04-17 17:03:17 - Saving data for VLO locally in HDF5 format within 'raw' subdirectory...
+2025-04-17 17:03:17 - Flattening multi-index columns for VLO.
+2025-04-17 17:03:17 - Data for VLO saved to dev_database\raw\dev_tickers1.csv_raw.h5.
+2025-04-17 17:03:17 - Full dataset for VLO downloaded and saved.
+2025-04-17 17:03:17 - Processing ticker: EOG
+2025-04-17 17:03:17 - Checking if data for EOG exists locally in HDF5 format within 'raw' subdirectory...
+2025-04-17 17:03:17 - Data for EOG found locally in 'raw' subdirectory.
+2025-04-17 17:03:17 - Error reading data for EOG from HDF5: cannot properly create the storer for: [_TABLE_MAP] [group->/EOG (Group) '',value-><class 'NoneType'>,format->None
+2025-04-17 17:03:17 - No existing data found for EOG. Downloading full dataset from 2020-01-01.
+2025-04-17 17:03:17 - Downloading data for EOG from 2020-01-01 to 2025-04-17...
+2025-04-17 17:03:17 - Data for EOG downloaded successfully.
+2025-04-17 17:03:17 - Saving data for EOG locally in HDF5 format within 'raw' subdirectory...
+2025-04-17 17:03:17 - Flattening multi-index columns for EOG.
+2025-04-17 17:03:17 - Data for EOG saved to dev_database\raw\dev_tickers1.csv_raw.h5.
+2025-04-17 17:03:17 - Full dataset for EOG downloaded and saved.
+2025-04-17 17:03:17 - Processing ticker: DVN
+2025-04-17 17:03:17 - Checking if data for DVN exists locally in HDF5 format within 'raw' subdirectory...
+2025-04-17 17:03:17 - Data for DVN found locally in 'raw' subdirectory.
+2025-04-17 17:03:17 - Error reading data for DVN from HDF5: cannot properly create the storer for: [_TABLE_MAP] [group->/DVN (Group) '',value-><class 'NoneType'>,format->None
+2025-04-17 17:03:17 - No existing data found for DVN. Downloading full dataset from 2020-01-01.
+2025-04-17 17:03:17 - Downloading data for DVN from 2020-01-01 to 2025-04-17...
+2025-04-17 17:03:18 - Data for DVN downloaded successfully.
+2025-04-17 17:03:18 - Saving data for DVN locally in HDF5 format within 'raw' subdirectory...
+2025-04-17 17:03:18 - Flattening multi-index columns for DVN.
+2025-04-17 17:03:18 - Data for DVN saved to dev_database\raw\dev_tickers1.csv_raw.h5.
+2025-04-17 17:03:18 - Full dataset for DVN downloaded and saved.
+2025-04-17 17:03:18 - Processing ticker: HES
+2025-04-17 17:03:18 - Checking if data for HES exists locally in HDF5 format within 'raw' subdirectory...
+2025-04-17 17:03:18 - Data for HES found locally in 'raw' subdirectory.
+2025-04-17 17:03:18 - Error reading data for HES from HDF5: cannot properly create the storer for: [_TABLE_MAP] [group->/HES (Group) '',value-><class 'NoneType'>,format->None
+2025-04-17 17:03:18 - No existing data found for HES. Downloading full dataset from 2020-01-01.
+2025-04-17 17:03:18 - Downloading data for HES from 2020-01-01 to 2025-04-17...
+2025-04-17 17:03:18 - Data for HES downloaded successfully.
+2025-04-17 17:03:18 - Saving data for HES locally in HDF5 format within 'raw' subdirectory...
+2025-04-17 17:03:18 - Flattening multi-index columns for HES.
+2025-04-17 17:03:18 - Data for HES saved to dev_database\raw\dev_tickers1.csv_raw.h5.
+2025-04-17 17:03:18 - Full dataset for HES downloaded and saved.
+2025-04-17 17:03:18 - Processing ticker: APA
+2025-04-17 17:03:18 - Checking if data for APA exists locally in HDF5 format within 'raw' subdirectory...
+2025-04-17 17:03:18 - Data for APA found locally in 'raw' subdirectory.
+2025-04-17 17:03:18 - Error reading data for APA from HDF5: cannot properly create the storer for: [_TABLE_MAP] [group->/APA (Group) '',value-><class 'NoneType'>,format->None
+2025-04-17 17:03:18 - No existing data found for APA. Downloading full dataset from 2020-01-01.
+2025-04-17 17:03:18 - Downloading data for APA from 2020-01-01 to 2025-04-17...
+2025-04-17 17:03:18 - Data for APA downloaded successfully.
+2025-04-17 17:03:18 - Saving data for APA locally in HDF5 format within 'raw' subdirectory...
+2025-04-17 17:03:18 - Flattening multi-index columns for APA.
+2025-04-17 17:03:18 - Data for APA saved to dev_database\raw\dev_tickers1.csv_raw.h5.
+2025-04-17 17:03:18 - Full dataset for APA downloaded and saved.
+2025-04-17 17:03:18 - Processing ticker: MRO
+2025-04-17 17:03:18 - Checking if data for MRO exists locally in HDF5 format within 'raw' subdirectory...
+2025-04-17 17:03:18 - No local data found for MRO in 'raw' subdirectory.
+2025-04-17 17:03:18 - No existing data found for MRO. Downloading full dataset from 2020-01-01.
+2025-04-17 17:03:18 - Downloading data for MRO from 2020-01-01 to 2025-04-17...
+2025-04-17 17:03:19 - No data downloaded for MRO.
+2025-04-17 17:03:20 - No data downloaded for MRO.
+2025-04-17 17:03:20 - Processing ticker: MUR
+2025-04-17 17:03:20 - Checking if data for MUR exists locally in HDF5 format within 'raw' subdirectory...
+2025-04-17 17:03:20 - Data for MUR found locally in 'raw' subdirectory.
+2025-04-17 17:03:20 - Error reading data for MUR from HDF5: cannot properly create the storer for: [_TABLE_MAP] [group->/MUR (Group) '',value-><class 'NoneType'>,format->None
+2025-04-17 17:03:20 - No existing data found for MUR. Downloading full dataset from 2020-01-01.
+2025-04-17 17:03:20 - Downloading data for MUR from 2020-01-01 to 2025-04-17...
+2025-04-17 17:03:20 - Data for MUR downloaded successfully.
+2025-04-17 17:03:20 - Saving data for MUR locally in HDF5 format within 'raw' subdirectory...
+2025-04-17 17:03:20 - Flattening multi-index columns for MUR.
+2025-04-17 17:03:20 - Data for MUR saved to dev_database\raw\dev_tickers1.csv_raw.h5.
+2025-04-17 17:03:20 - Full dataset for MUR downloaded and saved.
+2025-04-17 17:03:20 - Processing ticker: FANG
+2025-04-17 17:03:20 - Checking if data for FANG exists locally in HDF5 format within 'raw' subdirectory...
+2025-04-17 17:03:20 - Data for FANG found locally in 'raw' subdirectory.
+2025-04-17 17:03:20 - Error reading data for FANG from HDF5: cannot properly create the storer for: [_TABLE_MAP] [group->/FANG (Group) '',value-><class 'NoneType'>,format->None
+2025-04-17 17:03:20 - No existing data found for FANG. Downloading full dataset from 2020-01-01.
+2025-04-17 17:03:20 - Downloading data for FANG from 2020-01-01 to 2025-04-17...
+2025-04-17 17:03:20 - Data for FANG downloaded successfully.
+2025-04-17 17:03:20 - Saving data for FANG locally in HDF5 format within 'raw' subdirectory...
+2025-04-17 17:03:20 - Flattening multi-index columns for FANG.
+2025-04-17 17:03:20 - Data for FANG saved to dev_database\raw\dev_tickers1.csv_raw.h5.
+2025-04-17 17:03:20 - Full dataset for FANG downloaded and saved.
+2025-04-17 17:03:20 - Processing ticker: EQT
+2025-04-17 17:03:20 - Checking if data for EQT exists locally in HDF5 format within 'raw' subdirectory...
+2025-04-17 17:03:20 - Data for EQT found locally in 'raw' subdirectory.
+2025-04-17 17:03:20 - Error reading data for EQT from HDF5: cannot properly create the storer for: [_TABLE_MAP] [group->/EQT (Group) '',value-><class 'NoneType'>,format->None
+2025-04-17 17:03:20 - No existing data found for EQT. Downloading full dataset from 2020-01-01.
+2025-04-17 17:03:20 - Downloading data for EQT from 2020-01-01 to 2025-04-17...
+2025-04-17 17:03:20 - Data for EQT downloaded successfully.
+2025-04-17 17:03:20 - Saving data for EQT locally in HDF5 format within 'raw' subdirectory...
+2025-04-17 17:03:20 - Flattening multi-index columns for EQT.
+2025-04-17 17:03:20 - Data for EQT saved to dev_database\raw\dev_tickers1.csv_raw.h5.
+2025-04-17 17:03:20 - Full dataset for EQT downloaded and saved.
+2025-04-17 17:03:20 - Processing ticker: RRC
+2025-04-17 17:03:20 - Checking if data for RRC exists locally in HDF5 format within 'raw' subdirectory...
+2025-04-17 17:03:20 - Data for RRC found locally in 'raw' subdirectory.
+2025-04-17 17:03:20 - Error reading data for RRC from HDF5: cannot properly create the storer for: [_TABLE_MAP] [group->/RRC (Group) '',value-><class 'NoneType'>,format->None
+2025-04-17 17:03:20 - No existing data found for RRC. Downloading full dataset from 2020-01-01.
+2025-04-17 17:03:20 - Downloading data for RRC from 2020-01-01 to 2025-04-17...
+2025-04-17 17:03:20 - Data for RRC downloaded successfully.
+2025-04-17 17:03:20 - Saving data for RRC locally in HDF5 format within 'raw' subdirectory...
+2025-04-17 17:03:20 - Flattening multi-index columns for RRC.
+2025-04-17 17:03:20 - Data for RRC saved to dev_database\raw\dev_tickers1.csv_raw.h5.
+2025-04-17 17:03:20 - Full dataset for RRC downloaded and saved.
+2025-04-17 17:03:20 - Processing ticker: GPOR
+2025-04-17 17:03:20 - Checking if data for GPOR exists locally in HDF5 format within 'raw' subdirectory...
+2025-04-17 17:03:20 - Data for GPOR found locally in 'raw' subdirectory.
+2025-04-17 17:03:20 - Error reading data for GPOR from HDF5: cannot properly create the storer for: [_TABLE_MAP] [group->/GPOR (Group) '',value-><class 'NoneType'>,format->None
+2025-04-17 17:03:20 - No existing data found for GPOR. Downloading full dataset from 2020-01-01.
+2025-04-17 17:03:20 - Downloading data for GPOR from 2020-01-01 to 2025-04-17...
+2025-04-17 17:03:21 - Data for GPOR downloaded successfully.
+2025-04-17 17:03:21 - Saving data for GPOR locally in HDF5 format within 'raw' subdirectory...
+2025-04-17 17:03:21 - Flattening multi-index columns for GPOR.
+2025-04-17 17:03:21 - Data for GPOR saved to dev_database\raw\dev_tickers1.csv_raw.h5.
+2025-04-17 17:03:21 - Full dataset for GPOR downloaded and saved.
+2025-04-17 17:03:21 - Processing ticker: MTDR
+2025-04-17 17:03:21 - Checking if data for MTDR exists locally in HDF5 format within 'raw' subdirectory...
+2025-04-17 17:03:21 - Data for MTDR found locally in 'raw' subdirectory.
+2025-04-17 17:03:21 - Error reading data for MTDR from HDF5: cannot properly create the storer for: [_TABLE_MAP] [group->/MTDR (Group) '',value-><class 'NoneType'>,format->None
+2025-04-17 17:03:21 - No existing data found for MTDR. Downloading full dataset from 2020-01-01.
+2025-04-17 17:03:21 - Downloading data for MTDR from 2020-01-01 to 2025-04-17...
+2025-04-17 17:03:21 - Data for MTDR downloaded successfully.
+2025-04-17 17:03:21 - Saving data for MTDR locally in HDF5 format within 'raw' subdirectory...
+2025-04-17 17:03:21 - Flattening multi-index columns for MTDR.
+2025-04-17 17:03:21 - Data for MTDR saved to dev_database\raw\dev_tickers1.csv_raw.h5.
+2025-04-17 17:03:21 - Full dataset for MTDR downloaded and saved.
+2025-04-17 17:03:21 - Processing ticker: SM
+2025-04-17 17:03:21 - Checking if data for SM exists locally in HDF5 format within 'raw' subdirectory...
+2025-04-17 17:03:21 - Data for SM found locally in 'raw' subdirectory.
+2025-04-17 17:03:21 - Error reading data for SM from HDF5: cannot properly create the storer for: [_TABLE_MAP] [group->/SM (Group) '',value-><class 'NoneType'>,format->None
+2025-04-17 17:03:21 - No existing data found for SM. Downloading full dataset from 2020-01-01.
+2025-04-17 17:03:21 - Downloading data for SM from 2020-01-01 to 2025-04-17...
+2025-04-17 17:03:21 - Data for SM downloaded successfully.
+2025-04-17 17:03:21 - Saving data for SM locally in HDF5 format within 'raw' subdirectory...
+2025-04-17 17:03:21 - Flattening multi-index columns for SM.
+2025-04-17 17:03:21 - Data for SM saved to dev_database\raw\dev_tickers1.csv_raw.h5.
+2025-04-17 17:03:21 - Full dataset for SM downloaded and saved.
+2025-04-17 17:03:21 - Processing ticker: AR
+2025-04-17 17:03:21 - Checking if data for AR exists locally in HDF5 format within 'raw' subdirectory...
+2025-04-17 17:03:21 - Data for AR found locally in 'raw' subdirectory.
+2025-04-17 17:03:21 - Error reading data for AR from HDF5: cannot properly create the storer for: [_TABLE_MAP] [group->/AR (Group) '',value-><class 'NoneType'>,format->None
+2025-04-17 17:03:21 - No existing data found for AR. Downloading full dataset from 2020-01-01.
+2025-04-17 17:03:21 - Downloading data for AR from 2020-01-01 to 2025-04-17...
+2025-04-17 17:03:21 - Data for AR downloaded successfully.
+2025-04-17 17:03:21 - Saving data for AR locally in HDF5 format within 'raw' subdirectory...
+2025-04-17 17:03:21 - Flattening multi-index columns for AR.
+2025-04-17 17:03:21 - Data for AR saved to dev_database\raw\dev_tickers1.csv_raw.h5.
+2025-04-17 17:03:21 - Full dataset for AR downloaded and saved.
+2025-04-17 17:03:21 - Processing ticker: WTI
+2025-04-17 17:03:21 - Checking if data for WTI exists locally in HDF5 format within 'raw' subdirectory...
+2025-04-17 17:03:21 - Data for WTI found locally in 'raw' subdirectory.
+2025-04-17 17:03:21 - Error reading data for WTI from HDF5: cannot properly create the storer for: [_TABLE_MAP] [group->/WTI (Group) '',value-><class 'NoneType'>,format->None
+2025-04-17 17:03:21 - No existing data found for WTI. Downloading full dataset from 2020-01-01.
+2025-04-17 17:03:21 - Downloading data for WTI from 2020-01-01 to 2025-04-17...
+2025-04-17 17:03:21 - Data for WTI downloaded successfully.
+2025-04-17 17:03:21 - Saving data for WTI locally in HDF5 format within 'raw' subdirectory...
+2025-04-17 17:03:21 - Flattening multi-index columns for WTI.
+2025-04-17 17:03:21 - Data for WTI saved to dev_database\raw\dev_tickers1.csv_raw.h5.
+2025-04-17 17:03:21 - Full dataset for WTI downloaded and saved.
+2025-04-17 17:03:21 - Processing ticker: CRC
+2025-04-17 17:03:21 - Checking if data for CRC exists locally in HDF5 format within 'raw' subdirectory...
+2025-04-17 17:03:21 - Data for CRC found locally in 'raw' subdirectory.
+2025-04-17 17:03:21 - Error reading data for CRC from HDF5: cannot properly create the storer for: [_TABLE_MAP] [group->/CRC (Group) '',value-><class 'NoneType'>,format->None
+2025-04-17 17:03:21 - No existing data found for CRC. Downloading full dataset from 2020-01-01.
+2025-04-17 17:03:21 - Downloading data for CRC from 2020-01-01 to 2025-04-17...
+2025-04-17 17:03:22 - Data for CRC downloaded successfully.
+2025-04-17 17:03:22 - Saving data for CRC locally in HDF5 format within 'raw' subdirectory...
+2025-04-17 17:03:22 - Flattening multi-index columns for CRC.
+2025-04-17 17:03:22 - Data for CRC saved to dev_database\raw\dev_tickers1.csv_raw.h5.
+2025-04-17 17:03:22 - Full dataset for CRC downloaded and saved.
+2025-04-17 17:03:22 - Processing ticker: CRK
+2025-04-17 17:03:22 - Checking if data for CRK exists locally in HDF5 format within 'raw' subdirectory...
+2025-04-17 17:03:22 - Data for CRK found locally in 'raw' subdirectory.
+2025-04-17 17:03:22 - Error reading data for CRK from HDF5: cannot properly create the storer for: [_TABLE_MAP] [group->/CRK (Group) '',value-><class 'NoneType'>,format->None
+2025-04-17 17:03:22 - No existing data found for CRK. Downloading full dataset from 2020-01-01.
+2025-04-17 17:03:22 - Downloading data for CRK from 2020-01-01 to 2025-04-17...
+2025-04-17 17:03:22 - Data for CRK downloaded successfully.
+2025-04-17 17:03:22 - Saving data for CRK locally in HDF5 format within 'raw' subdirectory...
+2025-04-17 17:03:22 - Flattening multi-index columns for CRK.
+2025-04-17 17:03:22 - Data for CRK saved to dev_database\raw\dev_tickers1.csv_raw.h5.
+2025-04-17 17:03:22 - Full dataset for CRK downloaded and saved.
+
+Summary:
+Date range: 2020-01-01 to 2025-04-17
+Tickers with last 7 days loaded: []
+Tickers with full dataset loaded: ['XOM', 'CVX', 'COP', 'OXY', 'PSX', 'MPC', 'VLO', 'EOG', 'DVN', 'HES', 'APA', 'MUR', 'FANG', 'EQT', 'RRC', 'GPOR', 'MTDR', 'SM', 'AR', 'WTI', 'CRC', 'CRK']
+Unavailable tickers: ['MRO']
+2025-04-17 17:03:22 - Data fetch and update completed.

@@ -8,6 +8,9 @@ ENV = "dev"  # or "prod"
 # Base path to the database
 BASE_DATABASE = f"{ENV}_database"
 
+# Ticker dataset name
+TICKER_FILE = "dev_tickers1.csv"
+
 # Directory structure within the database
 RAW_DATA_DIR = f"{BASE_DATABASE}/raw"
 PROCESSED_DATA_DIR = f"{BASE_DATABASE}/processed"
