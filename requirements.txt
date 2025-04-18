@@ -1,0 +1,7 @@
+pandas
+numpy
+yfinance
+h5py
+scipy
+statsmodels
+tqdm

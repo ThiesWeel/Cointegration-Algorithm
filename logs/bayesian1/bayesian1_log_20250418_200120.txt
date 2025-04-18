@@ -1,0 +1,702 @@
+2025-04-18 20:01:27 - DEBUG: Keys in pre_processed: ['APA', 'AR', 'COP', 'CRC', 'CRK', 'CVX', 'DVN', 'EOG', 'EQT', 'FANG', 'GPOR', 'HES', 'MPC', 'MTDR', 'MUR', 'OXY', 'PSX', 'RRC', 'SM', 'VLO', 'WTI', 'XOM']
+2025-04-18 20:01:27 - INFO: Table dev_tickers1.csv_Bayesian1_intereference_table_2025-04-18.csv not found. Creating a new one.
+2025-04-18 20:01:27 - ('XOM', 'CVX', 'COP', 'OXY', 'PSX', 'MPC', 'VLO', 'EOG', 'DVN', 'HES', 'APA', 'MUR', 'FANG', 'EQT', 'RRC', 'GPOR', 'MTDR', 'SM', 'AR', 'WTI', 'CRC', 'CRK'), ('Energy', 'Energy', 'Energy', 'Energy', 'Energy', 'Energy', 'Energy', 'Energy', 'Energy', 'Energy', 'Energy', 'Energy', 'Energy', 'Energy', 'Energy', 'Energy', 'Energy', 'Energy', 'Energy', 'Energy', 'Energy', 'Energy'), ('US', 'US', 'US', 'US', 'US', 'US', 'US', 'US', 'US', 'US', 'US', 'US', 'US', 'US', 'US', 'US', 'US', 'US', 'US', 'US', 'US', 'US')
+2025-04-18 20:01:27 - INFO: Loaded 22 tickers from dev_database/tickers\dev_tickers1.csv.
+2025-04-18 20:01:27 - INFO: Matched industry and region for XOM and CVX
+2025-04-18 20:01:27 - INFO: Matched industry and region for XOM and COP
+2025-04-18 20:01:27 - INFO: Matched industry and region for XOM and OXY
+2025-04-18 20:01:27 - INFO: Matched industry and region for XOM and PSX
+2025-04-18 20:01:27 - INFO: Matched industry and region for XOM and MPC
+2025-04-18 20:01:27 - INFO: Matched industry and region for XOM and VLO
+2025-04-18 20:01:27 - INFO: Matched industry and region for XOM and EOG
+2025-04-18 20:01:27 - INFO: Matched industry and region for XOM and DVN
+2025-04-18 20:01:27 - INFO: Matched industry and region for XOM and HES
+2025-04-18 20:01:27 - INFO: Matched industry and region for XOM and APA
+2025-04-18 20:01:27 - INFO: Matched industry and region for XOM and MUR
+2025-04-18 20:01:27 - INFO: Matched industry and region for XOM and FANG
+2025-04-18 20:01:27 - INFO: Matched industry and region for XOM and EQT
+2025-04-18 20:01:27 - INFO: Matched industry and region for XOM and RRC
+2025-04-18 20:01:27 - INFO: Matched industry and region for XOM and GPOR
+2025-04-18 20:01:27 - INFO: Matched industry and region for XOM and MTDR
+2025-04-18 20:01:27 - INFO: Matched industry and region for XOM and SM
+2025-04-18 20:01:27 - INFO: Matched industry and region for XOM and AR
+2025-04-18 20:01:27 - INFO: Matched industry and region for XOM and WTI
+2025-04-18 20:01:27 - INFO: Matched industry and region for XOM and CRC
+2025-04-18 20:01:27 - INFO: Matched industry and region for XOM and CRK
+2025-04-18 20:01:27 - INFO: Matched industry and region for CVX and COP
+2025-04-18 20:01:27 - INFO: Matched industry and region for CVX and OXY
+2025-04-18 20:01:28 - INFO: Matched industry and region for CVX and PSX
+2025-04-18 20:01:28 - INFO: Matched industry and region for CVX and MPC
+2025-04-18 20:01:28 - INFO: Matched industry and region for CVX and VLO
+2025-04-18 20:01:28 - INFO: Matched industry and region for CVX and EOG
+2025-04-18 20:01:28 - INFO: Matched industry and region for CVX and DVN
+2025-04-18 20:01:28 - INFO: Matched industry and region for CVX and HES
+2025-04-18 20:01:28 - INFO: Matched industry and region for CVX and APA
+2025-04-18 20:01:28 - INFO: Matched industry and region for CVX and MUR
+2025-04-18 20:01:28 - INFO: Matched industry and region for CVX and FANG
+2025-04-18 20:01:28 - INFO: Matched industry and region for CVX and EQT
+2025-04-18 20:01:28 - INFO: Matched industry and region for CVX and RRC
+2025-04-18 20:01:28 - INFO: Matched industry and region for CVX and GPOR
+2025-04-18 20:01:28 - INFO: Matched industry and region for CVX and MTDR
+2025-04-18 20:01:28 - INFO: Matched industry and region for CVX and SM
+2025-04-18 20:01:28 - INFO: Matched industry and region for CVX and AR
+2025-04-18 20:01:28 - INFO: Matched industry and region for CVX and WTI
+2025-04-18 20:01:28 - INFO: Matched industry and region for CVX and CRC
+2025-04-18 20:01:28 - INFO: Matched industry and region for CVX and CRK
+2025-04-18 20:01:28 - INFO: Matched industry and region for COP and OXY
+2025-04-18 20:01:28 - INFO: Matched industry and region for COP and PSX
+2025-04-18 20:01:28 - INFO: Matched industry and region for COP and MPC
+2025-04-18 20:01:28 - INFO: Matched industry and region for COP and VLO
+2025-04-18 20:01:28 - INFO: Matched industry and region for COP and EOG
+2025-04-18 20:01:28 - INFO: Matched industry and region for COP and DVN
+2025-04-18 20:01:28 - INFO: Matched industry and region for COP and HES
+2025-04-18 20:01:28 - INFO: Matched industry and region for COP and APA
+2025-04-18 20:01:28 - INFO: Matched industry and region for COP and MUR
+2025-04-18 20:01:28 - INFO: Matched industry and region for COP and FANG
+2025-04-18 20:01:28 - INFO: Matched industry and region for COP and EQT
+2025-04-18 20:01:28 - INFO: Matched industry and region for COP and RRC
+2025-04-18 20:01:28 - INFO: Matched industry and region for COP and GPOR
+2025-04-18 20:01:28 - INFO: Matched industry and region for COP and MTDR
+2025-04-18 20:01:28 - INFO: Matched industry and region for COP and SM
+2025-04-18 20:01:28 - INFO: Matched industry and region for COP and AR
+2025-04-18 20:01:28 - INFO: Matched industry and region for COP and WTI
+2025-04-18 20:01:28 - INFO: Matched industry and region for COP and CRC
+2025-04-18 20:01:28 - INFO: Matched industry and region for COP and CRK
+2025-04-18 20:01:28 - INFO: Matched industry and region for OXY and PSX
+2025-04-18 20:01:28 - INFO: Matched industry and region for OXY and MPC
+2025-04-18 20:01:28 - INFO: Matched industry and region for OXY and VLO
+2025-04-18 20:01:28 - INFO: Matched industry and region for OXY and EOG
+2025-04-18 20:01:28 - INFO: Matched industry and region for OXY and DVN
+2025-04-18 20:01:28 - INFO: Matched industry and region for OXY and HES
+2025-04-18 20:01:28 - INFO: Matched industry and region for OXY and APA
+2025-04-18 20:01:28 - INFO: Matched industry and region for OXY and MUR
+2025-04-18 20:01:28 - INFO: Matched industry and region for OXY and FANG
+2025-04-18 20:01:28 - INFO: Matched industry and region for OXY and EQT
+2025-04-18 20:01:28 - INFO: Matched industry and region for OXY and RRC
+2025-04-18 20:01:28 - INFO: Matched industry and region for OXY and GPOR
+2025-04-18 20:01:28 - INFO: Matched industry and region for OXY and MTDR
+2025-04-18 20:01:28 - INFO: Matched industry and region for OXY and SM
+2025-04-18 20:01:28 - INFO: Matched industry and region for OXY and AR
+2025-04-18 20:01:28 - INFO: Matched industry and region for OXY and WTI
+2025-04-18 20:01:28 - INFO: Matched industry and region for OXY and CRC
+2025-04-18 20:01:28 - INFO: Matched industry and region for OXY and CRK
+2025-04-18 20:01:28 - INFO: Matched industry and region for PSX and MPC
+2025-04-18 20:01:28 - INFO: Matched industry and region for PSX and VLO
+2025-04-18 20:01:28 - INFO: Matched industry and region for PSX and EOG
+2025-04-18 20:01:28 - INFO: Matched industry and region for PSX and DVN
+2025-04-18 20:01:28 - INFO: Matched industry and region for PSX and HES
+2025-04-18 20:01:28 - INFO: Matched industry and region for PSX and APA
+2025-04-18 20:01:28 - INFO: Matched industry and region for PSX and MUR
+2025-04-18 20:01:28 - INFO: Matched industry and region for PSX and FANG
+2025-04-18 20:01:28 - INFO: Matched industry and region for PSX and EQT
+2025-04-18 20:01:28 - INFO: Matched industry and region for PSX and RRC
+2025-04-18 20:01:28 - INFO: Matched industry and region for PSX and GPOR
+2025-04-18 20:01:28 - INFO: Matched industry and region for PSX and MTDR
+2025-04-18 20:01:28 - INFO: Matched industry and region for PSX and SM
+2025-04-18 20:01:28 - INFO: Matched industry and region for PSX and AR
+2025-04-18 20:01:28 - INFO: Matched industry and region for PSX and WTI
+2025-04-18 20:01:28 - INFO: Matched industry and region for PSX and CRC
+2025-04-18 20:01:28 - INFO: Matched industry and region for PSX and CRK
+2025-04-18 20:01:28 - INFO: Matched industry and region for MPC and VLO
+2025-04-18 20:01:28 - INFO: Matched industry and region for MPC and EOG
+2025-04-18 20:01:28 - INFO: Matched industry and region for MPC and DVN
+2025-04-18 20:01:28 - INFO: Matched industry and region for MPC and HES
+2025-04-18 20:01:28 - INFO: Matched industry and region for MPC and APA
+2025-04-18 20:01:28 - INFO: Matched industry and region for MPC and MUR
+2025-04-18 20:01:28 - INFO: Matched industry and region for MPC and FANG
+2025-04-18 20:01:28 - INFO: Matched industry and region for MPC and EQT
+2025-04-18 20:01:28 - INFO: Matched industry and region for MPC and RRC
+2025-04-18 20:01:28 - INFO: Matched industry and region for MPC and GPOR
+2025-04-18 20:01:28 - INFO: Matched industry and region for MPC and MTDR
+2025-04-18 20:01:28 - INFO: Matched industry and region for MPC and SM
+2025-04-18 20:01:28 - INFO: Matched industry and region for MPC and AR
+2025-04-18 20:01:28 - INFO: Matched industry and region for MPC and WTI
+2025-04-18 20:01:28 - INFO: Matched industry and region for MPC and CRC
+2025-04-18 20:01:28 - INFO: Matched industry and region for MPC and CRK
+2025-04-18 20:01:28 - INFO: Matched industry and region for VLO and EOG
+2025-04-18 20:01:28 - INFO: Matched industry and region for VLO and DVN
+2025-04-18 20:01:28 - INFO: Matched industry and region for VLO and HES
+2025-04-18 20:01:28 - INFO: Matched industry and region for VLO and APA
+2025-04-18 20:01:28 - INFO: Matched industry and region for VLO and MUR
+2025-04-18 20:01:28 - INFO: Matched industry and region for VLO and FANG
+2025-04-18 20:01:28 - INFO: Matched industry and region for VLO and EQT
+2025-04-18 20:01:28 - INFO: Matched industry and region for VLO and RRC
+2025-04-18 20:01:28 - INFO: Matched industry and region for VLO and GPOR
+2025-04-18 20:01:28 - INFO: Matched industry and region for VLO and MTDR
+2025-04-18 20:01:28 - INFO: Matched industry and region for VLO and SM
+2025-04-18 20:01:28 - INFO: Matched industry and region for VLO and AR
+2025-04-18 20:01:28 - INFO: Matched industry and region for VLO and WTI
+2025-04-18 20:01:28 - INFO: Matched industry and region for VLO and CRC
+2025-04-18 20:01:28 - INFO: Matched industry and region for VLO and CRK
+2025-04-18 20:01:28 - INFO: Matched industry and region for EOG and DVN
+2025-04-18 20:01:28 - INFO: Matched industry and region for EOG and HES
+2025-04-18 20:01:28 - INFO: Matched industry and region for EOG and APA
+2025-04-18 20:01:28 - INFO: Matched industry and region for EOG and MUR
+2025-04-18 20:01:28 - INFO: Matched industry and region for EOG and FANG
+2025-04-18 20:01:28 - INFO: Matched industry and region for EOG and EQT
+2025-04-18 20:01:28 - INFO: Matched industry and region for EOG and RRC
+2025-04-18 20:01:28 - INFO: Matched industry and region for EOG and GPOR
+2025-04-18 20:01:28 - INFO: Matched industry and region for EOG and MTDR
+2025-04-18 20:01:28 - INFO: Matched industry and region for EOG and SM
+2025-04-18 20:01:28 - INFO: Matched industry and region for EOG and AR
+2025-04-18 20:01:28 - INFO: Matched industry and region for EOG and WTI
+2025-04-18 20:01:28 - INFO: Matched industry and region for EOG and CRC
+2025-04-18 20:01:28 - INFO: Matched industry and region for EOG and CRK
+2025-04-18 20:01:28 - INFO: Matched industry and region for DVN and HES
+2025-04-18 20:01:28 - INFO: Matched industry and region for DVN and APA
+2025-04-18 20:01:28 - INFO: Matched industry and region for DVN and MUR
+2025-04-18 20:01:28 - INFO: Matched industry and region for DVN and FANG
+2025-04-18 20:01:28 - INFO: Matched industry and region for DVN and EQT
+2025-04-18 20:01:28 - INFO: Matched industry and region for DVN and RRC
+2025-04-18 20:01:28 - INFO: Matched industry and region for DVN and GPOR
+2025-04-18 20:01:28 - INFO: Matched industry and region for DVN and MTDR
+2025-04-18 20:01:28 - INFO: Matched industry and region for DVN and SM
+2025-04-18 20:01:28 - INFO: Matched industry and region for DVN and AR
+2025-04-18 20:01:28 - INFO: Matched industry and region for DVN and WTI
+2025-04-18 20:01:28 - INFO: Matched industry and region for DVN and CRC
+2025-04-18 20:01:28 - INFO: Matched industry and region for DVN and CRK
+2025-04-18 20:01:28 - INFO: Matched industry and region for HES and APA
+2025-04-18 20:01:28 - INFO: Matched industry and region for HES and MUR
+2025-04-18 20:01:28 - INFO: Matched industry and region for HES and FANG
+2025-04-18 20:01:28 - INFO: Matched industry and region for HES and EQT
+2025-04-18 20:01:28 - INFO: Matched industry and region for HES and RRC
+2025-04-18 20:01:28 - INFO: Matched industry and region for HES and GPOR
+2025-04-18 20:01:28 - INFO: Matched industry and region for HES and MTDR
+2025-04-18 20:01:28 - INFO: Matched industry and region for HES and SM
+2025-04-18 20:01:28 - INFO: Matched industry and region for HES and AR
+2025-04-18 20:01:28 - INFO: Matched industry and region for HES and WTI
+2025-04-18 20:01:28 - INFO: Matched industry and region for HES and CRC
+2025-04-18 20:01:28 - INFO: Matched industry and region for HES and CRK
+2025-04-18 20:01:28 - INFO: Matched industry and region for APA and MUR
+2025-04-18 20:01:28 - INFO: Matched industry and region for APA and FANG
+2025-04-18 20:01:28 - INFO: Matched industry and region for APA and EQT
+2025-04-18 20:01:28 - INFO: Matched industry and region for APA and RRC
+2025-04-18 20:01:28 - INFO: Matched industry and region for APA and GPOR
+2025-04-18 20:01:28 - INFO: Matched industry and region for APA and MTDR
+2025-04-18 20:01:28 - INFO: Matched industry and region for APA and SM
+2025-04-18 20:01:28 - INFO: Matched industry and region for APA and AR
+2025-04-18 20:01:28 - INFO: Matched industry and region for APA and WTI
+2025-04-18 20:01:28 - INFO: Matched industry and region for APA and CRC
+2025-04-18 20:01:28 - INFO: Matched industry and region for APA and CRK
+2025-04-18 20:01:28 - INFO: Matched industry and region for MUR and FANG
+2025-04-18 20:01:28 - INFO: Matched industry and region for MUR and EQT
+2025-04-18 20:01:28 - INFO: Matched industry and region for MUR and RRC
+2025-04-18 20:01:28 - INFO: Matched industry and region for MUR and GPOR
+2025-04-18 20:01:28 - INFO: Matched industry and region for MUR and MTDR
+2025-04-18 20:01:28 - INFO: Matched industry and region for MUR and SM
+2025-04-18 20:01:28 - INFO: Matched industry and region for MUR and AR
+2025-04-18 20:01:28 - INFO: Matched industry and region for MUR and WTI
+2025-04-18 20:01:28 - INFO: Matched industry and region for MUR and CRC
+2025-04-18 20:01:28 - INFO: Matched industry and region for MUR and CRK
+2025-04-18 20:01:28 - INFO: Matched industry and region for FANG and EQT
+2025-04-18 20:01:28 - INFO: Matched industry and region for FANG and RRC
+2025-04-18 20:01:28 - INFO: Matched industry and region for FANG and GPOR
+2025-04-18 20:01:28 - INFO: Matched industry and region for FANG and MTDR
+2025-04-18 20:01:28 - INFO: Matched industry and region for FANG and SM
+2025-04-18 20:01:28 - INFO: Matched industry and region for FANG and AR
+2025-04-18 20:01:28 - INFO: Matched industry and region for FANG and WTI
+2025-04-18 20:01:28 - INFO: Matched industry and region for FANG and CRC
+2025-04-18 20:01:28 - INFO: Matched industry and region for FANG and CRK
+2025-04-18 20:01:28 - INFO: Matched industry and region for EQT and RRC
+2025-04-18 20:01:28 - INFO: Matched industry and region for EQT and GPOR
+2025-04-18 20:01:28 - INFO: Matched industry and region for EQT and MTDR
+2025-04-18 20:01:28 - INFO: Matched industry and region for EQT and SM
+2025-04-18 20:01:28 - INFO: Matched industry and region for EQT and AR
+2025-04-18 20:01:28 - INFO: Matched industry and region for EQT and WTI
+2025-04-18 20:01:28 - INFO: Matched industry and region for EQT and CRC
+2025-04-18 20:01:28 - INFO: Matched industry and region for EQT and CRK
+2025-04-18 20:01:28 - INFO: Matched industry and region for RRC and GPOR
+2025-04-18 20:01:28 - INFO: Matched industry and region for RRC and MTDR
+2025-04-18 20:01:28 - INFO: Matched industry and region for RRC and SM
+2025-04-18 20:01:28 - INFO: Matched industry and region for RRC and AR
+2025-04-18 20:01:28 - INFO: Matched industry and region for RRC and WTI
+2025-04-18 20:01:28 - INFO: Matched industry and region for RRC and CRC
+2025-04-18 20:01:28 - INFO: Matched industry and region for RRC and CRK
+2025-04-18 20:01:28 - INFO: Matched industry and region for GPOR and MTDR
+2025-04-18 20:01:28 - INFO: Matched industry and region for GPOR and SM
+2025-04-18 20:01:28 - INFO: Matched industry and region for GPOR and AR
+2025-04-18 20:01:28 - INFO: Matched industry and region for GPOR and WTI
+2025-04-18 20:01:28 - INFO: Matched industry and region for GPOR and CRC
+2025-04-18 20:01:28 - INFO: Matched industry and region for GPOR and CRK
+2025-04-18 20:01:28 - INFO: Matched industry and region for MTDR and SM
+2025-04-18 20:01:28 - INFO: Matched industry and region for MTDR and AR
+2025-04-18 20:01:28 - INFO: Matched industry and region for MTDR and WTI
+2025-04-18 20:01:28 - INFO: Matched industry and region for MTDR and CRC
+2025-04-18 20:01:28 - INFO: Matched industry and region for MTDR and CRK
+2025-04-18 20:01:28 - INFO: Matched industry and region for SM and AR
+2025-04-18 20:01:28 - INFO: Matched industry and region for SM and WTI
+2025-04-18 20:01:28 - INFO: Matched industry and region for SM and CRC
+2025-04-18 20:01:28 - INFO: Matched industry and region for SM and CRK
+2025-04-18 20:01:28 - INFO: Matched industry and region for AR and WTI
+2025-04-18 20:01:28 - INFO: Matched industry and region for AR and CRC
+2025-04-18 20:01:28 - INFO: Matched industry and region for AR and CRK
+2025-04-18 20:01:28 - INFO: Matched industry and region for WTI and CRC
+2025-04-18 20:01:28 - INFO: Matched industry and region for WTI and CRK
+2025-04-18 20:01:28 - INFO: Matched industry and region for CRC and CRK
+2025-04-18 20:01:28 - INFO: Prior table created based on industry and region matches.
+2025-04-18 20:01:28 - INFO: Starting correlation calculations...
+2025-04-18 20:01:28 - INFO: Calculating correlation between XOM and CVX
+2025-04-18 20:01:28 - INFO: Correlation between XOM and CVX: 0.3323
+2025-04-18 20:01:28 - INFO: Calculating correlation between XOM and COP
+2025-04-18 20:01:28 - INFO: Correlation between XOM and COP: 0.8187
+2025-04-18 20:01:28 - INFO: Calculating correlation between XOM and OXY
+2025-04-18 20:01:28 - INFO: Correlation between XOM and OXY: 0.6132
+2025-04-18 20:01:28 - INFO: Calculating correlation between XOM and PSX
+2025-04-18 20:01:28 - INFO: Correlation between XOM and PSX: 0.7615
+2025-04-18 20:01:28 - INFO: Calculating correlation between XOM and MPC
+2025-04-18 20:01:28 - INFO: Correlation between XOM and MPC: 0.6324
+2025-04-18 20:01:28 - INFO: Calculating correlation between XOM and VLO
+2025-04-18 20:01:28 - INFO: Correlation between XOM and VLO: 0.6259
+2025-04-18 20:01:28 - INFO: Calculating correlation between XOM and EOG
+2025-04-18 20:01:28 - INFO: Correlation between XOM and EOG: 0.4933
+2025-04-18 20:01:28 - INFO: Calculating correlation between XOM and DVN
+2025-04-18 20:01:28 - INFO: Correlation between XOM and DVN: 0.7407
+2025-04-18 20:01:28 - INFO: Calculating correlation between XOM and HES
+2025-04-18 20:01:28 - INFO: Correlation between XOM and HES: 0.3189
+2025-04-18 20:01:28 - INFO: Calculating correlation between XOM and APA
+2025-04-18 20:01:28 - INFO: Correlation between XOM and APA: 0.5041
+2025-04-18 20:01:28 - INFO: Calculating correlation between XOM and MUR
+2025-04-18 20:01:28 - INFO: Correlation between XOM and MUR: 0.6094
+2025-04-18 20:01:28 - INFO: Calculating correlation between XOM and FANG
+2025-04-18 20:01:28 - INFO: Correlation between XOM and FANG: 0.6903
+2025-04-18 20:01:28 - INFO: Calculating correlation between XOM and EQT
+2025-04-18 20:01:28 - INFO: Correlation between XOM and EQT: -0.3851
+2025-04-18 20:01:28 - INFO: Calculating correlation between XOM and RRC
+2025-04-18 20:01:28 - INFO: Correlation between XOM and RRC: -0.2630
+2025-04-18 20:01:28 - INFO: Calculating correlation between XOM and GPOR
+2025-04-18 20:01:28 - INFO: Correlation between XOM and GPOR: -0.3474
+2025-04-18 20:01:28 - INFO: Calculating correlation between XOM and MTDR
+2025-04-18 20:01:28 - INFO: Correlation between XOM and MTDR: 0.2521
+2025-04-18 20:01:28 - INFO: Calculating correlation between XOM and SM
+2025-04-18 20:01:28 - INFO: Correlation between XOM and SM: 0.5342
+2025-04-18 20:01:28 - INFO: Calculating correlation between XOM and AR
+2025-04-18 20:01:28 - INFO: Correlation between XOM and AR: -0.3302
+2025-04-18 20:01:28 - INFO: Calculating correlation between XOM and WTI
+2025-04-18 20:01:28 - INFO: Correlation between XOM and WTI: 0.7263
+2025-04-18 20:01:28 - INFO: Calculating correlation between XOM and CRC
+2025-04-18 20:01:28 - INFO: Correlation between XOM and CRC: 0.5091
+2025-04-18 20:01:28 - INFO: Calculating correlation between XOM and CRK
+2025-04-18 20:01:28 - INFO: Correlation between XOM and CRK: -0.4627
+2025-04-18 20:01:28 - INFO: Calculating correlation between CVX and COP
+2025-04-18 20:01:28 - INFO: Correlation between CVX and COP: 0.1535
+2025-04-18 20:01:28 - INFO: Calculating correlation between CVX and OXY
+2025-04-18 20:01:28 - INFO: Correlation between CVX and OXY: -0.0572
+2025-04-18 20:01:28 - INFO: Calculating correlation between CVX and PSX
+2025-04-18 20:01:28 - INFO: Correlation between CVX and PSX: 0.2621
+2025-04-18 20:01:28 - INFO: Calculating correlation between CVX and MPC
+2025-04-18 20:01:28 - INFO: Correlation between CVX and MPC: -0.0809
+2025-04-18 20:01:28 - INFO: Calculating correlation between CVX and VLO
+2025-04-18 20:01:28 - INFO: Correlation between CVX and VLO: 0.2171
+2025-04-18 20:01:28 - INFO: Calculating correlation between CVX and EOG
+2025-04-18 20:01:28 - INFO: Correlation between CVX and EOG: 0.6842
+2025-04-18 20:01:28 - INFO: Calculating correlation between CVX and DVN
+2025-04-18 20:01:28 - INFO: Correlation between CVX and DVN: -0.0897
+2025-04-18 20:01:28 - INFO: Calculating correlation between CVX and HES
+2025-04-18 20:01:28 - INFO: Correlation between CVX and HES: 0.9695
+2025-04-18 20:01:28 - INFO: Calculating correlation between CVX and APA
+2025-04-18 20:01:28 - INFO: Correlation between CVX and APA: -0.1901
+2025-04-18 20:01:28 - INFO: Calculating correlation between CVX and MUR
+2025-04-18 20:01:28 - INFO: Correlation between CVX and MUR: -0.1985
+2025-04-18 20:01:28 - INFO: Calculating correlation between CVX and FANG
+2025-04-18 20:01:28 - INFO: Correlation between CVX and FANG: -0.0903
+2025-04-18 20:01:28 - INFO: Calculating correlation between CVX and EQT
+2025-04-18 20:01:28 - INFO: Correlation between CVX and EQT: 0.6513
+2025-04-18 20:01:28 - INFO: Calculating correlation between CVX and RRC
+2025-04-18 20:01:28 - INFO: Correlation between CVX and RRC: 0.7525
+2025-04-18 20:01:28 - INFO: Calculating correlation between CVX and GPOR
+2025-04-18 20:01:28 - INFO: Correlation between CVX and GPOR: 0.6595
+2025-04-18 20:01:28 - INFO: Calculating correlation between CVX and MTDR
+2025-04-18 20:01:28 - INFO: Correlation between CVX and MTDR: 0.3958
+2025-04-18 20:01:28 - INFO: Calculating correlation between CVX and SM
+2025-04-18 20:01:28 - INFO: Correlation between CVX and SM: -0.0414
+2025-04-18 20:01:28 - INFO: Calculating correlation between CVX and AR
+2025-04-18 20:01:28 - INFO: Correlation between CVX and AR: 0.6772
+2025-04-18 20:01:28 - INFO: Calculating correlation between CVX and WTI
+2025-04-18 20:01:28 - INFO: Correlation between CVX and WTI: -0.1687
+2025-04-18 20:01:28 - INFO: Calculating correlation between CVX and CRC
+2025-04-18 20:01:28 - INFO: Correlation between CVX and CRC: 0.2165
+2025-04-18 20:01:28 - INFO: Calculating correlation between CVX and CRK
+2025-04-18 20:01:28 - INFO: Correlation between CVX and CRK: 0.5759
+2025-04-18 20:01:28 - INFO: Calculating correlation between COP and OXY
+2025-04-18 20:01:28 - INFO: Correlation between COP and OXY: 0.8260
+2025-04-18 20:01:28 - INFO: Calculating correlation between COP and PSX
+2025-04-18 20:01:28 - INFO: Correlation between COP and PSX: 0.7685
+2025-04-18 20:01:28 - INFO: Calculating correlation between COP and MPC
+2025-04-18 20:01:28 - INFO: Correlation between COP and MPC: 0.8111
+2025-04-18 20:01:28 - INFO: Calculating correlation between COP and VLO
+2025-04-18 20:01:28 - INFO: Correlation between COP and VLO: 0.7761
+2025-04-18 20:01:28 - INFO: Calculating correlation between COP and EOG
+2025-04-18 20:01:28 - INFO: Correlation between COP and EOG: 0.5943
+2025-04-18 20:01:28 - INFO: Calculating correlation between COP and DVN
+2025-04-18 20:01:28 - INFO: Correlation between COP and DVN: 0.8442
+2025-04-18 20:01:28 - INFO: Calculating correlation between COP and HES
+2025-04-18 20:01:28 - INFO: Correlation between COP and HES: 0.1262
+2025-04-18 20:01:28 - INFO: Calculating correlation between COP and APA
+2025-04-18 20:01:28 - INFO: Correlation between COP and APA: 0.7667
+2025-04-18 20:01:28 - INFO: Calculating correlation between COP and MUR
+2025-04-18 20:01:28 - INFO: Correlation between COP and MUR: 0.8635
+2025-04-18 20:01:28 - INFO: Calculating correlation between COP and FANG
+2025-04-18 20:01:28 - INFO: Correlation between COP and FANG: 0.9122
+2025-04-18 20:01:28 - INFO: Calculating correlation between COP and EQT
+2025-04-18 20:01:28 - INFO: Correlation between COP and EQT: -0.5080
+2025-04-18 20:01:28 - INFO: Calculating correlation between COP and RRC
+2025-04-18 20:01:28 - INFO: Correlation between COP and RRC: -0.3288
+2025-04-18 20:01:28 - INFO: Calculating correlation between COP and GPOR
+2025-04-18 20:01:28 - INFO: Correlation between COP and GPOR: -0.3475
+2025-04-18 20:01:28 - INFO: Calculating correlation between COP and MTDR
+2025-04-18 20:01:28 - INFO: Correlation between COP and MTDR: 0.5874
+2025-04-18 20:01:28 - INFO: Calculating correlation between COP and SM
+2025-04-18 20:01:28 - INFO: Correlation between COP and SM: 0.8278
+2025-04-18 20:01:28 - INFO: Calculating correlation between COP and AR
+2025-04-18 20:01:28 - INFO: Correlation between COP and AR: -0.4021
+2025-04-18 20:01:28 - INFO: Calculating correlation between COP and WTI
+2025-04-18 20:01:28 - INFO: Correlation between COP and WTI: 0.8577
+2025-04-18 20:01:28 - INFO: Calculating correlation between COP and CRC
+2025-04-18 20:01:28 - INFO: Correlation between COP and CRC: 0.7441
+2025-04-18 20:01:28 - INFO: Calculating correlation between COP and CRK
+2025-04-18 20:01:28 - INFO: Correlation between COP and CRK: -0.5519
+2025-04-18 20:01:28 - INFO: Calculating correlation between OXY and PSX
+2025-04-18 20:01:28 - INFO: Correlation between OXY and PSX: 0.7949
+2025-04-18 20:01:28 - INFO: Calculating correlation between OXY and MPC
+2025-04-18 20:01:28 - INFO: Correlation between OXY and MPC: 0.8867
+2025-04-18 20:01:28 - INFO: Calculating correlation between OXY and VLO
+2025-04-18 20:01:28 - INFO: Correlation between OXY and VLO: 0.8366
+2025-04-18 20:01:28 - INFO: Calculating correlation between OXY and EOG
+2025-04-18 20:01:28 - INFO: Correlation between OXY and EOG: 0.4837
+2025-04-18 20:01:28 - INFO: Calculating correlation between OXY and DVN
+2025-04-18 20:01:28 - INFO: Correlation between OXY and DVN: 0.9185
+2025-04-18 20:01:28 - INFO: Calculating correlation between OXY and HES
+2025-04-18 20:01:28 - INFO: Correlation between OXY and HES: -0.0238
+2025-04-18 20:01:28 - INFO: Calculating correlation between OXY and APA
+2025-04-18 20:01:28 - INFO: Correlation between OXY and APA: 0.9600
+2025-04-18 20:01:28 - INFO: Calculating correlation between OXY and MUR
+2025-04-18 20:01:28 - INFO: Correlation between OXY and MUR: 0.9320
+2025-04-18 20:01:28 - INFO: Calculating correlation between OXY and FANG
+2025-04-18 20:01:28 - INFO: Correlation between OXY and FANG: 0.9256
+2025-04-18 20:01:28 - INFO: Calculating correlation between OXY and EQT
+2025-04-18 20:01:28 - INFO: Correlation between OXY and EQT: -0.6299
+2025-04-18 20:01:28 - INFO: Calculating correlation between OXY and RRC
+2025-04-18 20:01:28 - INFO: Correlation between OXY and RRC: -0.3991
+2025-04-18 20:01:28 - INFO: Calculating correlation between OXY and GPOR
+2025-04-18 20:01:28 - INFO: Correlation between OXY and GPOR: -0.4483
+2025-04-18 20:01:28 - INFO: Calculating correlation between OXY and MTDR
+2025-04-18 20:01:28 - INFO: Correlation between OXY and MTDR: 0.5527
+2025-04-18 20:01:28 - INFO: Calculating correlation between OXY and SM
+2025-04-18 20:01:28 - INFO: Correlation between OXY and SM: 0.8008
+2025-04-18 20:01:28 - INFO: Calculating correlation between OXY and AR
+2025-04-18 20:01:28 - INFO: Correlation between OXY and AR: -0.4387
+2025-04-18 20:01:28 - INFO: Calculating correlation between OXY and WTI
+2025-04-18 20:01:28 - INFO: Correlation between OXY and WTI: 0.8618
+2025-04-18 20:01:28 - INFO: Calculating correlation between OXY and CRC
+2025-04-18 20:01:28 - INFO: Correlation between OXY and CRC: 0.5428
+2025-04-18 20:01:28 - INFO: Calculating correlation between OXY and CRK
+2025-04-18 20:01:28 - INFO: Correlation between OXY and CRK: -0.6083
+2025-04-18 20:01:28 - INFO: Calculating correlation between PSX and MPC
+2025-04-18 20:01:28 - INFO: Correlation between PSX and MPC: 0.8674
+2025-04-18 20:01:28 - INFO: Calculating correlation between PSX and VLO
+2025-04-18 20:01:28 - INFO: Correlation between PSX and VLO: 0.8684
+2025-04-18 20:01:28 - INFO: Calculating correlation between PSX and EOG
+2025-04-18 20:01:28 - INFO: Correlation between PSX and EOG: 0.5855
+2025-04-18 20:01:28 - INFO: Calculating correlation between PSX and DVN
+2025-04-18 20:01:28 - INFO: Correlation between PSX and DVN: 0.8244
+2025-04-18 20:01:28 - INFO: Calculating correlation between PSX and HES
+2025-04-18 20:01:28 - INFO: Correlation between PSX and HES: 0.2627
+2025-04-18 20:01:28 - INFO: Calculating correlation between PSX and APA
+2025-04-18 20:01:28 - INFO: Correlation between PSX and APA: 0.7205
+2025-04-18 20:01:28 - INFO: Calculating correlation between PSX and MUR
+2025-04-18 20:01:28 - INFO: Correlation between PSX and MUR: 0.7124
+2025-04-18 20:01:28 - INFO: Calculating correlation between PSX and FANG
+2025-04-18 20:01:28 - INFO: Correlation between PSX and FANG: 0.7375
+2025-04-18 20:01:28 - INFO: Calculating correlation between PSX and EQT
+2025-04-18 20:01:28 - INFO: Correlation between PSX and EQT: -0.4411
+2025-04-18 20:01:28 - INFO: Calculating correlation between PSX and RRC
+2025-04-18 20:01:28 - INFO: Correlation between PSX and RRC: -0.2398
+2025-04-18 20:01:28 - INFO: Calculating correlation between PSX and GPOR
+2025-04-18 20:01:28 - INFO: Correlation between PSX and GPOR: -0.3317
+2025-04-18 20:01:28 - INFO: Calculating correlation between PSX and MTDR
+2025-04-18 20:01:28 - INFO: Correlation between PSX and MTDR: 0.4321
+2025-04-18 20:01:28 - INFO: Calculating correlation between PSX and SM
+2025-04-18 20:01:28 - INFO: Correlation between PSX and SM: 0.6388
+2025-04-18 20:01:28 - INFO: Calculating correlation between PSX and AR
+2025-04-18 20:01:28 - INFO: Correlation between PSX and AR: -0.3014
+2025-04-18 20:01:28 - INFO: Calculating correlation between PSX and WTI
+2025-04-18 20:01:28 - INFO: Correlation between PSX and WTI: 0.7514
+2025-04-18 20:01:28 - INFO: Calculating correlation between PSX and CRC
+2025-04-18 20:01:28 - INFO: Correlation between PSX and CRC: 0.4993
+2025-04-18 20:01:28 - INFO: Calculating correlation between PSX and CRK
+2025-04-18 20:01:28 - INFO: Correlation between PSX and CRK: -0.5101
+2025-04-18 20:01:28 - INFO: Calculating correlation between MPC and VLO
+2025-04-18 20:01:28 - INFO: Correlation between MPC and VLO: 0.8989
+2025-04-18 20:01:28 - INFO: Calculating correlation between MPC and EOG
+2025-04-18 20:01:28 - INFO: Correlation between MPC and EOG: 0.4354
+2025-04-18 20:01:28 - INFO: Calculating correlation between MPC and DVN
+2025-04-18 20:01:28 - INFO: Correlation between MPC and DVN: 0.9174
+2025-04-18 20:01:28 - INFO: Calculating correlation between MPC and HES
+2025-04-18 20:01:28 - INFO: Correlation between MPC and HES: -0.0377
+2025-04-18 20:01:28 - INFO: Calculating correlation between MPC and APA
+2025-04-18 20:01:28 - INFO: Correlation between MPC and APA: 0.8775
+2025-04-18 20:01:28 - INFO: Calculating correlation between MPC and MUR
+2025-04-18 20:01:28 - INFO: Correlation between MPC and MUR: 0.8569
+2025-04-18 20:01:28 - INFO: Calculating correlation between MPC and FANG
+2025-04-18 20:01:28 - INFO: Correlation between MPC and FANG: 0.8602
+2025-04-18 20:01:28 - INFO: Calculating correlation between MPC and EQT
+2025-04-18 20:01:28 - INFO: Correlation between MPC and EQT: -0.6238
+2025-04-18 20:01:28 - INFO: Calculating correlation between MPC and RRC
+2025-04-18 20:01:28 - INFO: Correlation between MPC and RRC: -0.4405
+2025-04-18 20:01:28 - INFO: Calculating correlation between MPC and GPOR
+2025-04-18 20:01:28 - INFO: Correlation between MPC and GPOR: -0.4759
+2025-04-18 20:01:28 - INFO: Calculating correlation between MPC and MTDR
+2025-04-18 20:01:28 - INFO: Correlation between MPC and MTDR: 0.4415
+2025-04-18 20:01:28 - INFO: Calculating correlation between MPC and SM
+2025-04-18 20:01:28 - INFO: Correlation between MPC and SM: 0.7285
+2025-04-18 20:01:28 - INFO: Calculating correlation between MPC and AR
+2025-04-18 20:01:28 - INFO: Correlation between MPC and AR: -0.4564
+2025-04-18 20:01:28 - INFO: Calculating correlation between MPC and WTI
+2025-04-18 20:01:28 - INFO: Correlation between MPC and WTI: 0.8454
+2025-04-18 20:01:28 - INFO: Calculating correlation between MPC and CRC
+2025-04-18 20:01:28 - INFO: Correlation between MPC and CRC: 0.4606
+2025-04-18 20:01:28 - INFO: Calculating correlation between MPC and CRK
+2025-04-18 20:01:28 - INFO: Correlation between MPC and CRK: -0.6572
+2025-04-18 20:01:28 - INFO: Calculating correlation between VLO and EOG
+2025-04-18 20:01:28 - INFO: Correlation between VLO and EOG: 0.6497
+2025-04-18 20:01:28 - INFO: Calculating correlation between VLO and DVN
+2025-04-18 20:01:28 - INFO: Correlation between VLO and DVN: 0.8164
+2025-04-18 20:01:28 - INFO: Calculating correlation between VLO and HES
+2025-04-18 20:01:28 - INFO: Correlation between VLO and HES: 0.2485
+2025-04-18 20:01:28 - INFO: Calculating correlation between VLO and APA
+2025-04-18 20:01:28 - INFO: Correlation between VLO and APA: 0.8012
+2025-04-18 20:01:28 - INFO: Calculating correlation between VLO and MUR
+2025-04-18 20:01:28 - INFO: Correlation between VLO and MUR: 0.7371
+2025-04-18 20:01:28 - INFO: Calculating correlation between VLO and FANG
+2025-04-18 20:01:28 - INFO: Correlation between VLO and FANG: 0.8023
+2025-04-18 20:01:28 - INFO: Calculating correlation between VLO and EQT
+2025-04-18 20:01:28 - INFO: Correlation between VLO and EQT: -0.3626
+2025-04-18 20:01:28 - INFO: Calculating correlation between VLO and RRC
+2025-04-18 20:01:28 - INFO: Correlation between VLO and RRC: -0.1528
+2025-04-18 20:01:28 - INFO: Calculating correlation between VLO and GPOR
+2025-04-18 20:01:28 - INFO: Correlation between VLO and GPOR: -0.2234
+2025-04-18 20:01:28 - INFO: Calculating correlation between VLO and MTDR
+2025-04-18 20:01:28 - INFO: Correlation between VLO and MTDR: 0.6261
+2025-04-18 20:01:28 - INFO: Calculating correlation between VLO and SM
+2025-04-18 20:01:28 - INFO: Correlation between VLO and SM: 0.6975
+2025-04-18 20:01:28 - INFO: Calculating correlation between VLO and AR
+2025-04-18 20:01:28 - INFO: Correlation between VLO and AR: -0.1952
+2025-04-18 20:01:28 - INFO: Calculating correlation between VLO and WTI
+2025-04-18 20:01:28 - INFO: Correlation between VLO and WTI: 0.7131
+2025-04-18 20:01:28 - INFO: Calculating correlation between VLO and CRC
+2025-04-18 20:01:28 - INFO: Correlation between VLO and CRC: 0.4947
+2025-04-18 20:01:28 - INFO: Calculating correlation between VLO and CRK
+2025-04-18 20:01:28 - INFO: Correlation between VLO and CRK: -0.4186
+2025-04-18 20:01:28 - INFO: Calculating correlation between EOG and DVN
+2025-04-18 20:01:28 - INFO: Correlation between EOG and DVN: 0.3700
+2025-04-18 20:01:28 - INFO: Calculating correlation between EOG and HES
+2025-04-18 20:01:28 - INFO: Correlation between EOG and HES: 0.6509
+2025-04-18 20:01:28 - INFO: Calculating correlation between EOG and APA
+2025-04-18 20:01:28 - INFO: Correlation between EOG and APA: 0.4054
+2025-04-18 20:01:28 - INFO: Calculating correlation between EOG and MUR
+2025-04-18 20:01:28 - INFO: Correlation between EOG and MUR: 0.3724
+2025-04-18 20:01:28 - INFO: Calculating correlation between EOG and FANG
+2025-04-18 20:01:28 - INFO: Correlation between EOG and FANG: 0.4858
+2025-04-18 20:01:28 - INFO: Calculating correlation between EOG and EQT
+2025-04-18 20:01:28 - INFO: Correlation between EOG and EQT: 0.2331
+2025-04-18 20:01:28 - INFO: Calculating correlation between EOG and RRC
+2025-04-18 20:01:28 - INFO: Correlation between EOG and RRC: 0.4267
+2025-04-18 20:01:28 - INFO: Calculating correlation between EOG and GPOR
+2025-04-18 20:01:28 - INFO: Correlation between EOG and GPOR: 0.3906
+2025-04-18 20:01:28 - INFO: Calculating correlation between EOG and MTDR
+2025-04-18 20:01:28 - INFO: Correlation between EOG and MTDR: 0.8128
+2025-04-18 20:01:28 - INFO: Calculating correlation between EOG and SM
+2025-04-18 20:01:28 - INFO: Correlation between EOG and SM: 0.5749
+2025-04-18 20:01:28 - INFO: Calculating correlation between EOG and AR
+2025-04-18 20:01:28 - INFO: Correlation between EOG and AR: 0.3383
+2025-04-18 20:01:28 - INFO: Calculating correlation between EOG and WTI
+2025-04-18 20:01:28 - INFO: Correlation between EOG and WTI: 0.3460
+2025-04-18 20:01:28 - INFO: Calculating correlation between EOG and CRC
+2025-04-18 20:01:28 - INFO: Correlation between EOG and CRC: 0.6485
+2025-04-18 20:01:28 - INFO: Calculating correlation between EOG and CRK
+2025-04-18 20:01:28 - INFO: Correlation between EOG and CRK: 0.1836
+2025-04-18 20:01:28 - INFO: Calculating correlation between DVN and HES
+2025-04-18 20:01:28 - INFO: Correlation between DVN and HES: -0.0384
+2025-04-18 20:01:28 - INFO: Calculating correlation between DVN and APA
+2025-04-18 20:01:28 - INFO: Correlation between DVN and APA: 0.8764
+2025-04-18 20:01:28 - INFO: Calculating correlation between DVN and MUR
+2025-04-18 20:01:28 - INFO: Correlation between DVN and MUR: 0.8925
+2025-04-18 20:01:28 - INFO: Calculating correlation between DVN and FANG
+2025-04-18 20:01:28 - INFO: Correlation between DVN and FANG: 0.8956
+2025-04-18 20:01:28 - INFO: Calculating correlation between DVN and EQT
+2025-04-18 20:01:28 - INFO: Correlation between DVN and EQT: -0.7078
+2025-04-18 20:01:28 - INFO: Calculating correlation between DVN and RRC
+2025-04-18 20:01:28 - INFO: Correlation between DVN and RRC: -0.5250
+2025-04-18 20:01:28 - INFO: Calculating correlation between DVN and GPOR
+2025-04-18 20:01:28 - INFO: Correlation between DVN and GPOR: -0.6046
+2025-04-18 20:01:28 - INFO: Calculating correlation between DVN and MTDR
+2025-04-18 20:01:28 - INFO: Correlation between DVN and MTDR: 0.3256
+2025-04-18 20:01:28 - INFO: Calculating correlation between DVN and SM
+2025-04-18 20:01:28 - INFO: Correlation between DVN and SM: 0.6915
+2025-04-18 20:01:28 - INFO: Calculating correlation between DVN and AR
+2025-04-18 20:01:28 - INFO: Correlation between DVN and AR: -0.5525
+2025-04-18 20:01:28 - INFO: Calculating correlation between DVN and WTI
+2025-04-18 20:01:28 - INFO: Correlation between DVN and WTI: 0.8912
+2025-04-18 20:01:28 - INFO: Calculating correlation between DVN and CRC
+2025-04-18 20:01:28 - INFO: Correlation between DVN and CRC: 0.4186
+2025-04-18 20:01:28 - INFO: Calculating correlation between DVN and CRK
+2025-04-18 20:01:28 - INFO: Correlation between DVN and CRK: -0.7124
+2025-04-18 20:01:28 - INFO: Calculating correlation between HES and APA
+2025-04-18 20:01:28 - INFO: Correlation between HES and APA: -0.1505
+2025-04-18 20:01:28 - INFO: Calculating correlation between HES and MUR
+2025-04-18 20:01:28 - INFO: Correlation between HES and MUR: -0.2073
+2025-04-18 20:01:28 - INFO: Calculating correlation between HES and FANG
+2025-04-18 20:01:28 - INFO: Correlation between HES and FANG: -0.0967
+2025-04-18 20:01:28 - INFO: Calculating correlation between HES and EQT
+2025-04-18 20:01:28 - INFO: Correlation between HES and EQT: 0.6643
+2025-04-18 20:01:28 - INFO: Calculating correlation between HES and RRC
+2025-04-18 20:01:28 - INFO: Correlation between HES and RRC: 0.7751
+2025-04-18 20:01:28 - INFO: Calculating correlation between HES and GPOR
+2025-04-18 20:01:28 - INFO: Correlation between HES and GPOR: 0.6516
+2025-04-18 20:01:28 - INFO: Calculating correlation between HES and MTDR
+2025-04-18 20:01:28 - INFO: Correlation between HES and MTDR: 0.3367
+2025-04-18 20:01:28 - INFO: Calculating correlation between HES and SM
+2025-04-18 20:01:28 - INFO: Correlation between HES and SM: -0.1151
+2025-04-18 20:01:28 - INFO: Calculating correlation between HES and AR
+2025-04-18 20:01:28 - INFO: Correlation between HES and AR: 0.7295
+2025-04-18 20:01:28 - INFO: Calculating correlation between HES and WTI
+2025-04-18 20:01:28 - INFO: Correlation between HES and WTI: -0.1780
+2025-04-18 20:01:28 - INFO: Calculating correlation between HES and CRC
+2025-04-18 20:01:28 - INFO: Correlation between HES and CRC: 0.0726
+2025-04-18 20:01:28 - INFO: Calculating correlation between HES and CRK
+2025-04-18 20:01:28 - INFO: Correlation between HES and CRK: 0.6039
+2025-04-18 20:01:28 - INFO: Calculating correlation between APA and MUR
+2025-04-18 20:01:28 - INFO: Correlation between APA and MUR: 0.9214
+2025-04-18 20:01:28 - INFO: Calculating correlation between APA and FANG
+2025-04-18 20:01:28 - INFO: Correlation between APA and FANG: 0.9180
+2025-04-18 20:01:28 - INFO: Calculating correlation between APA and EQT
+2025-04-18 20:01:28 - INFO: Correlation between APA and EQT: -0.6597
+2025-04-18 20:01:28 - INFO: Calculating correlation between APA and RRC
+2025-04-18 20:01:28 - INFO: Correlation between APA and RRC: -0.4518
+2025-04-18 20:01:28 - INFO: Calculating correlation between APA and GPOR
+2025-04-18 20:01:28 - INFO: Correlation between APA and GPOR: -0.4695
+2025-04-18 20:01:28 - INFO: Calculating correlation between APA and MTDR
+2025-04-18 20:01:28 - INFO: Correlation between APA and MTDR: 0.5575
+2025-04-18 20:01:28 - INFO: Calculating correlation between APA and SM
+2025-04-18 20:01:28 - INFO: Correlation between APA and SM: 0.8301
+2025-04-18 20:01:28 - INFO: Calculating correlation between APA and AR
+2025-04-18 20:01:28 - INFO: Correlation between APA and AR: -0.4762
+2025-04-18 20:01:28 - INFO: Calculating correlation between APA and WTI
+2025-04-18 20:01:28 - INFO: Correlation between APA and WTI: 0.8485
+2025-04-18 20:01:28 - INFO: Calculating correlation between APA and CRC
+2025-04-18 20:01:28 - INFO: Correlation between APA and CRC: 0.5331
+2025-04-18 20:01:28 - INFO: Calculating correlation between APA and CRK
+2025-04-18 20:01:28 - INFO: Correlation between APA and CRK: -0.6335
+2025-04-18 20:01:28 - INFO: Calculating correlation between MUR and FANG
+2025-04-18 20:01:28 - INFO: Correlation between MUR and FANG: 0.9499
+2025-04-18 20:01:28 - INFO: Calculating correlation between MUR and EQT
+2025-04-18 20:01:28 - INFO: Correlation between MUR and EQT: -0.7507
+2025-04-18 20:01:28 - INFO: Calculating correlation between MUR and RRC
+2025-04-18 20:01:28 - INFO: Correlation between MUR and RRC: -0.5636
+2025-04-18 20:01:28 - INFO: Calculating correlation between MUR and GPOR
+2025-04-18 20:01:28 - INFO: Correlation between MUR and GPOR: -0.5435
+2025-04-18 20:01:28 - INFO: Calculating correlation between MUR and MTDR
+2025-04-18 20:01:28 - INFO: Correlation between MUR and MTDR: 0.5066
+2025-04-18 20:01:28 - INFO: Calculating correlation between MUR and SM
+2025-04-18 20:01:28 - INFO: Correlation between MUR and SM: 0.8661
+2025-04-18 20:01:28 - INFO: Calculating correlation between MUR and AR
+2025-04-18 20:01:28 - INFO: Correlation between MUR and AR: -0.6114
+2025-04-18 20:01:28 - INFO: Calculating correlation between MUR and WTI
+2025-04-18 20:01:28 - INFO: Correlation between MUR and WTI: 0.8984
+2025-04-18 20:01:28 - INFO: Calculating correlation between MUR and CRC
+2025-04-18 20:01:28 - INFO: Correlation between MUR and CRC: 0.6522
+2025-04-18 20:01:28 - INFO: Calculating correlation between MUR and CRK
+2025-04-18 20:01:28 - INFO: Correlation between MUR and CRK: -0.7366
+2025-04-18 20:01:28 - INFO: Calculating correlation between FANG and EQT
+2025-04-18 20:01:28 - INFO: Correlation between FANG and EQT: -0.6568
+2025-04-18 20:01:28 - INFO: Calculating correlation between FANG and RRC
+2025-04-18 20:01:28 - INFO: Correlation between FANG and RRC: -0.4716
+2025-04-18 20:01:28 - INFO: Calculating correlation between FANG and GPOR
+2025-04-18 20:01:28 - INFO: Correlation between FANG and GPOR: -0.4719
+2025-04-18 20:01:28 - INFO: Calculating correlation between FANG and MTDR
+2025-04-18 20:01:28 - INFO: Correlation between FANG and MTDR: 0.5986
+2025-04-18 20:01:28 - INFO: Calculating correlation between FANG and SM
+2025-04-18 20:01:28 - INFO: Correlation between FANG and SM: 0.9071
+2025-04-18 20:01:28 - INFO: Calculating correlation between FANG and AR
+2025-04-18 20:01:28 - INFO: Correlation between FANG and AR: -0.5257
+2025-04-18 20:01:28 - INFO: Calculating correlation between FANG and WTI
+2025-04-18 20:01:28 - INFO: Correlation between FANG and WTI: 0.9054
+2025-04-18 20:01:28 - INFO: Calculating correlation between FANG and CRC
+2025-04-18 20:01:28 - INFO: Correlation between FANG and CRC: 0.6972
+2025-04-18 20:01:28 - INFO: Calculating correlation between FANG and CRK
+2025-04-18 20:01:28 - INFO: Correlation between FANG and CRK: -0.6607
+2025-04-18 20:01:28 - INFO: Calculating correlation between EQT and RRC
+2025-04-18 20:01:28 - INFO: Correlation between EQT and RRC: 0.9529
+2025-04-18 20:01:28 - INFO: Calculating correlation between EQT and GPOR
+2025-04-18 20:01:28 - INFO: Correlation between EQT and GPOR: 0.9360
+2025-04-18 20:01:28 - INFO: Calculating correlation between EQT and MTDR
+2025-04-18 20:01:28 - INFO: Correlation between EQT and MTDR: 0.0865
+2025-04-18 20:01:28 - INFO: Calculating correlation between EQT and SM
+2025-04-18 20:01:28 - INFO: Correlation between EQT and SM: -0.5194
+2025-04-18 20:01:28 - INFO: Calculating correlation between EQT and AR
+2025-04-18 20:01:28 - INFO: Correlation between EQT and AR: 0.9587
+2025-04-18 20:01:28 - INFO: Calculating correlation between EQT and WTI
+2025-04-18 20:01:28 - INFO: Correlation between EQT and WTI: -0.7502
+2025-04-18 20:01:28 - INFO: Calculating correlation between EQT and CRC
+2025-04-18 20:01:28 - INFO: Correlation between EQT and CRC: -0.2535
+2025-04-18 20:01:28 - INFO: Calculating correlation between EQT and CRK
+2025-04-18 20:01:28 - INFO: Correlation between EQT and CRK: 0.9747
+2025-04-18 20:01:28 - INFO: Calculating correlation between RRC and GPOR
+2025-04-18 20:01:28 - INFO: Correlation between RRC and GPOR: 0.9479
+2025-04-18 20:01:28 - INFO: Calculating correlation between RRC and MTDR
+2025-04-18 20:01:28 - INFO: Correlation between RRC and MTDR: 0.2800
+2025-04-18 20:01:28 - INFO: Calculating correlation between RRC and SM
+2025-04-18 20:01:28 - INFO: Correlation between RRC and SM: -0.3526
+2025-04-18 20:01:28 - INFO: Calculating correlation between RRC and AR
+2025-04-18 20:01:28 - INFO: Correlation between RRC and AR: 0.9828
+2025-04-18 20:01:28 - INFO: Calculating correlation between RRC and WTI
+2025-04-18 20:01:28 - INFO: Correlation between RRC and WTI: -0.5931
+2025-04-18 20:01:28 - INFO: Calculating correlation between RRC and CRC
+2025-04-18 20:01:28 - INFO: Correlation between RRC and CRC: -0.1144
+2025-04-18 20:01:28 - INFO: Calculating correlation between RRC and CRK
+2025-04-18 20:01:28 - INFO: Correlation between RRC and CRK: 0.9404
+2025-04-18 20:01:28 - INFO: Calculating correlation between GPOR and MTDR
+2025-04-18 20:01:28 - INFO: Correlation between GPOR and MTDR: 0.3344
+2025-04-18 20:01:28 - INFO: Calculating correlation between GPOR and SM
+2025-04-18 20:01:28 - INFO: Correlation between GPOR and SM: -0.2902
+2025-04-18 20:01:28 - INFO: Calculating correlation between GPOR and AR
+2025-04-18 20:01:28 - INFO: Correlation between GPOR and AR: 0.9356
+2025-04-18 20:01:28 - INFO: Calculating correlation between GPOR and WTI
+2025-04-18 20:01:28 - INFO: Correlation between GPOR and WTI: -0.6296
+2025-04-18 20:01:28 - INFO: Calculating correlation between GPOR and CRC
+2025-04-18 20:01:28 - INFO: Correlation between GPOR and CRC: -0.0175
+2025-04-18 20:01:28 - INFO: Calculating correlation between GPOR and CRK
+2025-04-18 20:01:28 - INFO: Correlation between GPOR and CRK: 0.9294
+2025-04-18 20:01:28 - INFO: Calculating correlation between MTDR and SM
+2025-04-18 20:01:28 - INFO: Correlation between MTDR and SM: 0.7599
+2025-04-18 20:01:28 - INFO: Calculating correlation between MTDR and AR
+2025-04-18 20:01:28 - INFO: Correlation between MTDR and AR: 0.1964
+2025-04-18 20:01:28 - INFO: Calculating correlation between MTDR and WTI
+2025-04-18 20:01:28 - INFO: Correlation between MTDR and WTI: 0.3710
+2025-04-18 20:01:28 - INFO: Calculating correlation between MTDR and CRC
+2025-04-18 20:01:28 - INFO: Correlation between MTDR and CRC: 0.7709
+2025-04-18 20:01:28 - INFO: Calculating correlation between MTDR and CRK
+2025-04-18 20:01:28 - INFO: Correlation between MTDR and CRK: 0.0704
+2025-04-18 20:01:28 - INFO: Calculating correlation between SM and AR
+2025-04-18 20:01:28 - INFO: Correlation between SM and AR: -0.4332
+2025-04-18 20:01:28 - INFO: Calculating correlation between SM and WTI
+2025-04-18 20:01:28 - INFO: Correlation between SM and WTI: 0.8097
+2025-04-18 20:01:28 - INFO: Calculating correlation between SM and CRC
+2025-04-18 20:01:28 - INFO: Correlation between SM and CRC: 0.8777
+2025-04-18 20:01:28 - INFO: Calculating correlation between SM and CRK
+2025-04-18 20:01:28 - INFO: Correlation between SM and CRK: -0.5374
+2025-04-18 20:01:28 - INFO: Calculating correlation between AR and WTI
+2025-04-18 20:01:28 - INFO: Correlation between AR and WTI: -0.6459
+2025-04-18 20:01:28 - INFO: Calculating correlation between AR and CRC
+2025-04-18 20:01:28 - INFO: Correlation between AR and CRC: -0.2371
+2025-04-18 20:01:28 - INFO: Calculating correlation between AR and CRK
+2025-04-18 20:01:28 - INFO: Correlation between AR and CRK: 0.9494
+2025-04-18 20:01:28 - INFO: Calculating correlation between WTI and CRC
+2025-04-18 20:01:28 - INFO: Correlation between WTI and CRC: 0.6029
+2025-04-18 20:01:28 - INFO: Calculating correlation between WTI and CRK
+2025-04-18 20:01:28 - INFO: Correlation between WTI and CRK: -0.7687
+2025-04-18 20:01:28 - INFO: Calculating correlation between CRC and CRK
+2025-04-18 20:01:28 - INFO: Correlation between CRC and CRK: -0.2929
+2025-04-18 20:01:28 - INFO: Correlation calculations completed. Total correlations calculated: 231
+2025-04-18 20:01:28 - INFO: Updated table saved to dev_database\bayesian1\dev_tickers1.csv_Bayesian1_intereference_table_2025-04-18.csv
+2025-04-18 20:01:28 - INFO: Correlated pairs identified: [('COP', 'XOM'), ('PSX', 'XOM'), ('DVN', 'XOM'), ('WTI', 'XOM'), ('CVX', 'HES'), ('CVX', 'RRC'), ('COP', 'OXY'), ('COP', 'PSX'), ('COP', 'MPC'), ('COP', 'VLO'), ('COP', 'DVN'), ('APA', 'COP'), ('COP', 'MUR'), ('COP', 'FANG'), ('COP', 'SM'), ('COP', 'WTI'), ('COP', 'CRC'), ('OXY', 'PSX'), ('MPC', 'OXY'), ('OXY', 'VLO'), ('DVN', 'OXY'), ('APA', 'OXY'), ('MUR', 'OXY'), ('FANG', 'OXY'), ('OXY', 'SM'), ('OXY', 'WTI'), ('MPC', 'PSX'), ('PSX', 'VLO'), ('DVN', 'PSX'), ('APA', 'PSX'), ('MUR', 'PSX'), ('FANG', 'PSX'), ('PSX', 'WTI'), ('MPC', 'VLO'), ('DVN', 'MPC'), ('APA', 'MPC'), ('MPC', 'MUR'), ('FANG', 'MPC'), ('MPC', 'SM'), ('MPC', 'WTI'), ('DVN', 'VLO'), ('APA', 'VLO'), ('MUR', 'VLO'), ('FANG', 'VLO'), ('VLO', 'WTI'), ('EOG', 'MTDR'), ('APA', 'DVN'), ('DVN', 'MUR'), ('DVN', 'FANG'), ('DVN', 'WTI'), ('HES', 'RRC'), ('AR', 'HES'), ('APA', 'MUR'), ('APA', 'FANG'), ('APA', 'SM'), ('APA', 'WTI'), ('FANG', 'MUR'), ('MUR', 'SM'), ('MUR', 'WTI'), ('FANG', 'SM'), ('FANG', 'WTI'), ('EQT', 'RRC'), ('EQT', 'GPOR'), ('AR', 'EQT'), ('CRK', 'EQT'), ('GPOR', 'RRC'), ('AR', 'RRC'), ('CRK', 'RRC'), ('AR', 'GPOR'), ('CRK', 'GPOR'), ('MTDR', 'SM'), ('CRC', 'MTDR'), ('SM', 'WTI'), ('CRC', 'SM'), ('AR', 'CRK')]

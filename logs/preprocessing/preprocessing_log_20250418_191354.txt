@@ -1,0 +1,7 @@
+2025-04-18 19:13:58,205 - ERROR - 
+1 Failed download:
+2025-04-18 19:13:58,205 - ERROR - ['MRO']: YFPricesMissingError('possibly delisted; no price data found  (1d 2020-01-01 -> 2025-04-18) (Yahoo error = "No data found, symbol may be delisted")')
+2025-04-18 19:14:00,485 - INFO - Preprocessed data file 2024-08-01_to_2025-04-18_processed.h5 already exists. Loading from file.
+2025-04-18 19:14:00,937 - INFO - Loading existing table from dev_database\bayesian1\dev_tickers1.csv_Bayesian1_intereference_table_2025-04-18.csv
+2025-04-18 19:14:00,948 - INFO - Updated table saved to dev_database\bayesian1\dev_tickers1.csv_Bayesian1_intereference_table_2025-04-18.csv
+2025-04-18 19:14:00,957 - INFO - Correlated pairs identified: []

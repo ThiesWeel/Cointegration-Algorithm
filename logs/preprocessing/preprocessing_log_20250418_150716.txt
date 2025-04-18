@@ -1,0 +1,1 @@
+2025-04-18 15:07:16,124 - INFO - Loaded ticker file from dev_database/tickers\dev_tickers1.csv

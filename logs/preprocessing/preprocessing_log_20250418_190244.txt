@@ -1,0 +1,541 @@
+2025-04-18 19:02:48,737 - ERROR - 
+1 Failed download:
+2025-04-18 19:02:48,737 - ERROR - ['MRO']: YFPricesMissingError('possibly delisted; no price data found  (1d 2020-01-01 -> 2025-04-18) (Yahoo error = "No data found, symbol may be delisted")')
+2025-04-18 19:02:51,060 - INFO - Preprocessed data file 2024-08-01_to_2025-04-18_processed.h5 already exists. Loading from file.
+2025-04-18 19:02:51,426 - INFO - Table dev_tickers1.csv_Bayesian1_intereference_table_2025-04-18.csv not found. Creating a new one.
+2025-04-18 19:02:51,445 - ERROR - Tickers XOM or CVX not found in pre-processed data.
+2025-04-18 19:02:51,446 - ERROR - Correlation calculation failed for XOM and CVX.
+2025-04-18 19:02:51,446 - ERROR - Tickers XOM or COP not found in pre-processed data.
+2025-04-18 19:02:51,446 - ERROR - Correlation calculation failed for XOM and COP.
+2025-04-18 19:02:51,447 - ERROR - Tickers XOM or OXY not found in pre-processed data.
+2025-04-18 19:02:51,447 - ERROR - Correlation calculation failed for XOM and OXY.
+2025-04-18 19:02:51,447 - ERROR - Tickers XOM or PSX not found in pre-processed data.
+2025-04-18 19:02:51,447 - ERROR - Correlation calculation failed for XOM and PSX.
+2025-04-18 19:02:51,447 - ERROR - Tickers XOM or MPC not found in pre-processed data.
+2025-04-18 19:02:51,448 - ERROR - Correlation calculation failed for XOM and MPC.
+2025-04-18 19:02:51,448 - ERROR - Tickers XOM or VLO not found in pre-processed data.
+2025-04-18 19:02:51,448 - ERROR - Correlation calculation failed for XOM and VLO.
+2025-04-18 19:02:51,448 - ERROR - Tickers XOM or EOG not found in pre-processed data.
+2025-04-18 19:02:51,448 - ERROR - Correlation calculation failed for XOM and EOG.
+2025-04-18 19:02:51,450 - ERROR - Tickers XOM or DVN not found in pre-processed data.
+2025-04-18 19:02:51,450 - ERROR - Correlation calculation failed for XOM and DVN.
+2025-04-18 19:02:51,450 - ERROR - Tickers XOM or HES not found in pre-processed data.
+2025-04-18 19:02:51,450 - ERROR - Correlation calculation failed for XOM and HES.
+2025-04-18 19:02:51,450 - ERROR - Tickers XOM or APA not found in pre-processed data.
+2025-04-18 19:02:51,451 - ERROR - Correlation calculation failed for XOM and APA.
+2025-04-18 19:02:51,451 - ERROR - Tickers XOM or MRO not found in pre-processed data.
+2025-04-18 19:02:51,451 - ERROR - Correlation calculation failed for XOM and MRO.
+2025-04-18 19:02:51,451 - ERROR - Tickers XOM or MUR not found in pre-processed data.
+2025-04-18 19:02:51,451 - ERROR - Correlation calculation failed for XOM and MUR.
+2025-04-18 19:02:51,452 - ERROR - Tickers XOM or FANG not found in pre-processed data.
+2025-04-18 19:02:51,452 - ERROR - Correlation calculation failed for XOM and FANG.
+2025-04-18 19:02:51,452 - ERROR - Tickers XOM or EQT not found in pre-processed data.
+2025-04-18 19:02:51,452 - ERROR - Correlation calculation failed for XOM and EQT.
+2025-04-18 19:02:51,453 - ERROR - Tickers XOM or RRC not found in pre-processed data.
+2025-04-18 19:02:51,453 - ERROR - Correlation calculation failed for XOM and RRC.
+2025-04-18 19:02:51,453 - ERROR - Tickers XOM or GPOR not found in pre-processed data.
+2025-04-18 19:02:51,453 - ERROR - Correlation calculation failed for XOM and GPOR.
+2025-04-18 19:02:51,453 - ERROR - Tickers XOM or MTDR not found in pre-processed data.
+2025-04-18 19:02:51,453 - ERROR - Correlation calculation failed for XOM and MTDR.
+2025-04-18 19:02:51,455 - ERROR - Tickers XOM or SM not found in pre-processed data.
+2025-04-18 19:02:51,455 - ERROR - Correlation calculation failed for XOM and SM.
+2025-04-18 19:02:51,455 - ERROR - Tickers XOM or AR not found in pre-processed data.
+2025-04-18 19:02:51,456 - ERROR - Correlation calculation failed for XOM and AR.
+2025-04-18 19:02:51,456 - ERROR - Tickers XOM or WTI not found in pre-processed data.
+2025-04-18 19:02:51,456 - ERROR - Correlation calculation failed for XOM and WTI.
+2025-04-18 19:02:51,456 - ERROR - Tickers XOM or CRC not found in pre-processed data.
+2025-04-18 19:02:51,457 - ERROR - Correlation calculation failed for XOM and CRC.
+2025-04-18 19:02:51,457 - ERROR - Tickers XOM or CRK not found in pre-processed data.
+2025-04-18 19:02:51,457 - ERROR - Correlation calculation failed for XOM and CRK.
+2025-04-18 19:02:51,458 - ERROR - Tickers CVX or COP not found in pre-processed data.
+2025-04-18 19:02:51,458 - ERROR - Correlation calculation failed for CVX and COP.
+2025-04-18 19:02:51,458 - ERROR - Tickers CVX or OXY not found in pre-processed data.
+2025-04-18 19:02:51,458 - ERROR - Correlation calculation failed for CVX and OXY.
+2025-04-18 19:02:51,458 - ERROR - Tickers CVX or PSX not found in pre-processed data.
+2025-04-18 19:02:51,459 - ERROR - Correlation calculation failed for CVX and PSX.
+2025-04-18 19:02:51,459 - ERROR - Tickers CVX or MPC not found in pre-processed data.
+2025-04-18 19:02:51,459 - ERROR - Correlation calculation failed for CVX and MPC.
+2025-04-18 19:02:51,459 - ERROR - Tickers CVX or VLO not found in pre-processed data.
+2025-04-18 19:02:51,459 - ERROR - Correlation calculation failed for CVX and VLO.
+2025-04-18 19:02:51,460 - ERROR - Tickers CVX or EOG not found in pre-processed data.
+2025-04-18 19:02:51,460 - ERROR - Correlation calculation failed for CVX and EOG.
+2025-04-18 19:02:51,460 - ERROR - Tickers CVX or DVN not found in pre-processed data.
+2025-04-18 19:02:51,460 - ERROR - Correlation calculation failed for CVX and DVN.
+2025-04-18 19:02:51,460 - ERROR - Tickers CVX or HES not found in pre-processed data.
+2025-04-18 19:02:51,461 - ERROR - Correlation calculation failed for CVX and HES.
+2025-04-18 19:02:51,462 - ERROR - Tickers CVX or APA not found in pre-processed data.
+2025-04-18 19:02:51,462 - ERROR - Correlation calculation failed for CVX and APA.
+2025-04-18 19:02:51,462 - ERROR - Tickers CVX or MRO not found in pre-processed data.
+2025-04-18 19:02:51,462 - ERROR - Correlation calculation failed for CVX and MRO.
+2025-04-18 19:02:51,462 - ERROR - Tickers CVX or MUR not found in pre-processed data.
+2025-04-18 19:02:51,462 - ERROR - Correlation calculation failed for CVX and MUR.
+2025-04-18 19:02:51,462 - ERROR - Tickers CVX or FANG not found in pre-processed data.
+2025-04-18 19:02:51,462 - ERROR - Correlation calculation failed for CVX and FANG.
+2025-04-18 19:02:51,462 - ERROR - Tickers CVX or EQT not found in pre-processed data.
+2025-04-18 19:02:51,464 - ERROR - Correlation calculation failed for CVX and EQT.
+2025-04-18 19:02:51,464 - ERROR - Tickers CVX or RRC not found in pre-processed data.
+2025-04-18 19:02:51,464 - ERROR - Correlation calculation failed for CVX and RRC.
+2025-04-18 19:02:51,464 - ERROR - Tickers CVX or GPOR not found in pre-processed data.
+2025-04-18 19:02:51,464 - ERROR - Correlation calculation failed for CVX and GPOR.
+2025-04-18 19:02:51,465 - ERROR - Tickers CVX or MTDR not found in pre-processed data.
+2025-04-18 19:02:51,465 - ERROR - Correlation calculation failed for CVX and MTDR.
+2025-04-18 19:02:51,465 - ERROR - Tickers CVX or SM not found in pre-processed data.
+2025-04-18 19:02:51,465 - ERROR - Correlation calculation failed for CVX and SM.
+2025-04-18 19:02:51,466 - ERROR - Tickers CVX or AR not found in pre-processed data.
+2025-04-18 19:02:51,466 - ERROR - Correlation calculation failed for CVX and AR.
+2025-04-18 19:02:51,466 - ERROR - Tickers CVX or WTI not found in pre-processed data.
+2025-04-18 19:02:51,466 - ERROR - Correlation calculation failed for CVX and WTI.
+2025-04-18 19:02:51,466 - ERROR - Tickers CVX or CRC not found in pre-processed data.
+2025-04-18 19:02:51,466 - ERROR - Correlation calculation failed for CVX and CRC.
+2025-04-18 19:02:51,466 - ERROR - Tickers CVX or CRK not found in pre-processed data.
+2025-04-18 19:02:51,467 - ERROR - Correlation calculation failed for CVX and CRK.
+2025-04-18 19:02:51,467 - ERROR - Tickers COP or OXY not found in pre-processed data.
+2025-04-18 19:02:51,467 - ERROR - Correlation calculation failed for COP and OXY.
+2025-04-18 19:02:51,467 - ERROR - Tickers COP or PSX not found in pre-processed data.
+2025-04-18 19:02:51,467 - ERROR - Correlation calculation failed for COP and PSX.
+2025-04-18 19:02:51,468 - ERROR - Tickers COP or MPC not found in pre-processed data.
+2025-04-18 19:02:51,468 - ERROR - Correlation calculation failed for COP and MPC.
+2025-04-18 19:02:51,469 - ERROR - Tickers COP or VLO not found in pre-processed data.
+2025-04-18 19:02:51,469 - ERROR - Correlation calculation failed for COP and VLO.
+2025-04-18 19:02:51,469 - ERROR - Tickers COP or EOG not found in pre-processed data.
+2025-04-18 19:02:51,469 - ERROR - Correlation calculation failed for COP and EOG.
+2025-04-18 19:02:51,469 - ERROR - Tickers COP or DVN not found in pre-processed data.
+2025-04-18 19:02:51,470 - ERROR - Correlation calculation failed for COP and DVN.
+2025-04-18 19:02:51,470 - ERROR - Tickers COP or HES not found in pre-processed data.
+2025-04-18 19:02:51,470 - ERROR - Correlation calculation failed for COP and HES.
+2025-04-18 19:02:51,470 - ERROR - Tickers COP or APA not found in pre-processed data.
+2025-04-18 19:02:51,471 - ERROR - Correlation calculation failed for COP and APA.
+2025-04-18 19:02:51,471 - ERROR - Tickers COP or MRO not found in pre-processed data.
+2025-04-18 19:02:51,471 - ERROR - Correlation calculation failed for COP and MRO.
+2025-04-18 19:02:51,471 - ERROR - Tickers COP or MUR not found in pre-processed data.
+2025-04-18 19:02:51,471 - ERROR - Correlation calculation failed for COP and MUR.
+2025-04-18 19:02:51,471 - ERROR - Tickers COP or FANG not found in pre-processed data.
+2025-04-18 19:02:51,471 - ERROR - Correlation calculation failed for COP and FANG.
+2025-04-18 19:02:51,471 - ERROR - Tickers COP or EQT not found in pre-processed data.
+2025-04-18 19:02:51,471 - ERROR - Correlation calculation failed for COP and EQT.
+2025-04-18 19:02:51,471 - ERROR - Tickers COP or RRC not found in pre-processed data.
+2025-04-18 19:02:51,471 - ERROR - Correlation calculation failed for COP and RRC.
+2025-04-18 19:02:51,471 - ERROR - Tickers COP or GPOR not found in pre-processed data.
+2025-04-18 19:02:51,471 - ERROR - Correlation calculation failed for COP and GPOR.
+2025-04-18 19:02:51,471 - ERROR - Tickers COP or MTDR not found in pre-processed data.
+2025-04-18 19:02:51,475 - ERROR - Correlation calculation failed for COP and MTDR.
+2025-04-18 19:02:51,475 - ERROR - Tickers COP or SM not found in pre-processed data.
+2025-04-18 19:02:51,475 - ERROR - Correlation calculation failed for COP and SM.
+2025-04-18 19:02:51,475 - ERROR - Tickers COP or AR not found in pre-processed data.
+2025-04-18 19:02:51,475 - ERROR - Correlation calculation failed for COP and AR.
+2025-04-18 19:02:51,476 - ERROR - Tickers COP or WTI not found in pre-processed data.
+2025-04-18 19:02:51,476 - ERROR - Correlation calculation failed for COP and WTI.
+2025-04-18 19:02:51,476 - ERROR - Tickers COP or CRC not found in pre-processed data.
+2025-04-18 19:02:51,476 - ERROR - Correlation calculation failed for COP and CRC.
+2025-04-18 19:02:51,476 - ERROR - Tickers COP or CRK not found in pre-processed data.
+2025-04-18 19:02:51,476 - ERROR - Correlation calculation failed for COP and CRK.
+2025-04-18 19:02:51,476 - ERROR - Tickers OXY or PSX not found in pre-processed data.
+2025-04-18 19:02:51,476 - ERROR - Correlation calculation failed for OXY and PSX.
+2025-04-18 19:02:51,478 - ERROR - Tickers OXY or MPC not found in pre-processed data.
+2025-04-18 19:02:51,478 - ERROR - Correlation calculation failed for OXY and MPC.
+2025-04-18 19:02:51,478 - ERROR - Tickers OXY or VLO not found in pre-processed data.
+2025-04-18 19:02:51,478 - ERROR - Correlation calculation failed for OXY and VLO.
+2025-04-18 19:02:51,478 - ERROR - Tickers OXY or EOG not found in pre-processed data.
+2025-04-18 19:02:51,479 - ERROR - Correlation calculation failed for OXY and EOG.
+2025-04-18 19:02:51,479 - ERROR - Tickers OXY or DVN not found in pre-processed data.
+2025-04-18 19:02:51,480 - ERROR - Correlation calculation failed for OXY and DVN.
+2025-04-18 19:02:51,480 - ERROR - Tickers OXY or HES not found in pre-processed data.
+2025-04-18 19:02:51,480 - ERROR - Correlation calculation failed for OXY and HES.
+2025-04-18 19:02:51,480 - ERROR - Tickers OXY or APA not found in pre-processed data.
+2025-04-18 19:02:51,480 - ERROR - Correlation calculation failed for OXY and APA.
+2025-04-18 19:02:51,481 - ERROR - Tickers OXY or MRO not found in pre-processed data.
+2025-04-18 19:02:51,481 - ERROR - Correlation calculation failed for OXY and MRO.
+2025-04-18 19:02:51,481 - ERROR - Tickers OXY or MUR not found in pre-processed data.
+2025-04-18 19:02:51,481 - ERROR - Correlation calculation failed for OXY and MUR.
+2025-04-18 19:02:51,481 - ERROR - Tickers OXY or FANG not found in pre-processed data.
+2025-04-18 19:02:51,481 - ERROR - Correlation calculation failed for OXY and FANG.
+2025-04-18 19:02:51,481 - ERROR - Tickers OXY or EQT not found in pre-processed data.
+2025-04-18 19:02:51,481 - ERROR - Correlation calculation failed for OXY and EQT.
+2025-04-18 19:02:51,481 - ERROR - Tickers OXY or RRC not found in pre-processed data.
+2025-04-18 19:02:51,483 - ERROR - Correlation calculation failed for OXY and RRC.
+2025-04-18 19:02:51,483 - ERROR - Tickers OXY or GPOR not found in pre-processed data.
+2025-04-18 19:02:51,483 - ERROR - Correlation calculation failed for OXY and GPOR.
+2025-04-18 19:02:51,483 - ERROR - Tickers OXY or MTDR not found in pre-processed data.
+2025-04-18 19:02:51,483 - ERROR - Correlation calculation failed for OXY and MTDR.
+2025-04-18 19:02:51,485 - ERROR - Tickers OXY or SM not found in pre-processed data.
+2025-04-18 19:02:51,485 - ERROR - Correlation calculation failed for OXY and SM.
+2025-04-18 19:02:51,485 - ERROR - Tickers OXY or AR not found in pre-processed data.
+2025-04-18 19:02:51,485 - ERROR - Correlation calculation failed for OXY and AR.
+2025-04-18 19:02:51,485 - ERROR - Tickers OXY or WTI not found in pre-processed data.
+2025-04-18 19:02:51,485 - ERROR - Correlation calculation failed for OXY and WTI.
+2025-04-18 19:02:51,486 - ERROR - Tickers OXY or CRC not found in pre-processed data.
+2025-04-18 19:02:51,486 - ERROR - Correlation calculation failed for OXY and CRC.
+2025-04-18 19:02:51,486 - ERROR - Tickers OXY or CRK not found in pre-processed data.
+2025-04-18 19:02:51,486 - ERROR - Correlation calculation failed for OXY and CRK.
+2025-04-18 19:02:51,486 - ERROR - Tickers PSX or MPC not found in pre-processed data.
+2025-04-18 19:02:51,487 - ERROR - Correlation calculation failed for PSX and MPC.
+2025-04-18 19:02:51,487 - ERROR - Tickers PSX or VLO not found in pre-processed data.
+2025-04-18 19:02:51,487 - ERROR - Correlation calculation failed for PSX and VLO.
+2025-04-18 19:02:51,487 - ERROR - Tickers PSX or EOG not found in pre-processed data.
+2025-04-18 19:02:51,487 - ERROR - Correlation calculation failed for PSX and EOG.
+2025-04-18 19:02:51,488 - ERROR - Tickers PSX or DVN not found in pre-processed data.
+2025-04-18 19:02:51,488 - ERROR - Correlation calculation failed for PSX and DVN.
+2025-04-18 19:02:51,488 - ERROR - Tickers PSX or HES not found in pre-processed data.
+2025-04-18 19:02:51,488 - ERROR - Correlation calculation failed for PSX and HES.
+2025-04-18 19:02:51,488 - ERROR - Tickers PSX or APA not found in pre-processed data.
+2025-04-18 19:02:51,488 - ERROR - Correlation calculation failed for PSX and APA.
+2025-04-18 19:02:51,489 - ERROR - Tickers PSX or MRO not found in pre-processed data.
+2025-04-18 19:02:51,489 - ERROR - Correlation calculation failed for PSX and MRO.
+2025-04-18 19:02:51,489 - ERROR - Tickers PSX or MUR not found in pre-processed data.
+2025-04-18 19:02:51,489 - ERROR - Correlation calculation failed for PSX and MUR.
+2025-04-18 19:02:51,489 - ERROR - Tickers PSX or FANG not found in pre-processed data.
+2025-04-18 19:02:51,489 - ERROR - Correlation calculation failed for PSX and FANG.
+2025-04-18 19:02:51,489 - ERROR - Tickers PSX or EQT not found in pre-processed data.
+2025-04-18 19:02:51,489 - ERROR - Correlation calculation failed for PSX and EQT.
+2025-04-18 19:02:51,489 - ERROR - Tickers PSX or RRC not found in pre-processed data.
+2025-04-18 19:02:51,489 - ERROR - Correlation calculation failed for PSX and RRC.
+2025-04-18 19:02:51,489 - ERROR - Tickers PSX or GPOR not found in pre-processed data.
+2025-04-18 19:02:51,489 - ERROR - Correlation calculation failed for PSX and GPOR.
+2025-04-18 19:02:51,489 - ERROR - Tickers PSX or MTDR not found in pre-processed data.
+2025-04-18 19:02:51,493 - ERROR - Correlation calculation failed for PSX and MTDR.
+2025-04-18 19:02:51,493 - ERROR - Tickers PSX or SM not found in pre-processed data.
+2025-04-18 19:02:51,493 - ERROR - Correlation calculation failed for PSX and SM.
+2025-04-18 19:02:51,493 - ERROR - Tickers PSX or AR not found in pre-processed data.
+2025-04-18 19:02:51,493 - ERROR - Correlation calculation failed for PSX and AR.
+2025-04-18 19:02:51,493 - ERROR - Tickers PSX or WTI not found in pre-processed data.
+2025-04-18 19:02:51,494 - ERROR - Correlation calculation failed for PSX and WTI.
+2025-04-18 19:02:51,494 - ERROR - Tickers PSX or CRC not found in pre-processed data.
+2025-04-18 19:02:51,494 - ERROR - Correlation calculation failed for PSX and CRC.
+2025-04-18 19:02:51,495 - ERROR - Tickers PSX or CRK not found in pre-processed data.
+2025-04-18 19:02:51,495 - ERROR - Correlation calculation failed for PSX and CRK.
+2025-04-18 19:02:51,495 - ERROR - Tickers MPC or VLO not found in pre-processed data.
+2025-04-18 19:02:51,495 - ERROR - Correlation calculation failed for MPC and VLO.
+2025-04-18 19:02:51,495 - ERROR - Tickers MPC or EOG not found in pre-processed data.
+2025-04-18 19:02:51,495 - ERROR - Correlation calculation failed for MPC and EOG.
+2025-04-18 19:02:51,496 - ERROR - Tickers MPC or DVN not found in pre-processed data.
+2025-04-18 19:02:51,496 - ERROR - Correlation calculation failed for MPC and DVN.
+2025-04-18 19:02:51,496 - ERROR - Tickers MPC or HES not found in pre-processed data.
+2025-04-18 19:02:51,496 - ERROR - Correlation calculation failed for MPC and HES.
+2025-04-18 19:02:51,496 - ERROR - Tickers MPC or APA not found in pre-processed data.
+2025-04-18 19:02:51,496 - ERROR - Correlation calculation failed for MPC and APA.
+2025-04-18 19:02:51,497 - ERROR - Tickers MPC or MRO not found in pre-processed data.
+2025-04-18 19:02:51,497 - ERROR - Correlation calculation failed for MPC and MRO.
+2025-04-18 19:02:51,497 - ERROR - Tickers MPC or MUR not found in pre-processed data.
+2025-04-18 19:02:51,497 - ERROR - Correlation calculation failed for MPC and MUR.
+2025-04-18 19:02:51,497 - ERROR - Tickers MPC or FANG not found in pre-processed data.
+2025-04-18 19:02:51,498 - ERROR - Correlation calculation failed for MPC and FANG.
+2025-04-18 19:02:51,498 - ERROR - Tickers MPC or EQT not found in pre-processed data.
+2025-04-18 19:02:51,498 - ERROR - Correlation calculation failed for MPC and EQT.
+2025-04-18 19:02:51,498 - ERROR - Tickers MPC or RRC not found in pre-processed data.
+2025-04-18 19:02:51,498 - ERROR - Correlation calculation failed for MPC and RRC.
+2025-04-18 19:02:51,498 - ERROR - Tickers MPC or GPOR not found in pre-processed data.
+2025-04-18 19:02:51,498 - ERROR - Correlation calculation failed for MPC and GPOR.
+2025-04-18 19:02:51,498 - ERROR - Tickers MPC or MTDR not found in pre-processed data.
+2025-04-18 19:02:51,498 - ERROR - Correlation calculation failed for MPC and MTDR.
+2025-04-18 19:02:51,500 - ERROR - Tickers MPC or SM not found in pre-processed data.
+2025-04-18 19:02:51,500 - ERROR - Correlation calculation failed for MPC and SM.
+2025-04-18 19:02:51,500 - ERROR - Tickers MPC or AR not found in pre-processed data.
+2025-04-18 19:02:51,500 - ERROR - Correlation calculation failed for MPC and AR.
+2025-04-18 19:02:51,500 - ERROR - Tickers MPC or WTI not found in pre-processed data.
+2025-04-18 19:02:51,501 - ERROR - Correlation calculation failed for MPC and WTI.
+2025-04-18 19:02:51,501 - ERROR - Tickers MPC or CRC not found in pre-processed data.
+2025-04-18 19:02:51,501 - ERROR - Correlation calculation failed for MPC and CRC.
+2025-04-18 19:02:51,501 - ERROR - Tickers MPC or CRK not found in pre-processed data.
+2025-04-18 19:02:51,501 - ERROR - Correlation calculation failed for MPC and CRK.
+2025-04-18 19:02:51,502 - ERROR - Tickers VLO or EOG not found in pre-processed data.
+2025-04-18 19:02:51,502 - ERROR - Correlation calculation failed for VLO and EOG.
+2025-04-18 19:02:51,502 - ERROR - Tickers VLO or DVN not found in pre-processed data.
+2025-04-18 19:02:51,502 - ERROR - Correlation calculation failed for VLO and DVN.
+2025-04-18 19:02:51,504 - ERROR - Tickers VLO or HES not found in pre-processed data.
+2025-04-18 19:02:51,504 - ERROR - Correlation calculation failed for VLO and HES.
+2025-04-18 19:02:51,504 - ERROR - Tickers VLO or APA not found in pre-processed data.
+2025-04-18 19:02:51,504 - ERROR - Correlation calculation failed for VLO and APA.
+2025-04-18 19:02:51,504 - ERROR - Tickers VLO or MRO not found in pre-processed data.
+2025-04-18 19:02:51,505 - ERROR - Correlation calculation failed for VLO and MRO.
+2025-04-18 19:02:51,505 - ERROR - Tickers VLO or MUR not found in pre-processed data.
+2025-04-18 19:02:51,505 - ERROR - Correlation calculation failed for VLO and MUR.
+2025-04-18 19:02:51,505 - ERROR - Tickers VLO or FANG not found in pre-processed data.
+2025-04-18 19:02:51,505 - ERROR - Correlation calculation failed for VLO and FANG.
+2025-04-18 19:02:51,506 - ERROR - Tickers VLO or EQT not found in pre-processed data.
+2025-04-18 19:02:51,506 - ERROR - Correlation calculation failed for VLO and EQT.
+2025-04-18 19:02:51,506 - ERROR - Tickers VLO or RRC not found in pre-processed data.
+2025-04-18 19:02:51,506 - ERROR - Correlation calculation failed for VLO and RRC.
+2025-04-18 19:02:51,506 - ERROR - Tickers VLO or GPOR not found in pre-processed data.
+2025-04-18 19:02:51,507 - ERROR - Correlation calculation failed for VLO and GPOR.
+2025-04-18 19:02:51,507 - ERROR - Tickers VLO or MTDR not found in pre-processed data.
+2025-04-18 19:02:51,507 - ERROR - Correlation calculation failed for VLO and MTDR.
+2025-04-18 19:02:51,507 - ERROR - Tickers VLO or SM not found in pre-processed data.
+2025-04-18 19:02:51,507 - ERROR - Correlation calculation failed for VLO and SM.
+2025-04-18 19:02:51,508 - ERROR - Tickers VLO or AR not found in pre-processed data.
+2025-04-18 19:02:51,508 - ERROR - Correlation calculation failed for VLO and AR.
+2025-04-18 19:02:51,508 - ERROR - Tickers VLO or WTI not found in pre-processed data.
+2025-04-18 19:02:51,508 - ERROR - Correlation calculation failed for VLO and WTI.
+2025-04-18 19:02:51,508 - ERROR - Tickers VLO or CRC not found in pre-processed data.
+2025-04-18 19:02:51,509 - ERROR - Correlation calculation failed for VLO and CRC.
+2025-04-18 19:02:51,509 - ERROR - Tickers VLO or CRK not found in pre-processed data.
+2025-04-18 19:02:51,509 - ERROR - Correlation calculation failed for VLO and CRK.
+2025-04-18 19:02:51,509 - ERROR - Tickers EOG or DVN not found in pre-processed data.
+2025-04-18 19:02:51,509 - ERROR - Correlation calculation failed for EOG and DVN.
+2025-04-18 19:02:51,510 - ERROR - Tickers EOG or HES not found in pre-processed data.
+2025-04-18 19:02:51,510 - ERROR - Correlation calculation failed for EOG and HES.
+2025-04-18 19:02:51,510 - ERROR - Tickers EOG or APA not found in pre-processed data.
+2025-04-18 19:02:51,510 - ERROR - Correlation calculation failed for EOG and APA.
+2025-04-18 19:02:51,510 - ERROR - Tickers EOG or MRO not found in pre-processed data.
+2025-04-18 19:02:51,510 - ERROR - Correlation calculation failed for EOG and MRO.
+2025-04-18 19:02:51,511 - ERROR - Tickers EOG or MUR not found in pre-processed data.
+2025-04-18 19:02:51,511 - ERROR - Correlation calculation failed for EOG and MUR.
+2025-04-18 19:02:51,511 - ERROR - Tickers EOG or FANG not found in pre-processed data.
+2025-04-18 19:02:51,511 - ERROR - Correlation calculation failed for EOG and FANG.
+2025-04-18 19:02:51,511 - ERROR - Tickers EOG or EQT not found in pre-processed data.
+2025-04-18 19:02:51,511 - ERROR - Correlation calculation failed for EOG and EQT.
+2025-04-18 19:02:51,511 - ERROR - Tickers EOG or RRC not found in pre-processed data.
+2025-04-18 19:02:51,512 - ERROR - Correlation calculation failed for EOG and RRC.
+2025-04-18 19:02:51,513 - ERROR - Tickers EOG or GPOR not found in pre-processed data.
+2025-04-18 19:02:51,513 - ERROR - Correlation calculation failed for EOG and GPOR.
+2025-04-18 19:02:51,513 - ERROR - Tickers EOG or MTDR not found in pre-processed data.
+2025-04-18 19:02:51,513 - ERROR - Correlation calculation failed for EOG and MTDR.
+2025-04-18 19:02:51,513 - ERROR - Tickers EOG or SM not found in pre-processed data.
+2025-04-18 19:02:51,514 - ERROR - Correlation calculation failed for EOG and SM.
+2025-04-18 19:02:51,514 - ERROR - Tickers EOG or AR not found in pre-processed data.
+2025-04-18 19:02:51,514 - ERROR - Correlation calculation failed for EOG and AR.
+2025-04-18 19:02:51,514 - ERROR - Tickers EOG or WTI not found in pre-processed data.
+2025-04-18 19:02:51,514 - ERROR - Correlation calculation failed for EOG and WTI.
+2025-04-18 19:02:51,515 - ERROR - Tickers EOG or CRC not found in pre-processed data.
+2025-04-18 19:02:51,515 - ERROR - Correlation calculation failed for EOG and CRC.
+2025-04-18 19:02:51,515 - ERROR - Tickers EOG or CRK not found in pre-processed data.
+2025-04-18 19:02:51,515 - ERROR - Correlation calculation failed for EOG and CRK.
+2025-04-18 19:02:51,515 - ERROR - Tickers DVN or HES not found in pre-processed data.
+2025-04-18 19:02:51,515 - ERROR - Correlation calculation failed for DVN and HES.
+2025-04-18 19:02:51,515 - ERROR - Tickers DVN or APA not found in pre-processed data.
+2025-04-18 19:02:51,515 - ERROR - Correlation calculation failed for DVN and APA.
+2025-04-18 19:02:51,517 - ERROR - Tickers DVN or MRO not found in pre-processed data.
+2025-04-18 19:02:51,517 - ERROR - Correlation calculation failed for DVN and MRO.
+2025-04-18 19:02:51,517 - ERROR - Tickers DVN or MUR not found in pre-processed data.
+2025-04-18 19:02:51,517 - ERROR - Correlation calculation failed for DVN and MUR.
+2025-04-18 19:02:51,517 - ERROR - Tickers DVN or FANG not found in pre-processed data.
+2025-04-18 19:02:51,517 - ERROR - Correlation calculation failed for DVN and FANG.
+2025-04-18 19:02:51,517 - ERROR - Tickers DVN or EQT not found in pre-processed data.
+2025-04-18 19:02:51,517 - ERROR - Correlation calculation failed for DVN and EQT.
+2025-04-18 19:02:51,519 - ERROR - Tickers DVN or RRC not found in pre-processed data.
+2025-04-18 19:02:51,519 - ERROR - Correlation calculation failed for DVN and RRC.
+2025-04-18 19:02:51,519 - ERROR - Tickers DVN or GPOR not found in pre-processed data.
+2025-04-18 19:02:51,519 - ERROR - Correlation calculation failed for DVN and GPOR.
+2025-04-18 19:02:51,520 - ERROR - Tickers DVN or MTDR not found in pre-processed data.
+2025-04-18 19:02:51,520 - ERROR - Correlation calculation failed for DVN and MTDR.
+2025-04-18 19:02:51,520 - ERROR - Tickers DVN or SM not found in pre-processed data.
+2025-04-18 19:02:51,520 - ERROR - Correlation calculation failed for DVN and SM.
+2025-04-18 19:02:51,521 - ERROR - Tickers DVN or AR not found in pre-processed data.
+2025-04-18 19:02:51,521 - ERROR - Correlation calculation failed for DVN and AR.
+2025-04-18 19:02:51,521 - ERROR - Tickers DVN or WTI not found in pre-processed data.
+2025-04-18 19:02:51,521 - ERROR - Correlation calculation failed for DVN and WTI.
+2025-04-18 19:02:51,522 - ERROR - Tickers DVN or CRC not found in pre-processed data.
+2025-04-18 19:02:51,522 - ERROR - Correlation calculation failed for DVN and CRC.
+2025-04-18 19:02:51,522 - ERROR - Tickers DVN or CRK not found in pre-processed data.
+2025-04-18 19:02:51,522 - ERROR - Correlation calculation failed for DVN and CRK.
+2025-04-18 19:02:51,522 - ERROR - Tickers HES or APA not found in pre-processed data.
+2025-04-18 19:02:51,522 - ERROR - Correlation calculation failed for HES and APA.
+2025-04-18 19:02:51,523 - ERROR - Tickers HES or MRO not found in pre-processed data.
+2025-04-18 19:02:51,523 - ERROR - Correlation calculation failed for HES and MRO.
+2025-04-18 19:02:51,523 - ERROR - Tickers HES or MUR not found in pre-processed data.
+2025-04-18 19:02:51,523 - ERROR - Correlation calculation failed for HES and MUR.
+2025-04-18 19:02:51,524 - ERROR - Tickers HES or FANG not found in pre-processed data.
+2025-04-18 19:02:51,524 - ERROR - Correlation calculation failed for HES and FANG.
+2025-04-18 19:02:51,524 - ERROR - Tickers HES or EQT not found in pre-processed data.
+2025-04-18 19:02:51,524 - ERROR - Correlation calculation failed for HES and EQT.
+2025-04-18 19:02:51,524 - ERROR - Tickers HES or RRC not found in pre-processed data.
+2025-04-18 19:02:51,525 - ERROR - Correlation calculation failed for HES and RRC.
+2025-04-18 19:02:51,525 - ERROR - Tickers HES or GPOR not found in pre-processed data.
+2025-04-18 19:02:51,525 - ERROR - Correlation calculation failed for HES and GPOR.
+2025-04-18 19:02:51,525 - ERROR - Tickers HES or MTDR not found in pre-processed data.
+2025-04-18 19:02:51,525 - ERROR - Correlation calculation failed for HES and MTDR.
+2025-04-18 19:02:51,526 - ERROR - Tickers HES or SM not found in pre-processed data.
+2025-04-18 19:02:51,526 - ERROR - Correlation calculation failed for HES and SM.
+2025-04-18 19:02:51,526 - ERROR - Tickers HES or AR not found in pre-processed data.
+2025-04-18 19:02:51,526 - ERROR - Correlation calculation failed for HES and AR.
+2025-04-18 19:02:51,526 - ERROR - Tickers HES or WTI not found in pre-processed data.
+2025-04-18 19:02:51,526 - ERROR - Correlation calculation failed for HES and WTI.
+2025-04-18 19:02:51,526 - ERROR - Tickers HES or CRC not found in pre-processed data.
+2025-04-18 19:02:51,527 - ERROR - Correlation calculation failed for HES and CRC.
+2025-04-18 19:02:51,528 - ERROR - Tickers HES or CRK not found in pre-processed data.
+2025-04-18 19:02:51,528 - ERROR - Correlation calculation failed for HES and CRK.
+2025-04-18 19:02:51,528 - ERROR - Tickers APA or MRO not found in pre-processed data.
+2025-04-18 19:02:51,528 - ERROR - Correlation calculation failed for APA and MRO.
+2025-04-18 19:02:51,529 - ERROR - Tickers APA or MUR not found in pre-processed data.
+2025-04-18 19:02:51,529 - ERROR - Correlation calculation failed for APA and MUR.
+2025-04-18 19:02:51,529 - ERROR - Tickers APA or FANG not found in pre-processed data.
+2025-04-18 19:02:51,529 - ERROR - Correlation calculation failed for APA and FANG.
+2025-04-18 19:02:51,529 - ERROR - Tickers APA or EQT not found in pre-processed data.
+2025-04-18 19:02:51,530 - ERROR - Correlation calculation failed for APA and EQT.
+2025-04-18 19:02:51,530 - ERROR - Tickers APA or RRC not found in pre-processed data.
+2025-04-18 19:02:51,530 - ERROR - Correlation calculation failed for APA and RRC.
+2025-04-18 19:02:51,530 - ERROR - Tickers APA or GPOR not found in pre-processed data.
+2025-04-18 19:02:51,531 - ERROR - Correlation calculation failed for APA and GPOR.
+2025-04-18 19:02:51,531 - ERROR - Tickers APA or MTDR not found in pre-processed data.
+2025-04-18 19:02:51,531 - ERROR - Correlation calculation failed for APA and MTDR.
+2025-04-18 19:02:51,531 - ERROR - Tickers APA or SM not found in pre-processed data.
+2025-04-18 19:02:51,532 - ERROR - Correlation calculation failed for APA and SM.
+2025-04-18 19:02:51,532 - ERROR - Tickers APA or AR not found in pre-processed data.
+2025-04-18 19:02:51,532 - ERROR - Correlation calculation failed for APA and AR.
+2025-04-18 19:02:51,532 - ERROR - Tickers APA or WTI not found in pre-processed data.
+2025-04-18 19:02:51,532 - ERROR - Correlation calculation failed for APA and WTI.
+2025-04-18 19:02:51,533 - ERROR - Tickers APA or CRC not found in pre-processed data.
+2025-04-18 19:02:51,533 - ERROR - Correlation calculation failed for APA and CRC.
+2025-04-18 19:02:51,533 - ERROR - Tickers APA or CRK not found in pre-processed data.
+2025-04-18 19:02:51,533 - ERROR - Correlation calculation failed for APA and CRK.
+2025-04-18 19:02:51,533 - ERROR - Tickers MRO or MUR not found in pre-processed data.
+2025-04-18 19:02:51,533 - ERROR - Correlation calculation failed for MRO and MUR.
+2025-04-18 19:02:51,533 - ERROR - Tickers MRO or FANG not found in pre-processed data.
+2025-04-18 19:02:51,533 - ERROR - Correlation calculation failed for MRO and FANG.
+2025-04-18 19:02:51,535 - ERROR - Tickers MRO or EQT not found in pre-processed data.
+2025-04-18 19:02:51,535 - ERROR - Correlation calculation failed for MRO and EQT.
+2025-04-18 19:02:51,535 - ERROR - Tickers MRO or RRC not found in pre-processed data.
+2025-04-18 19:02:51,535 - ERROR - Correlation calculation failed for MRO and RRC.
+2025-04-18 19:02:51,536 - ERROR - Tickers MRO or GPOR not found in pre-processed data.
+2025-04-18 19:02:51,536 - ERROR - Correlation calculation failed for MRO and GPOR.
+2025-04-18 19:02:51,536 - ERROR - Tickers MRO or MTDR not found in pre-processed data.
+2025-04-18 19:02:51,536 - ERROR - Correlation calculation failed for MRO and MTDR.
+2025-04-18 19:02:51,536 - ERROR - Tickers MRO or SM not found in pre-processed data.
+2025-04-18 19:02:51,536 - ERROR - Correlation calculation failed for MRO and SM.
+2025-04-18 19:02:51,537 - ERROR - Tickers MRO or AR not found in pre-processed data.
+2025-04-18 19:02:51,537 - ERROR - Correlation calculation failed for MRO and AR.
+2025-04-18 19:02:51,537 - ERROR - Tickers MRO or WTI not found in pre-processed data.
+2025-04-18 19:02:51,537 - ERROR - Correlation calculation failed for MRO and WTI.
+2025-04-18 19:02:51,538 - ERROR - Tickers MRO or CRC not found in pre-processed data.
+2025-04-18 19:02:51,538 - ERROR - Correlation calculation failed for MRO and CRC.
+2025-04-18 19:02:51,538 - ERROR - Tickers MRO or CRK not found in pre-processed data.
+2025-04-18 19:02:51,538 - ERROR - Correlation calculation failed for MRO and CRK.
+2025-04-18 19:02:51,539 - ERROR - Tickers MUR or FANG not found in pre-processed data.
+2025-04-18 19:02:51,539 - ERROR - Correlation calculation failed for MUR and FANG.
+2025-04-18 19:02:51,539 - ERROR - Tickers MUR or EQT not found in pre-processed data.
+2025-04-18 19:02:51,539 - ERROR - Correlation calculation failed for MUR and EQT.
+2025-04-18 19:02:51,539 - ERROR - Tickers MUR or RRC not found in pre-processed data.
+2025-04-18 19:02:51,539 - ERROR - Correlation calculation failed for MUR and RRC.
+2025-04-18 19:02:51,540 - ERROR - Tickers MUR or GPOR not found in pre-processed data.
+2025-04-18 19:02:51,540 - ERROR - Correlation calculation failed for MUR and GPOR.
+2025-04-18 19:02:51,540 - ERROR - Tickers MUR or MTDR not found in pre-processed data.
+2025-04-18 19:02:51,540 - ERROR - Correlation calculation failed for MUR and MTDR.
+2025-04-18 19:02:51,541 - ERROR - Tickers MUR or SM not found in pre-processed data.
+2025-04-18 19:02:51,541 - ERROR - Correlation calculation failed for MUR and SM.
+2025-04-18 19:02:51,541 - ERROR - Tickers MUR or AR not found in pre-processed data.
+2025-04-18 19:02:51,541 - ERROR - Correlation calculation failed for MUR and AR.
+2025-04-18 19:02:51,542 - ERROR - Tickers MUR or WTI not found in pre-processed data.
+2025-04-18 19:02:51,542 - ERROR - Correlation calculation failed for MUR and WTI.
+2025-04-18 19:02:51,542 - ERROR - Tickers MUR or CRC not found in pre-processed data.
+2025-04-18 19:02:51,542 - ERROR - Correlation calculation failed for MUR and CRC.
+2025-04-18 19:02:51,542 - ERROR - Tickers MUR or CRK not found in pre-processed data.
+2025-04-18 19:02:51,543 - ERROR - Correlation calculation failed for MUR and CRK.
+2025-04-18 19:02:51,543 - ERROR - Tickers FANG or EQT not found in pre-processed data.
+2025-04-18 19:02:51,543 - ERROR - Correlation calculation failed for FANG and EQT.
+2025-04-18 19:02:51,543 - ERROR - Tickers FANG or RRC not found in pre-processed data.
+2025-04-18 19:02:51,543 - ERROR - Correlation calculation failed for FANG and RRC.
+2025-04-18 19:02:51,544 - ERROR - Tickers FANG or GPOR not found in pre-processed data.
+2025-04-18 19:02:51,544 - ERROR - Correlation calculation failed for FANG and GPOR.
+2025-04-18 19:02:51,544 - ERROR - Tickers FANG or MTDR not found in pre-processed data.
+2025-04-18 19:02:51,544 - ERROR - Correlation calculation failed for FANG and MTDR.
+2025-04-18 19:02:51,544 - ERROR - Tickers FANG or SM not found in pre-processed data.
+2025-04-18 19:02:51,545 - ERROR - Correlation calculation failed for FANG and SM.
+2025-04-18 19:02:51,545 - ERROR - Tickers FANG or AR not found in pre-processed data.
+2025-04-18 19:02:51,545 - ERROR - Correlation calculation failed for FANG and AR.
+2025-04-18 19:02:51,545 - ERROR - Tickers FANG or WTI not found in pre-processed data.
+2025-04-18 19:02:51,545 - ERROR - Correlation calculation failed for FANG and WTI.
+2025-04-18 19:02:51,545 - ERROR - Tickers FANG or CRC not found in pre-processed data.
+2025-04-18 19:02:51,545 - ERROR - Correlation calculation failed for FANG and CRC.
+2025-04-18 19:02:51,546 - ERROR - Tickers FANG or CRK not found in pre-processed data.
+2025-04-18 19:02:51,546 - ERROR - Correlation calculation failed for FANG and CRK.
+2025-04-18 19:02:51,546 - ERROR - Tickers EQT or RRC not found in pre-processed data.
+2025-04-18 19:02:51,546 - ERROR - Correlation calculation failed for EQT and RRC.
+2025-04-18 19:02:51,547 - ERROR - Tickers EQT or GPOR not found in pre-processed data.
+2025-04-18 19:02:51,547 - ERROR - Correlation calculation failed for EQT and GPOR.
+2025-04-18 19:02:51,547 - ERROR - Tickers EQT or MTDR not found in pre-processed data.
+2025-04-18 19:02:51,547 - ERROR - Correlation calculation failed for EQT and MTDR.
+2025-04-18 19:02:51,548 - ERROR - Tickers EQT or SM not found in pre-processed data.
+2025-04-18 19:02:51,549 - ERROR - Correlation calculation failed for EQT and SM.
+2025-04-18 19:02:51,549 - ERROR - Tickers EQT or AR not found in pre-processed data.
+2025-04-18 19:02:51,549 - ERROR - Correlation calculation failed for EQT and AR.
+2025-04-18 19:02:51,549 - ERROR - Tickers EQT or WTI not found in pre-processed data.
+2025-04-18 19:02:51,549 - ERROR - Correlation calculation failed for EQT and WTI.
+2025-04-18 19:02:51,550 - ERROR - Tickers EQT or CRC not found in pre-processed data.
+2025-04-18 19:02:51,550 - ERROR - Correlation calculation failed for EQT and CRC.
+2025-04-18 19:02:51,550 - ERROR - Tickers EQT or CRK not found in pre-processed data.
+2025-04-18 19:02:51,550 - ERROR - Correlation calculation failed for EQT and CRK.
+2025-04-18 19:02:51,550 - ERROR - Tickers RRC or GPOR not found in pre-processed data.
+2025-04-18 19:02:51,550 - ERROR - Correlation calculation failed for RRC and GPOR.
+2025-04-18 19:02:51,551 - ERROR - Tickers RRC or MTDR not found in pre-processed data.
+2025-04-18 19:02:51,551 - ERROR - Correlation calculation failed for RRC and MTDR.
+2025-04-18 19:02:51,551 - ERROR - Tickers RRC or SM not found in pre-processed data.
+2025-04-18 19:02:51,551 - ERROR - Correlation calculation failed for RRC and SM.
+2025-04-18 19:02:51,552 - ERROR - Tickers RRC or AR not found in pre-processed data.
+2025-04-18 19:02:51,552 - ERROR - Correlation calculation failed for RRC and AR.
+2025-04-18 19:02:51,552 - ERROR - Tickers RRC or WTI not found in pre-processed data.
+2025-04-18 19:02:51,552 - ERROR - Correlation calculation failed for RRC and WTI.
+2025-04-18 19:02:51,552 - ERROR - Tickers RRC or CRC not found in pre-processed data.
+2025-04-18 19:02:51,553 - ERROR - Correlation calculation failed for RRC and CRC.
+2025-04-18 19:02:51,553 - ERROR - Tickers RRC or CRK not found in pre-processed data.
+2025-04-18 19:02:51,553 - ERROR - Correlation calculation failed for RRC and CRK.
+2025-04-18 19:02:51,553 - ERROR - Tickers GPOR or MTDR not found in pre-processed data.
+2025-04-18 19:02:51,553 - ERROR - Correlation calculation failed for GPOR and MTDR.
+2025-04-18 19:02:51,553 - ERROR - Tickers GPOR or SM not found in pre-processed data.
+2025-04-18 19:02:51,553 - ERROR - Correlation calculation failed for GPOR and SM.
+2025-04-18 19:02:51,555 - ERROR - Tickers GPOR or AR not found in pre-processed data.
+2025-04-18 19:02:51,555 - ERROR - Correlation calculation failed for GPOR and AR.
+2025-04-18 19:02:51,555 - ERROR - Tickers GPOR or WTI not found in pre-processed data.
+2025-04-18 19:02:51,555 - ERROR - Correlation calculation failed for GPOR and WTI.
+2025-04-18 19:02:51,555 - ERROR - Tickers GPOR or CRC not found in pre-processed data.
+2025-04-18 19:02:51,556 - ERROR - Correlation calculation failed for GPOR and CRC.
+2025-04-18 19:02:51,556 - ERROR - Tickers GPOR or CRK not found in pre-processed data.
+2025-04-18 19:02:51,556 - ERROR - Correlation calculation failed for GPOR and CRK.
+2025-04-18 19:02:51,556 - ERROR - Tickers MTDR or SM not found in pre-processed data.
+2025-04-18 19:02:51,556 - ERROR - Correlation calculation failed for MTDR and SM.
+2025-04-18 19:02:51,556 - ERROR - Tickers MTDR or AR not found in pre-processed data.
+2025-04-18 19:02:51,556 - ERROR - Correlation calculation failed for MTDR and AR.
+2025-04-18 19:02:51,556 - ERROR - Tickers MTDR or WTI not found in pre-processed data.
+2025-04-18 19:02:51,556 - ERROR - Correlation calculation failed for MTDR and WTI.
+2025-04-18 19:02:51,558 - ERROR - Tickers MTDR or CRC not found in pre-processed data.
+2025-04-18 19:02:51,558 - ERROR - Correlation calculation failed for MTDR and CRC.
+2025-04-18 19:02:51,558 - ERROR - Tickers MTDR or CRK not found in pre-processed data.
+2025-04-18 19:02:51,558 - ERROR - Correlation calculation failed for MTDR and CRK.
+2025-04-18 19:02:51,558 - ERROR - Tickers SM or AR not found in pre-processed data.
+2025-04-18 19:02:51,559 - ERROR - Correlation calculation failed for SM and AR.
+2025-04-18 19:02:51,559 - ERROR - Tickers SM or WTI not found in pre-processed data.
+2025-04-18 19:02:51,559 - ERROR - Correlation calculation failed for SM and WTI.
+2025-04-18 19:02:51,559 - ERROR - Tickers SM or CRC not found in pre-processed data.
+2025-04-18 19:02:51,560 - ERROR - Correlation calculation failed for SM and CRC.
+2025-04-18 19:02:51,560 - ERROR - Tickers SM or CRK not found in pre-processed data.
+2025-04-18 19:02:51,560 - ERROR - Correlation calculation failed for SM and CRK.
+2025-04-18 19:02:51,560 - ERROR - Tickers AR or WTI not found in pre-processed data.
+2025-04-18 19:02:51,561 - ERROR - Correlation calculation failed for AR and WTI.
+2025-04-18 19:02:51,561 - ERROR - Tickers AR or CRC not found in pre-processed data.
+2025-04-18 19:02:51,561 - ERROR - Correlation calculation failed for AR and CRC.
+2025-04-18 19:02:51,561 - ERROR - Tickers AR or CRK not found in pre-processed data.
+2025-04-18 19:02:51,561 - ERROR - Correlation calculation failed for AR and CRK.
+2025-04-18 19:02:51,561 - ERROR - Tickers WTI or CRC not found in pre-processed data.
+2025-04-18 19:02:51,561 - ERROR - Correlation calculation failed for WTI and CRC.
+2025-04-18 19:02:51,561 - ERROR - Tickers WTI or CRK not found in pre-processed data.
+2025-04-18 19:02:51,563 - ERROR - Correlation calculation failed for WTI and CRK.
+2025-04-18 19:02:51,563 - ERROR - Tickers CRC or CRK not found in pre-processed data.
+2025-04-18 19:02:51,563 - ERROR - Correlation calculation failed for CRC and CRK.
+2025-04-18 19:02:51,577 - INFO - Updated table saved to dev_database/bayesian1\dev_tickers1.csv_Bayesian1_intereference_table_2025-04-18.csv
+2025-04-18 19:02:51,613 - INFO - 0       ticker   XOM   CVX   COP   OXY   PSX   MPC   VLO   EOG   DVN   HES  ...   MUR  FANG   EQT   RRC  GPOR  MTDR    SM    AR   WTI   CRC   CRK
+0                                                                           ...                                                                  
+ticker    1.00  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  ...  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18
+XOM       0.18  1.00  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  ...  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18
+CVX       0.18  0.18  1.00  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  ...  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18
+COP       0.18  0.18  0.18  1.00  0.18  0.18  0.18  0.18  0.18  0.18  0.18  ...  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18
+OXY       0.18  0.18  0.18  0.18  1.00  0.18  0.18  0.18  0.18  0.18  0.18  ...  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18
+PSX       0.18  0.18  0.18  0.18  0.18  1.00  0.18  0.18  0.18  0.18  0.18  ...  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18
+MPC       0.18  0.18  0.18  0.18  0.18  0.18  1.00  0.18  0.18  0.18  0.18  ...  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18
+VLO       0.18  0.18  0.18  0.18  0.18  0.18  0.18  1.00  0.18  0.18  0.18  ...  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18
+EOG       0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  1.00  0.18  0.18  ...  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18
+DVN       0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  1.00  0.18  ...  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18
+HES       0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  1.00  ...  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18
+APA       0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  ...  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18
+MRO       0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  ...  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18
+MUR       0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  ...  1.00  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18
+FANG      0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  ...  0.18  1.00  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18
+EQT       0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  ...  0.18  0.18  1.00  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18
+RRC       0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  ...  0.18  0.18  0.18  1.00  0.18  0.18  0.18  0.18  0.18  0.18  0.18
+GPOR      0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  ...  0.18  0.18  0.18  0.18  1.00  0.18  0.18  0.18  0.18  0.18  0.18
+MTDR      0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  ...  0.18  0.18  0.18  0.18  0.18  1.00  0.18  0.18  0.18  0.18  0.18
+SM        0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  ...  0.18  0.18  0.18  0.18  0.18  0.18  1.00  0.18  0.18  0.18  0.18
+AR        0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  ...  0.18  0.18  0.18  0.18  0.18  0.18  0.18  1.00  0.18  0.18  0.18
+WTI       0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  ...  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  1.00  0.18  0.18
+CRC       0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  ...  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  1.00  0.18
+CRK       0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  ...  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  0.18  1.00
+
+[24 rows x 24 columns]
+2025-04-18 19:02:51,618 - INFO - Correlated pairs identified: []
