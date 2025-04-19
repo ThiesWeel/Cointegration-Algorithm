@@ -1,0 +1,4 @@
+2025-04-19 17:18:31,342 - ERROR - 
+1 Failed download:
+2025-04-19 17:18:31,342 - ERROR - ['MRO']: YFPricesMissingError('possibly delisted; no price data found  (1d 2020-01-01 -> 2025-04-19) (Yahoo error = "No data found, symbol may be delisted")')
+2025-04-19 17:18:33,543 - INFO - Preprocessed data file 2024-08-02_to_2025-04-19_processed.h5 already exists. Loading from file.

@@ -1,0 +1,136 @@
+2025-04-19 21:31:52,221 - INFO - DEBUG: Keys in pre_processed: ['APA', 'AR', 'COP', 'CRC', 'CRK', 'CVX', 'DVN', 'EOG', 'EQT', 'FANG', 'GPOR', 'HES', 'MPC', 'MTDR', 'MUR', 'OXY', 'PSX', 'RRC', 'SM', 'VLO', 'WTI', 'XOM']
+2025-04-19 21:31:52,221 - INFO - Loading existing table from dev_database\bayesian1\Bayesian1_interference_table_2025-04-19.csv
+2025-04-19 21:31:52,244 - INFO - Calculating correlation between XOM and COP
+2025-04-19 21:31:52,246 - INFO - Calculating correlation between XOM and OXY
+2025-04-19 21:31:52,247 - INFO - Calculating correlation between XOM and PSX
+2025-04-19 21:31:52,249 - INFO - Calculating correlation between XOM and MPC
+2025-04-19 21:31:52,250 - INFO - Calculating correlation between XOM and VLO
+2025-04-19 21:31:52,251 - INFO - Calculating correlation between XOM and DVN
+2025-04-19 21:31:52,251 - INFO - Calculating correlation between XOM and MUR
+2025-04-19 21:31:52,254 - INFO - Calculating correlation between XOM and FANG
+2025-04-19 21:31:52,255 - INFO - Calculating correlation between XOM and WTI
+2025-04-19 21:31:52,256 - INFO - Calculating correlation between CVX and EOG
+2025-04-19 21:31:52,257 - INFO - Calculating correlation between CVX and HES
+2025-04-19 21:31:52,258 - INFO - Calculating correlation between CVX and EQT
+2025-04-19 21:31:52,259 - INFO - Calculating correlation between CVX and RRC
+2025-04-19 21:31:52,260 - INFO - Calculating correlation between CVX and GPOR
+2025-04-19 21:31:52,260 - INFO - Calculating correlation between CVX and AR
+2025-04-19 21:31:52,261 - INFO - Calculating correlation between CVX and CRK
+2025-04-19 21:31:52,262 - INFO - Calculating correlation between COP and OXY
+2025-04-19 21:31:52,262 - INFO - Calculating correlation between COP and PSX
+2025-04-19 21:31:52,263 - INFO - Calculating correlation between COP and MPC
+2025-04-19 21:31:52,264 - INFO - Calculating correlation between COP and VLO
+2025-04-19 21:31:52,266 - INFO - Calculating correlation between COP and EOG
+2025-04-19 21:31:52,266 - INFO - Calculating correlation between COP and DVN
+2025-04-19 21:31:52,266 - INFO - Calculating correlation between COP and APA
+2025-04-19 21:31:52,266 - INFO - Calculating correlation between COP and MUR
+2025-04-19 21:31:52,266 - INFO - Calculating correlation between COP and FANG
+2025-04-19 21:31:52,266 - INFO - Calculating correlation between COP and MTDR
+2025-04-19 21:31:52,266 - INFO - Calculating correlation between COP and SM
+2025-04-19 21:31:52,271 - INFO - Calculating correlation between COP and WTI
+2025-04-19 21:31:52,271 - INFO - Calculating correlation between COP and CRC
+2025-04-19 21:31:52,271 - INFO - Calculating correlation between OXY and PSX
+2025-04-19 21:31:52,271 - INFO - Calculating correlation between OXY and MPC
+2025-04-19 21:31:52,271 - INFO - Calculating correlation between OXY and VLO
+2025-04-19 21:31:52,271 - INFO - Calculating correlation between OXY and DVN
+2025-04-19 21:31:52,271 - INFO - Calculating correlation between OXY and APA
+2025-04-19 21:31:52,271 - INFO - Calculating correlation between OXY and MUR
+2025-04-19 21:31:52,271 - INFO - Calculating correlation between OXY and FANG
+2025-04-19 21:31:52,271 - INFO - Calculating correlation between OXY and SM
+2025-04-19 21:31:52,271 - INFO - Calculating correlation between OXY and WTI
+2025-04-19 21:31:52,271 - INFO - Calculating correlation between PSX and MPC
+2025-04-19 21:31:52,271 - INFO - Calculating correlation between PSX and VLO
+2025-04-19 21:31:52,281 - INFO - Calculating correlation between PSX and EOG
+2025-04-19 21:31:52,281 - INFO - Calculating correlation between PSX and DVN
+2025-04-19 21:31:52,281 - INFO - Calculating correlation between PSX and APA
+2025-04-19 21:31:52,281 - INFO - Calculating correlation between PSX and MUR
+2025-04-19 21:31:52,281 - INFO - Calculating correlation between PSX and FANG
+2025-04-19 21:31:52,281 - INFO - Calculating correlation between PSX and SM
+2025-04-19 21:31:52,281 - INFO - Calculating correlation between PSX and WTI
+2025-04-19 21:31:52,281 - INFO - Calculating correlation between MPC and VLO
+2025-04-19 21:31:52,281 - INFO - Calculating correlation between MPC and DVN
+2025-04-19 21:31:52,281 - INFO - Calculating correlation between MPC and APA
+2025-04-19 21:31:52,281 - INFO - Calculating correlation between MPC and MUR
+2025-04-19 21:31:52,281 - INFO - Calculating correlation between MPC and FANG
+2025-04-19 21:31:52,291 - INFO - Calculating correlation between MPC and SM
+2025-04-19 21:31:52,291 - INFO - Calculating correlation between MPC and WTI
+2025-04-19 21:31:52,291 - INFO - Calculating correlation between VLO and EOG
+2025-04-19 21:31:52,291 - INFO - Calculating correlation between VLO and DVN
+2025-04-19 21:31:52,294 - INFO - Calculating correlation between VLO and APA
+2025-04-19 21:31:52,294 - INFO - Calculating correlation between VLO and MUR
+2025-04-19 21:31:52,294 - INFO - Calculating correlation between VLO and FANG
+2025-04-19 21:31:52,294 - INFO - Calculating correlation between VLO and MTDR
+2025-04-19 21:31:52,297 - INFO - Calculating correlation between VLO and SM
+2025-04-19 21:31:52,297 - INFO - Calculating correlation between VLO and WTI
+2025-04-19 21:31:52,297 - INFO - Calculating correlation between EOG and HES
+2025-04-19 21:31:52,297 - INFO - Calculating correlation between EOG and MTDR
+2025-04-19 21:31:52,301 - INFO - Calculating correlation between EOG and SM
+2025-04-19 21:31:52,301 - INFO - Calculating correlation between EOG and CRC
+2025-04-19 21:31:52,301 - INFO - Calculating correlation between DVN and APA
+2025-04-19 21:31:52,301 - INFO - Calculating correlation between DVN and MUR
+2025-04-19 21:31:52,301 - INFO - Calculating correlation between DVN and FANG
+2025-04-19 21:31:52,301 - INFO - Calculating correlation between DVN and SM
+2025-04-19 21:31:52,301 - INFO - Calculating correlation between DVN and WTI
+2025-04-19 21:31:52,306 - INFO - Calculating correlation between HES and EQT
+2025-04-19 21:31:52,306 - INFO - Calculating correlation between HES and RRC
+2025-04-19 21:31:52,306 - INFO - Calculating correlation between HES and GPOR
+2025-04-19 21:31:52,306 - INFO - Calculating correlation between HES and AR
+2025-04-19 21:31:52,306 - INFO - Calculating correlation between HES and CRK
+2025-04-19 21:31:52,306 - INFO - Calculating correlation between APA and MUR
+2025-04-19 21:31:52,311 - INFO - Calculating correlation between APA and FANG
+2025-04-19 21:31:52,311 - INFO - Calculating correlation between APA and SM
+2025-04-19 21:31:52,311 - INFO - Calculating correlation between APA and WTI
+2025-04-19 21:31:52,313 - INFO - Calculating correlation between MUR and FANG
+2025-04-19 21:31:52,313 - INFO - Calculating correlation between MUR and SM
+2025-04-19 21:31:52,313 - INFO - Calculating correlation between MUR and WTI
+2025-04-19 21:31:52,313 - INFO - Calculating correlation between MUR and CRC
+2025-04-19 21:31:52,313 - INFO - Calculating correlation between FANG and MTDR
+2025-04-19 21:31:52,313 - INFO - Calculating correlation between FANG and SM
+2025-04-19 21:31:52,313 - INFO - Calculating correlation between FANG and WTI
+2025-04-19 21:31:52,313 - INFO - Calculating correlation between FANG and CRC
+2025-04-19 21:31:52,313 - INFO - Calculating correlation between EQT and RRC
+2025-04-19 21:31:52,313 - INFO - Calculating correlation between EQT and GPOR
+2025-04-19 21:31:52,321 - INFO - Calculating correlation between EQT and AR
+2025-04-19 21:31:52,321 - INFO - Calculating correlation between EQT and CRK
+2025-04-19 21:31:52,321 - INFO - Calculating correlation between RRC and GPOR
+2025-04-19 21:31:52,321 - INFO - Calculating correlation between RRC and AR
+2025-04-19 21:31:52,321 - INFO - Calculating correlation between RRC and CRK
+2025-04-19 21:31:52,321 - INFO - Calculating correlation between GPOR and AR
+2025-04-19 21:31:52,321 - INFO - Calculating correlation between GPOR and CRK
+2025-04-19 21:31:52,321 - INFO - Calculating correlation between MTDR and SM
+2025-04-19 21:31:52,321 - INFO - Calculating correlation between MTDR and CRC
+2025-04-19 21:31:52,321 - INFO - Calculating correlation between SM and WTI
+2025-04-19 21:31:52,329 - INFO - Calculating correlation between SM and CRC
+2025-04-19 21:31:52,329 - INFO - Calculating correlation between AR and CRK
+2025-04-19 21:31:52,329 - INFO - Calculating correlation between WTI and CRC
+2025-04-19 21:31:52,357 - INFO - Final correlation table:
+           XOM       CVX       COP       OXY       PSX       MPC       VLO       EOG       DVN       HES       APA       MUR      FANG       EQT       RRC      GPOR      MTDR        SM        AR       WTI       CRC       CRK
+XOM   1.000000  0.287558  0.807501  0.584572  0.754126  0.604307  0.601588  0.446216  0.725078  0.281440  0.463404  0.579753  0.667138 -0.364275 -0.274946 -0.349935  0.174113  0.490851 -0.332206  0.707630  0.463839 -0.442976
+CVX   0.287558  1.000000  0.068244 -0.186258  0.175643 -0.178761  0.136579  0.656558 -0.181133  0.969040 -0.320022 -0.325796 -0.195930  0.722329  0.775311  0.693694  0.335107 -0.159598  0.710641 -0.276141  0.130542  0.651180
+COP   0.807501  0.068244  1.000000  0.802192  0.728886  0.787553  0.745854  0.530511  0.829418  0.054670  0.737062  0.847173  0.901821 -0.492049 -0.356857 -0.356911  0.519305  0.799600 -0.416803  0.840555  0.704290 -0.534578
+OXY   0.584572 -0.186258  0.802192  1.000000  0.745047  0.873036  0.798531  0.397596  0.912963 -0.127653  0.952793  0.919597  0.916540 -0.628200 -0.442317 -0.470698  0.462703  0.763916 -0.464951  0.843546  0.465068 -0.594419
+PSX   0.754126  0.175643  0.728886  0.745047  1.000000  0.851187  0.840434  0.510162  0.804629  0.195040  0.662472  0.653856  0.691404 -0.416996 -0.268872 -0.344793  0.310768  0.561368 -0.314495  0.712192  0.401841 -0.486391
+MPC   0.604307 -0.178761  0.787553  0.873036  0.851187  1.000000  0.887470  0.362344  0.907540 -0.115683  0.861816  0.836475  0.840939 -0.611735 -0.467556 -0.486212  0.357223  0.689482 -0.468384  0.824989  0.388550 -0.642356
+VLO   0.601588  0.136579  0.745854  0.798531  0.840434  0.887470  1.000000  0.607931  0.792083  0.187523  0.758757  0.684494  0.770731 -0.323948 -0.163486 -0.215415  0.556893  0.642703 -0.190391  0.668048  0.414530 -0.376590
+EOG   0.446216  0.656558  0.530511  0.397596  0.510162  0.362344  0.607931  1.000000  0.295968  0.632880  0.320570  0.278698  0.414847  0.317223  0.456377  0.438869  0.786240  0.501718  0.381686  0.257568  0.584346  0.270847
+DVN   0.725078 -0.181133  0.829418  0.912963  0.804629  0.907540  0.792083  0.295968  1.000000 -0.111085  0.861091  0.879035  0.882810 -0.700519 -0.553444 -0.619982  0.229830  0.651820 -0.567919  0.878327  0.348478 -0.700336
+HES   0.281440  0.969040  0.054670 -0.127653  0.195040 -0.115683  0.187523  0.632880 -0.111085  1.000000 -0.256674 -0.316285 -0.185864  0.722504  0.791509  0.677498  0.283749 -0.221254  0.755551 -0.268931 -0.010893  0.667271
+APA   0.463404 -0.320022  0.737062  0.952793  0.662472  0.861816  0.758757  0.320570  0.861091 -0.256674  1.000000  0.907061  0.907616 -0.655531 -0.490144 -0.485461  0.479930  0.805925 -0.498480  0.828133  0.467567 -0.617813
+MUR   0.579753 -0.325796  0.847173  0.919597  0.653856  0.836475  0.684494  0.278698  0.879035 -0.316285  0.907061  1.000000  0.943123 -0.754571 -0.609892 -0.565345  0.420484  0.846066 -0.643567  0.884476  0.605360 -0.732173
+FANG  0.667138 -0.195930  0.901821  0.916540  0.691404  0.840939  0.770731  0.414847  0.882810 -0.185864  0.907616  0.943123  1.000000 -0.649339 -0.504909 -0.485200  0.534317  0.894745 -0.545897  0.892668  0.658440 -0.647857
+EQT  -0.364275  0.722329 -0.492049 -0.628200 -0.416996 -0.611735 -0.323948  0.317223 -0.700519  0.722504 -0.655531 -0.754571 -0.649339  1.000000  0.965987  0.941083  0.165264 -0.504781  0.965318 -0.748499 -0.218477  0.974210
+RRC  -0.274946  0.775311 -0.356857 -0.442317 -0.268872 -0.467556 -0.163486  0.456377 -0.553444  0.791509 -0.490144 -0.609892 -0.504909  0.965987  1.000000  0.949174  0.303510 -0.387451  0.984021 -0.630702 -0.132142  0.957221
+GPOR -0.349935  0.693694 -0.356911 -0.470698 -0.344793 -0.486212 -0.215415  0.438869 -0.619982  0.677498 -0.485461 -0.565345 -0.485200  0.941083  0.949174  1.000000  0.387023 -0.296232  0.935613 -0.650767 -0.005163  0.936685
+MTDR  0.174113  0.335107  0.519305  0.462703  0.310768  0.357223  0.556893  0.786240  0.229830  0.283749  0.479930  0.420484  0.534317  0.165264  0.303510  0.387023  1.000000  0.715593  0.232736  0.275238  0.734045  0.157805
+SM    0.490851 -0.159598  0.799600  0.763916  0.561368  0.689482  0.642703  0.501718  0.651820 -0.221254  0.805925  0.846066  0.894745 -0.504781 -0.387451 -0.296232  0.715593  1.000000 -0.454610  0.783213  0.858799 -0.517979
+AR   -0.332206  0.710641 -0.416803 -0.464951 -0.314495 -0.468384 -0.190391  0.381686 -0.567919  0.755551 -0.498480 -0.643567 -0.545897  0.965318  0.984021  0.935613  0.232736 -0.454610  1.000000 -0.670581 -0.244365  0.958924
+WTI   0.707630 -0.276141  0.840555  0.843546  0.712192  0.824989  0.668048  0.257568  0.878327 -0.268931  0.828133  0.884476  0.892668 -0.748499 -0.630702 -0.650767  0.275238  0.783213 -0.670581  1.000000  0.551961 -0.763650
+CRC   0.463839  0.130542  0.704290  0.465068  0.401841  0.388550  0.414530  0.584346  0.348478 -0.010893  0.467567  0.605360  0.658440 -0.218477 -0.132142 -0.005163  0.734045  0.858799 -0.244365  0.551961  1.000000 -0.255724
+CRK  -0.442976  0.651180 -0.534578 -0.594419 -0.486391 -0.642356 -0.376590  0.270847 -0.700336  0.667271 -0.617813 -0.732173 -0.647857  0.974210  0.957221  0.936685  0.157805 -0.517979  0.958924 -0.763650 -0.255724  1.000000
+2025-04-19 21:31:52,357 - INFO - 
+Summary:
+Date range: 2025-04-19
+Total tickers processed: 22
+Correlated pairs identified: [('COP', 'XOM'), ('PSX', 'XOM'), ('DVN', 'XOM'), ('WTI', 'XOM'), ('CVX', 'HES'), ('CVX', 'EQT'), ('CVX', 'RRC'), ('AR', 'CVX'), ('COP', 'OXY'), ('COP', 'PSX'), ('COP', 'MPC'), ('COP', 'VLO'), ('COP', 'DVN'), ('APA', 'COP'), ('COP', 'MUR'), ('COP', 'FANG'), ('COP', 'SM'), ('COP', 'WTI'), ('COP', 'CRC'), ('OXY', 'PSX'), ('MPC', 'OXY'), ('OXY', 'VLO'), ('DVN', 'OXY'), ('APA', 'OXY'), ('MUR', 'OXY'), ('FANG', 'OXY'), ('OXY', 'SM'), ('OXY', 'WTI'), ('MPC', 'PSX'), ('PSX', 'VLO'), ('DVN', 'PSX'), ('PSX', 'WTI'), ('MPC', 'VLO'), ('DVN', 'MPC'), ('APA', 'MPC'), ('MPC', 'MUR'), ('FANG', 'MPC'), ('MPC', 'WTI'), ('DVN', 'VLO'), ('APA', 'VLO'), ('FANG', 'VLO'), ('EOG', 'MTDR'), ('APA', 'DVN'), ('DVN', 'MUR'), ('DVN', 'FANG'), ('DVN', 'EQT'), ('DVN', 'WTI'), ('CRK', 'DVN'), ('EQT', 'HES'), ('HES', 'RRC'), ('AR', 'HES'), ('APA', 'MUR'), ('APA', 'FANG'), ('APA', 'SM'), ('APA', 'WTI'), ('FANG', 'MUR'), ('EQT', 'MUR'), ('MUR', 'SM'), ('MUR', 'WTI'), ('CRK', 'MUR'), ('FANG', 'SM'), ('FANG', 'WTI'), ('EQT', 'RRC'), ('EQT', 'GPOR'), ('AR', 'EQT'), ('EQT', 'WTI'), ('CRK', 'EQT'), ('GPOR', 'RRC'), ('AR', 'RRC'), ('CRK', 'RRC'), ('AR', 'GPOR'), ('CRK', 'GPOR'), ('MTDR', 'SM'), ('CRC', 'MTDR'), ('SM', 'WTI'), ('CRC', 'SM'), ('AR', 'CRK'), ('CRK', 'WTI')]
+Updated table saved to: dev_database\bayesian1\Bayesian1_interference_table_2025-04-19.csv
+

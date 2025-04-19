@@ -13,10 +13,12 @@ import pandas as pd
 import yfinance as yf
 from datetime import datetime, timedelta
 import sys
+import logging
 
 # Add the parent directory to the system path to import config
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from config import TICKER_FILE
+from logger_factory import get_logger
 
 # Define the base directory for the database
 BASE_DATABASE = "dev_database"  # Change from "data" to "dev_database"
@@ -34,14 +36,19 @@ LOG_FILE = os.path.join(
     f"loader_log_{datetime.now().strftime('%Y%m%d_%H%M%S')}.txt"
 )
 
+# Ensure the logs directory exists
+if not os.path.exists(os.path.dirname(LOG_FILE)):
+    os.makedirs(os.path.dirname(LOG_FILE), exist_ok=True)
 
-def log_message(message):
-    """
-    Log a message to the log file.
-    """
-    with open(LOG_FILE, "a") as log_file:
-        log_file.write(f"{datetime.now().strftime('%Y-%m-%d %H:%M:%S')} - {message}\n")
+# Configure loggers
+file_logger = get_logger(f"loader_log_{datetime.now().strftime('%Y%m%d_%H%M%S')}", f"logs/loader/loader_log_{datetime.now().strftime('%Y%m%d_%H%M%S')}.txt")
+summary_logger = get_logger("summary_logger", to_terminal=True)
 
+def log_message(msg):
+    file_logger.info(msg)
+
+def log_summary(msg):
+    summary_logger.info(msg)
 
 def check_existing_data_hdf5(ticker):
     """
@@ -73,7 +80,7 @@ def download_data(ticker, start_date, end_date):
     """
     log_message(f"Downloading data for {ticker} from {start_date} to {end_date}...")
     try:
-        data = yf.download(ticker, start=start_date, end=end_date)
+        data = yf.download(ticker, start=start_date, end=end_date,progress=False,show_errors=False)
         if not data.empty:
             log_message(f"Data for {ticker} downloaded successfully.")
             return data
@@ -193,12 +200,15 @@ def fetch_and_update_data_hdf5(tickers, start_date):
             unavailable_tickers.append(ticker)
 
     # Write a concise summary to the log file
-    with open(LOG_FILE, "a") as log_file:
-        log_file.write("\nSummary:\n")
-        log_file.write(f"Date range: {start_date} to {datetime.now().strftime('%Y-%m-%d')}\n")
-        log_file.write(f"Tickers with last 7 days loaded: {last_7_days_loaded}\n")
-        log_file.write(f"Tickers with full dataset loaded: {full_dataset_loaded}\n")
-        log_file.write(f"Unavailable tickers: {unavailable_tickers}\n")
+    summary = (
+        f"\nSummary:\n"
+        f"Date range: {start_date} to {datetime.now().strftime('%Y-%m-%d')}\n"
+        f"Tickers with last 7 days loaded: {last_7_days_loaded}\n"
+        f"Tickers with full dataset loaded: {full_dataset_loaded}\n"
+        f"Unavailable tickers: {unavailable_tickers}\n"
+    )
+    log_message(summary)  # Write the summary to the log file
+    log_summary(summary)  # Print the summary to the terminal
 
     log_message("Data fetch and update completed.")
     return data_dict

@@ -1,0 +1,24 @@
+2025-04-19 18:08:22,209 - INFO - DEBUG: Keys in pre_processed: ['APA', 'AR', 'COP', 'CRC', 'CRK', 'CVX', 'DVN', 'EOG', 'EQT', 'FANG', 'GPOR', 'HES', 'MPC', 'MTDR', 'MUR', 'OXY', 'PSX', 'RRC', 'SM', 'VLO', 'WTI', 'XOM']
+2025-04-19 18:08:22,209 - INFO - Table Bayesian1_interference_table_2025-04-19.csv not found. Creating a new one.
+2025-04-19 18:08:22,209 - INFO - ERROR: Ticker file dev_database\tickers.csv does not exist.
+2025-04-19 18:08:36,961 - INFO - DEBUG: Keys in pre_processed: ['XOM', 'CVX', 'COP', 'OXY', 'PSX', 'MPC', 'VLO', 'EOG', 'DVN', 'HES', 'APA', 'MUR', 'FANG', 'EQT', 'RRC', 'GPOR', 'MTDR', 'SM', 'AR', 'WTI', 'CRC', 'CRK']
+2025-04-19 18:08:36,969 - INFO - Table Bayesian1_interference_table_2025-04-19.csv not found. Creating a new one.
+2025-04-19 18:08:36,969 - INFO - ERROR: Ticker file dev_database\tickers.csv does not exist.
+2025-04-19 18:09:29,785 - INFO - DEBUG: Keys in pre_processed: ['APA', 'AR', 'COP', 'CRC', 'CRK', 'CVX', 'DVN', 'EOG', 'EQT', 'FANG', 'GPOR', 'HES', 'MPC', 'MTDR', 'MUR', 'OXY', 'PSX', 'RRC', 'SM', 'VLO', 'WTI', 'XOM']
+2025-04-19 18:09:29,785 - INFO - Table Bayesian1_interference_table_2025-04-19.csv not found. Creating a new one.
+2025-04-19 18:09:29,785 - INFO - ERROR: Ticker file dev_database\tickers.csv does not exist.
+2025-04-19 18:09:45,653 - INFO - DEBUG: Keys in pre_processed: ['APA', 'AR', 'COP', 'CRC', 'CRK', 'CVX', 'DVN', 'EOG', 'EQT', 'FANG', 'GPOR', 'HES', 'MPC', 'MTDR', 'MUR', 'OXY', 'PSX', 'RRC', 'SM', 'VLO', 'WTI', 'XOM']
+2025-04-19 18:09:45,653 - INFO - Table Bayesian1_interference_table_2025-04-19.csv not found. Creating a new one.
+2025-04-19 18:09:45,653 - INFO - ERROR: Ticker file dev_database\tickers.csv does not exist.
+2025-04-19 18:12:37,382 - INFO - DEBUG: Keys in pre_processed: ['APA', 'AR', 'COP', 'CRC', 'CRK', 'CVX', 'DVN', 'EOG', 'EQT', 'FANG', 'GPOR', 'HES', 'MPC', 'MTDR', 'MUR', 'OXY', 'PSX', 'RRC', 'SM', 'VLO', 'WTI', 'XOM']
+2025-04-19 18:12:37,382 - INFO - Table Bayesian1_interference_table_2025-04-19.csv not found. Creating a new one.
+2025-04-19 18:12:37,382 - INFO - ERROR: Ticker file dev_database\tickers.csv does not exist.
+2025-04-19 18:18:43,093 - INFO - DEBUG: Keys in pre_processed: ['APA', 'AR', 'COP', 'CRC', 'CRK', 'CVX', 'DVN', 'EOG', 'EQT', 'FANG', 'GPOR', 'HES', 'MPC', 'MTDR', 'MUR', 'OXY', 'PSX', 'RRC', 'SM', 'VLO', 'WTI', 'XOM']
+2025-04-19 18:18:43,093 - INFO - Table Bayesian1_interference_table_2025-04-19.csv not found. Creating a new one.
+2025-04-19 18:18:43,093 - INFO - ERROR: Ticker file dev_database\tickers.csv does not exist.
+2025-04-19 18:21:37,504 - INFO - DEBUG: Keys in pre_processed: ['APA', 'AR', 'COP', 'CRC', 'CRK', 'CVX', 'DVN', 'EOG', 'EQT', 'FANG', 'GPOR', 'HES', 'MPC', 'MTDR', 'MUR', 'OXY', 'PSX', 'RRC', 'SM', 'VLO', 'WTI', 'XOM']
+2025-04-19 18:21:37,504 - INFO - Table Bayesian1_interference_table_2025-04-19.csv not found. Creating a new one.
+2025-04-19 18:21:37,504 - INFO - ERROR: Ticker file dev_database\tickers.csv does not exist.
+2025-04-19 18:21:51,613 - INFO - DEBUG: Keys in pre_processed: ['APA', 'AR', 'COP', 'CRC', 'CRK', 'CVX', 'DVN', 'EOG', 'EQT', 'FANG', 'GPOR', 'HES', 'MPC', 'MTDR', 'MUR', 'OXY', 'PSX', 'RRC', 'SM', 'VLO', 'WTI', 'XOM']
+2025-04-19 18:21:51,613 - INFO - Table Bayesian1_interference_table_2025-04-19.csv not found. Creating a new one.
+2025-04-19 18:21:51,613 - INFO - ERROR: Ticker file dev_database\tickers.csv does not exist.

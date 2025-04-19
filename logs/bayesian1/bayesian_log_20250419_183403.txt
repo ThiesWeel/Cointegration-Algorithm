@@ -1,0 +1,3 @@
+2025-04-19 18:34:04,054 - INFO - DEBUG: Keys in pre_processed: ['APA', 'AR', 'COP', 'CRC', 'CRK', 'CVX', 'DVN', 'EOG', 'EQT', 'FANG', 'GPOR', 'HES', 'MPC', 'MTDR', 'MUR', 'OXY', 'PSX', 'RRC', 'SM', 'VLO', 'WTI', 'XOM']
+2025-04-19 18:34:04,054 - INFO - Table Bayesian1_interference_table_2025-04-19.csv not found. Creating a new one.
+2025-04-19 18:34:04,054 - INFO - ERROR: Ticker file dev_database\dev_database/tickers\dev_tickers1.csv does not exist.

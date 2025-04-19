@@ -1,0 +1,78 @@
+2025-04-19 17:14:18,228 - ERROR - 
+1 Failed download:
+2025-04-19 17:14:18,228 - ERROR - ['MRO']: YFPricesMissingError('possibly delisted; no price data found  (1d 2020-01-01 -> 2025-04-19) (Yahoo error = "No data found, symbol may be delisted")')
+2025-04-19 17:14:20,504 - INFO - Starting NaN handling...
+2025-04-19 17:14:20,504 - INFO - Starting NaN handling...
+2025-04-19 17:14:20,504 - INFO - Ticker: XOM - Found 0 NaN dates.
+2025-04-19 17:14:20,504 - INFO - Ticker: CVX - Found 0 NaN dates.
+2025-04-19 17:14:20,504 - INFO - Ticker: COP - Found 0 NaN dates.
+2025-04-19 17:14:20,504 - INFO - Ticker: OXY - Found 0 NaN dates.
+2025-04-19 17:14:20,504 - INFO - Ticker: PSX - Found 0 NaN dates.
+2025-04-19 17:14:20,504 - INFO - Ticker: MPC - Found 0 NaN dates.
+2025-04-19 17:14:20,511 - INFO - Ticker: VLO - Found 0 NaN dates.
+2025-04-19 17:14:20,511 - INFO - Ticker: EOG - Found 0 NaN dates.
+2025-04-19 17:14:20,511 - INFO - Ticker: DVN - Found 0 NaN dates.
+2025-04-19 17:14:20,511 - INFO - Ticker: HES - Found 0 NaN dates.
+2025-04-19 17:14:20,511 - INFO - Ticker: APA - Found 0 NaN dates.
+2025-04-19 17:14:20,513 - INFO - Ticker: MUR - Found 0 NaN dates.
+2025-04-19 17:14:20,513 - INFO - Ticker: FANG - Found 0 NaN dates.
+2025-04-19 17:14:20,513 - INFO - Ticker: EQT - Found 0 NaN dates.
+2025-04-19 17:14:20,514 - INFO - Ticker: RRC - Found 0 NaN dates.
+2025-04-19 17:14:20,515 - INFO - Ticker: GPOR - Found 0 NaN dates.
+2025-04-19 17:14:20,515 - INFO - Ticker: MTDR - Found 0 NaN dates.
+2025-04-19 17:14:20,515 - INFO - Ticker: SM - Found 0 NaN dates.
+2025-04-19 17:14:20,515 - INFO - Ticker: AR - Found 0 NaN dates.
+2025-04-19 17:14:20,517 - INFO - Ticker: WTI - Found 0 NaN dates.
+2025-04-19 17:14:20,518 - INFO - Ticker: CRC - Found 0 NaN dates.
+2025-04-19 17:14:20,518 - INFO - Ticker: CRK - Found 0 NaN dates.
+2025-04-19 17:14:20,518 - INFO - Total NaN dates to remove: 0
+2025-04-19 17:14:20,519 - INFO - Ticker: XOM - Rows after NaN removal: 1331
+2025-04-19 17:14:20,519 - INFO - Ticker: CVX - Rows after NaN removal: 1331
+2025-04-19 17:14:20,520 - INFO - Ticker: COP - Rows after NaN removal: 1331
+2025-04-19 17:14:20,520 - INFO - Ticker: OXY - Rows after NaN removal: 1331
+2025-04-19 17:14:20,520 - INFO - Ticker: PSX - Rows after NaN removal: 1331
+2025-04-19 17:14:20,521 - INFO - Ticker: MPC - Rows after NaN removal: 1331
+2025-04-19 17:14:20,521 - INFO - Ticker: VLO - Rows after NaN removal: 1331
+2025-04-19 17:14:20,522 - INFO - Ticker: EOG - Rows after NaN removal: 1331
+2025-04-19 17:14:20,522 - INFO - Ticker: DVN - Rows after NaN removal: 1331
+2025-04-19 17:14:20,522 - INFO - Ticker: HES - Rows after NaN removal: 1331
+2025-04-19 17:14:20,524 - INFO - Ticker: APA - Rows after NaN removal: 1331
+2025-04-19 17:14:20,524 - INFO - Ticker: MUR - Rows after NaN removal: 1331
+2025-04-19 17:14:20,524 - INFO - Ticker: FANG - Rows after NaN removal: 1331
+2025-04-19 17:14:20,524 - INFO - Ticker: EQT - Rows after NaN removal: 1331
+2025-04-19 17:14:20,524 - INFO - Ticker: RRC - Rows after NaN removal: 1331
+2025-04-19 17:14:20,524 - INFO - Ticker: GPOR - Rows after NaN removal: 985
+2025-04-19 17:14:20,527 - INFO - Ticker: MTDR - Rows after NaN removal: 1331
+2025-04-19 17:14:20,527 - INFO - Ticker: SM - Rows after NaN removal: 1331
+2025-04-19 17:14:20,528 - INFO - Ticker: AR - Rows after NaN removal: 1331
+2025-04-19 17:14:20,528 - INFO - Ticker: WTI - Rows after NaN removal: 1331
+2025-04-19 17:14:20,529 - INFO - Ticker: CRC - Rows after NaN removal: 1123
+2025-04-19 17:14:20,529 - INFO - Ticker: CRK - Rows after NaN removal: 1331
+2025-04-19 17:14:20,529 - INFO - NaN handling completed.
+2025-04-19 17:14:20,529 - INFO - Slicing data based on max_cointegration_window_size and start_date...
+2025-04-19 17:14:20,532 - INFO - Ticker: XOM - Final row count after slicing: 178
+2025-04-19 17:14:20,534 - INFO - Ticker: CVX - Final row count after slicing: 178
+2025-04-19 17:14:20,534 - INFO - Ticker: COP - Final row count after slicing: 178
+2025-04-19 17:14:20,534 - INFO - Ticker: OXY - Final row count after slicing: 178
+2025-04-19 17:14:20,534 - INFO - Ticker: PSX - Final row count after slicing: 178
+2025-04-19 17:14:20,539 - INFO - Ticker: MPC - Final row count after slicing: 178
+2025-04-19 17:14:20,540 - INFO - Ticker: VLO - Final row count after slicing: 178
+2025-04-19 17:14:20,540 - INFO - Ticker: EOG - Final row count after slicing: 178
+2025-04-19 17:14:20,541 - INFO - Ticker: DVN - Final row count after slicing: 178
+2025-04-19 17:14:20,542 - INFO - Ticker: HES - Final row count after slicing: 178
+2025-04-19 17:14:20,543 - INFO - Ticker: APA - Final row count after slicing: 178
+2025-04-19 17:14:20,544 - INFO - Ticker: MUR - Final row count after slicing: 178
+2025-04-19 17:14:20,545 - INFO - Ticker: FANG - Final row count after slicing: 178
+2025-04-19 17:14:20,546 - INFO - Ticker: EQT - Final row count after slicing: 178
+2025-04-19 17:14:20,546 - INFO - Ticker: RRC - Final row count after slicing: 178
+2025-04-19 17:14:20,548 - INFO - Ticker: GPOR - Final row count after slicing: 178
+2025-04-19 17:14:20,549 - INFO - Ticker: MTDR - Final row count after slicing: 178
+2025-04-19 17:14:20,549 - INFO - Ticker: SM - Final row count after slicing: 178
+2025-04-19 17:14:20,550 - INFO - Ticker: AR - Final row count after slicing: 178
+2025-04-19 17:14:20,551 - INFO - Ticker: WTI - Final row count after slicing: 178
+2025-04-19 17:14:20,551 - INFO - Ticker: CRC - Final row count after slicing: 178
+2025-04-19 17:14:20,551 - INFO - Ticker: CRK - Final row count after slicing: 178
+2025-04-19 17:14:20,553 - INFO - Data preprocessing completed.
+2025-04-19 17:14:20 - Saving data to 2024-08-02_to_2025-04-19_processed.h5 in HDF5 format...
+2025-04-19 17:14:21 - Data successfully saved to dev_database\preprocessed\2024-08-02_to_2025-04-19_processed.h5.
+2025-04-19 17:14:21,421 - INFO - Preprocessed data saved to 2024-08-02_to_2025-04-19_processed.h5.

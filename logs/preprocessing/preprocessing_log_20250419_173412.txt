@@ -1,0 +1,11 @@
+2025-04-19 17:34:16,995 - ERROR - 
+1 Failed download:
+2025-04-19 17:34:16,995 - ERROR - ['MRO']: YFPricesMissingError('possibly delisted; no price data found  (1d 2020-01-01 -> 2025-04-19) (Yahoo error = "No data found, symbol may be delisted")')
+2025-04-19 17:34:19,313 - INFO - 
+Summary:
+Date range: 2020-01-01 to 2025-04-19
+Tickers with last 7 days loaded: ['XOM', 'CVX', 'COP', 'OXY', 'PSX', 'MPC', 'VLO', 'EOG', 'DVN', 'HES', 'APA', 'MUR', 'FANG', 'EQT', 'RRC', 'GPOR', 'MTDR', 'SM', 'AR', 'WTI', 'CRC', 'CRK']
+Tickers with full dataset loaded: []
+Unavailable tickers: ['MRO']
+
+2025-04-19 17:34:19,315 - INFO - Preprocessed data file 2024-08-02_to_2025-04-19_processed.h5 already exists. Loading from file.

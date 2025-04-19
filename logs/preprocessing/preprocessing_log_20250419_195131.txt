@@ -1,0 +1,54 @@
+2025-04-19 19:51:32,440 - INFO - Starting preprocessing...
+2025-04-19 19:51:32,441 - INFO - Preprocessed data file 2024-08-02_to_2025-04-19_processed.h5 already exists. Loading from file.
+2025-04-19 19:51:33,151 - INFO - Pair: COP-XOM, Window: 250, End Date: 2025-04-11 00:00:00, P-Value: 0.4512561197401662, Cointegrated: False
+2025-04-19 19:51:33,156 - INFO - Pair: COP-XOM, Window: 120, End Date: 2025-04-11 00:00:00, P-Value: 0.4917992815413769, Cointegrated: False
+2025-04-19 19:51:33,159 - INFO - Pair: COP-XOM, Window: 60, End Date: 2025-04-11 00:00:00, P-Value: 0.5414563109015395, Cointegrated: False
+2025-04-19 19:51:33,165 - INFO - Pair: PSX-XOM, Window: 250, End Date: 2025-04-11 00:00:00, P-Value: 0.8805179905518978, Cointegrated: False
+2025-04-19 19:51:33,168 - INFO - Pair: PSX-XOM, Window: 120, End Date: 2025-04-11 00:00:00, P-Value: 0.9179654407247646, Cointegrated: False
+2025-04-19 19:51:33,172 - INFO - Pair: PSX-XOM, Window: 60, End Date: 2025-04-11 00:00:00, P-Value: 0.9824068308970438, Cointegrated: False
+2025-04-19 19:51:33,177 - INFO - Pair: DVN-XOM, Window: 250, End Date: 2025-04-11 00:00:00, P-Value: 0.8134955682367218, Cointegrated: False
+2025-04-19 19:51:33,181 - INFO - Pair: DVN-XOM, Window: 120, End Date: 2025-04-11 00:00:00, P-Value: 0.4649543738431144, Cointegrated: False
+2025-04-19 19:51:33,184 - INFO - Pair: DVN-XOM, Window: 60, End Date: 2025-04-11 00:00:00, P-Value: 0.5207076895072749, Cointegrated: False
+2025-04-19 19:51:33,189 - INFO - Pair: WTI-XOM, Window: 250, End Date: 2025-04-11 00:00:00, P-Value: 0.37990320426762514, Cointegrated: False
+2025-04-19 19:51:33,193 - INFO - Pair: WTI-XOM, Window: 120, End Date: 2025-04-11 00:00:00, P-Value: 0.629995077176935, Cointegrated: False
+2025-04-19 19:51:33,197 - INFO - Pair: WTI-XOM, Window: 60, End Date: 2025-04-11 00:00:00, P-Value: 0.8627038588912586, Cointegrated: False
+2025-04-19 19:51:33,201 - INFO - Pair: CVX-HES, Window: 250, End Date: 2025-04-11 00:00:00, P-Value: 0.6822263503768025, Cointegrated: False
+2025-04-19 19:51:33,205 - INFO - Pair: CVX-HES, Window: 120, End Date: 2025-04-11 00:00:00, P-Value: 0.9075406009977589, Cointegrated: False
+2025-04-19 19:51:33,208 - INFO - Pair: CVX-HES, Window: 60, End Date: 2025-04-11 00:00:00, P-Value: 0.845769005057319, Cointegrated: False
+2025-04-19 19:51:33,212 - INFO - Pair: CVX-EQT, Window: 250, End Date: 2025-04-11 00:00:00, P-Value: 0.09506593777348071, Cointegrated: False
+2025-04-19 19:51:33,216 - INFO - Pair: CVX-EQT, Window: 120, End Date: 2025-04-11 00:00:00, P-Value: 0.12320689750800223, Cointegrated: False
+2025-04-19 19:51:33,220 - INFO - Pair: CVX-EQT, Window: 60, End Date: 2025-04-11 00:00:00, P-Value: 0.8385040486494293, Cointegrated: False
+2025-04-19 19:51:33,225 - INFO - Pair: CVX-RRC, Window: 250, End Date: 2025-04-11 00:00:00, P-Value: 0.24524391554109243, Cointegrated: False
+2025-04-19 19:51:33,229 - INFO - Pair: CVX-RRC, Window: 120, End Date: 2025-04-11 00:00:00, P-Value: 0.2009362775948591, Cointegrated: False
+2025-04-19 19:51:33,232 - INFO - Pair: CVX-RRC, Window: 60, End Date: 2025-04-11 00:00:00, P-Value: 0.35028091885275137, Cointegrated: False
+2025-04-19 19:51:33,238 - INFO - Pair: AR-CVX, Window: 250, End Date: 2025-04-11 00:00:00, P-Value: 0.9022237441790428, Cointegrated: False
+2025-04-19 19:51:33,241 - INFO - Pair: AR-CVX, Window: 120, End Date: 2025-04-11 00:00:00, P-Value: 0.6410467595398621, Cointegrated: False
+2025-04-19 19:51:33,244 - INFO - Pair: AR-CVX, Window: 60, End Date: 2025-04-11 00:00:00, P-Value: 0.19387279833115606, Cointegrated: False
+2025-04-19 19:51:33,248 - INFO - Pair: COP-OXY, Window: 250, End Date: 2025-04-11 00:00:00, P-Value: 0.11398543858042448, Cointegrated: False
+2025-04-19 19:51:33,252 - INFO - Pair: COP-OXY, Window: 120, End Date: 2025-04-11 00:00:00, P-Value: 0.5747544109917262, Cointegrated: False
+2025-04-19 19:51:33,256 - INFO - Pair: COP-OXY, Window: 60, End Date: 2025-04-11 00:00:00, P-Value: 0.5176850793377215, Cointegrated: False
+2025-04-19 19:51:33,259 - INFO - Pair: COP-PSX, Window: 250, End Date: 2025-04-11 00:00:00, P-Value: 0.32534801202458397, Cointegrated: False
+2025-04-19 19:51:33,264 - INFO - Pair: COP-PSX, Window: 120, End Date: 2025-04-11 00:00:00, P-Value: 0.6179099671723726, Cointegrated: False
+2025-04-19 19:51:33,268 - INFO - Pair: COP-PSX, Window: 60, End Date: 2025-04-11 00:00:00, P-Value: 0.3797740714757515, Cointegrated: False
+2025-04-19 19:51:33,273 - INFO - Pair: COP-MPC, Window: 250, End Date: 2025-04-11 00:00:00, P-Value: 0.18803996094080383, Cointegrated: False
+2025-04-19 19:51:33,276 - INFO - Pair: COP-MPC, Window: 120, End Date: 2025-04-11 00:00:00, P-Value: 0.4348435261706716, Cointegrated: False
+2025-04-19 19:51:33,279 - INFO - Pair: COP-MPC, Window: 60, End Date: 2025-04-11 00:00:00, P-Value: 0.4094443754884948, Cointegrated: False
+2025-04-19 19:51:33,284 - INFO - Pair: COP-VLO, Window: 250, End Date: 2025-04-11 00:00:00, P-Value: 0.1556348461689609, Cointegrated: False
+2025-04-19 19:51:33,288 - INFO - Pair: COP-VLO, Window: 120, End Date: 2025-04-11 00:00:00, P-Value: 0.5006876031573267, Cointegrated: False
+2025-04-19 19:51:33,291 - INFO - Pair: COP-VLO, Window: 60, End Date: 2025-04-11 00:00:00, P-Value: 0.2771129196092034, Cointegrated: False
+2025-04-19 19:51:33,296 - INFO - Pair: COP-DVN, Window: 250, End Date: 2025-04-11 00:00:00, P-Value: 0.21000928729977358, Cointegrated: False
+2025-04-19 19:51:33,300 - INFO - Pair: COP-DVN, Window: 120, End Date: 2025-04-11 00:00:00, P-Value: 0.33687657256720027, Cointegrated: False
+2025-04-19 19:51:33,304 - INFO - Pair: COP-DVN, Window: 60, End Date: 2025-04-11 00:00:00, P-Value: 0.6465510097011719, Cointegrated: False
+2025-04-19 19:51:33,308 - INFO - Pair: APA-COP, Window: 250, End Date: 2025-04-11 00:00:00, P-Value: 0.34484467231962423, Cointegrated: False
+2025-04-19 19:51:33,313 - INFO - Pair: APA-COP, Window: 120, End Date: 2025-04-11 00:00:00, P-Value: 0.8488168836506644, Cointegrated: False
+2025-04-19 19:51:33,316 - INFO - Pair: APA-COP, Window: 60, End Date: 2025-04-11 00:00:00, P-Value: 0.814949943314231, Cointegrated: False
+2025-04-19 19:51:33,320 - INFO - Pair: COP-MUR, Window: 250, End Date: 2025-04-11 00:00:00, P-Value: 0.05992192847728018, Cointegrated: True
+2025-04-19 19:51:33,321 - INFO - Spread calculated for pair COP-MUR.
+2025-04-19 21:10:01,883 - INFO - Pair: COP-MUR, Window: 120, End Date: 2025-04-11 00:00:00, P-Value: 0.29352038778175604, Cointegrated: False
+2025-04-19 21:10:01,890 - INFO - Pair: COP-MUR, Window: 60, End Date: 2025-04-11 00:00:00, P-Value: 0.14288897661794725, Cointegrated: False
+2025-04-19 21:10:01,899 - INFO - Pair: COP-FANG, Window: 250, End Date: 2025-04-11 00:00:00, P-Value: 0.052885470957608934, Cointegrated: True
+2025-04-19 21:10:01,901 - INFO - Spread calculated for pair COP-FANG.
+2025-04-19 21:10:06,085 - INFO - Pair: COP-MUR, Window: 120, End Date: 2025-04-11 00:00:00, P-Value: 0.17388063963314776, Cointegrated: False
+2025-04-19 21:10:06,101 - INFO - Pair: COP-MUR, Window: 60, End Date: 2025-04-11 00:00:00, P-Value: 0.45086373357981935, Cointegrated: False
+2025-04-19 21:10:06,119 - INFO - Pair: COP-SM, Window: 250, End Date: 2025-04-11 00:00:00, P-Value: 0.04687946408683351, Cointegrated: True
+2025-04-19 21:10:06,122 - INFO - Spread calculated for pair COP-SM.
