@@ -9,6 +9,7 @@ from data.preprocessing import  run_preprocessing  # Import the function from pr
 from models.bayesian_filter_cointegration import bayesian_interference_check  # Import the function from bayesian_filter_cointegration.py       
 from datetime import datetime,timedelta  # Import datetime to define 'today'
 from models.cointegration import cointegration_checker  # Import the function from cointegration.py
+from models.ecm import ECM_model  # Import the function from ecm.py
 today = (datetime.today() - timedelta(100)).strftime('%Y-%m-%d')  # Define 'today' as the current date
 
 
@@ -51,5 +52,7 @@ if __name__ == "__main__":
     for i,el in enumerate([1,23,3]):
         print(f"Pair {i}: {el}")  
     # Step 5: Check for Cointegration pairs
-    cointegration_checker(pre_processed, possible_cointegration_pairs, end_date=today, window_sizes= [ 350,250, 180], sig_lvl= 0.15,plot=True)
-
+    cointegration_res = cointegration_checker(pre_processed, possible_cointegration_pairs, window_sizes= [ 350,250, 180], sig_lvl= 0.15)
+   
+    # Step 6: Setup the ECM
+    ECM_model(cointegration_res, pre_processed)

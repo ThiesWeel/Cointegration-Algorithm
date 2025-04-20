@@ -24,7 +24,7 @@ def get_logger(name: str, log_path: str = None, to_terminal: bool = False):
     # File handler (if log_path is provided)
     if log_path:
         os.makedirs(os.path.dirname(log_path), exist_ok=True)
-        file_handler = logging.FileHandler(log_path)
+        file_handler = logging.FileHandler(log_path, encoding='utf-8')
         file_handler.setFormatter(logging.Formatter(
             "%(asctime)s - %(levelname)s - %(message)s"
         ))
@@ -33,7 +33,7 @@ def get_logger(name: str, log_path: str = None, to_terminal: bool = False):
     # Terminal (stream) handler
     if to_terminal:
         stream_handler = logging.StreamHandler()
-        stream_handler.setFormatter(logging.Formatter("%(message)s"))
+        stream_handler.setFormatter(logging.Formatter("%(asctime)s - %(levelname)s - %(message)s"))
         logger.addHandler(stream_handler)
 
     return logger
