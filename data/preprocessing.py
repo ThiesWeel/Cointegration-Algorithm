@@ -137,8 +137,15 @@ def run_preprocessing(data, end_date, max_cointegration_window_size, output_file
         for ticker, df in cleaned_data.items():
             if start_date in df.index:
                 df = df.loc[start_date:]  # Slice from the start_date
-            sliced_data[ticker] = df.tail(max_cointegration_window_size)  # Keep only the last N days
-            rows_remaining[ticker] = len(sliced_data[ticker])
+            df = df.tail(max_cointegration_window_size)  # Keep only the last N days
+
+            # Apply log transform to all columns except those containing 'Volume'
+            for col in df.columns:
+                if 'Volume' not in col:
+                    df[col] = np.log(df[col])
+
+            sliced_data[ticker] = df
+            rows_remaining[ticker] = len(df)
             tickers_processed.append(ticker)
             log_message(f"Ticker: {ticker} - Final row count after slicing: {len(df)}")
 

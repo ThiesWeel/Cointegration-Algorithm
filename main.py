@@ -38,6 +38,7 @@ if __name__ == "__main__":
         print(e)
         exit(1)
 
+
     # Step 2: Fetch and update data for the tickers
     data = fetch_and_update_data_hdf5(tickers, start_date="2020-01-01")
    
@@ -48,11 +49,11 @@ if __name__ == "__main__":
     #print(pre_processed['XOM']["Close_XOM"])
     # Step 4: Use Bayesian interference model to check and update possible cointegration pairs
     possible_cointegration_pairs = bayesian_interference_check(pre_processed, end_date=today)
-
-    for i,el in enumerate([1,23,3]):
-        print(f"Pair {i}: {el}")  
+  
     # Step 5: Check for Cointegration pairs
     cointegration_res = cointegration_checker(pre_processed, possible_cointegration_pairs, window_sizes= [ 350,250, 180], sig_lvl= 0.15)
-   
-    # Step 6: Setup the ECM
-    ECM_model(cointegration_res, pre_processed)
+    
+    print(cointegration_res)
+
+    # Step 6: Setup spread simullation for backtesting
+    #ECM_model(cointegration_res, pre_processed)

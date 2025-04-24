@@ -110,55 +110,13 @@ def cointegration_test(closing_price_1, closing_price_2, window_sizes=None, sign
             f"ADF={adf_stat:.4g}, ADF_p={adf_pval:.4g}, {window_data.index[0].date()} to {window_data.index[-1].date()}"
         )
     return results
-
-def weighted_parameters(test_results, significance_level=0.05):
-    """
-    Compute weighted averages of alpha and beta using p-value-based weights,
-    but only if all window results are significant (p < significance_level).
-    Otherwise, return simple averages.
-
-    Args:
-        test_results (list of dict): Output from cointegration_test.
-        significance_level (float): Significance threshold for p-values.
-
-    Returns:
-        dict: Weighted or simple average alpha, beta, weights, and used p-values.
-    """
-    if not test_results:
-        return {'alpha': None, 'beta': None, 'weights': [], 'used_pvals': []}
-    alphas = np.array([r['alpha'] for r in test_results])
-    betas = np.array([r['beta'] for r in test_results])
-    pvals = np.array([r['p_value'] for r in test_results])
-    weights = np.clip(1 - pvals, 0, 1)
-
-    # Only use weighted average if all p-values are significant
-    if np.all(pvals < significance_level):
-        if np.sum(weights) == 0:
-            alpha_w = np.mean(alphas)
-            beta_w = np.mean(betas)
-        else:
-            alpha_w = np.sum(alphas * weights) / np.sum(weights)
-            beta_w = np.sum(betas * weights) / np.sum(weights)
-    else:
-        # If not all significant, use simple mean
-        alpha_w = np.mean(alphas)
-        beta_w = np.mean(betas)
-        weights = np.ones_like(alphas) / len(alphas)  # uniform weights
-
-    return {
-        'alpha': alpha_w,
-        'beta': beta_w,
-        'weights': weights.tolist(),
-        'used_pvals': pvals.tolist()
-    }
-
 def cointegration_checker(pre_processed, possible_pairs, window_sizes=[30, 60, 250], sig_lvl=0.05):
     """
-    For each pair, run cointegration tests for each window size and aggregate results.
-    Only report pairs where ALL p-values are below the significance level.
+    For each pair, run cointegration tests for each window size and return raw results.
+    Only include pairs where ALL p-values are below the significance level.
 
     Args:
-        pre_processed (dict): Dict of DataFrames for each ticker.
+        pre_processed (dict): Dict of DataFrames for each ticker, with aligned log prices.
         possible_pairs (list): List of (ticker1, ticker2) tuples.
         window_sizes (list): List of window sizes to use.
         sig_lvl (float): Significance threshold for p-values.
@@ -167,8 +125,12 @@ def cointegration_checker(pre_processed, possible_pairs, window_sizes=[30, 60, 2
         dict: 
           {
             (ticker1, ticker2): {
-                'per_window': [ ...results for each window... ],
-                'weighted': { 'alpha': ..., 'beta': ..., 'weights': [...], 'used_pvals': [...] }
+                'windows': [...],
+                'per_window_results': [ ...results for each window... ],
+                'log_prices': {
+                    'A': pd.Series,  # log(P_ticker1)
+                    'B': pd.Series   # log(P_ticker2)
+                }
             }, ...
           }
     """
@@ -178,28 +140,40 @@ def cointegration_checker(pre_processed, possible_pairs, window_sizes=[30, 60, 2
         if ticker1 not in pre_processed or ticker2 not in pre_processed:
             log_message(f"Ticker {ticker1} or {ticker2} not found in pre-processed data.")
             continue
-        closing_price_1 = pre_processed[ticker1][f"Close_{ticker1}"]
-        closing_price_2 = pre_processed[ticker2][f"Close_{ticker2}"]
-        # Run cointegration tests for all window sizes
-        per_window = cointegration_test(np.log(closing_price_1), np.log(closing_price_2), window_sizes, sig_lvl)
-        # If any p-value is above the significance level, skip this pair
+
+        # Use already log-transformed and aligned series
+        log_price_1 = pre_processed[ticker1][f"Close_{ticker1}"]
+        log_price_2 = pre_processed[ticker2][f"Close_{ticker2}"]
+
+        aligned_log_prices = pd.DataFrame({
+            "A": log_price_1,
+            "B": log_price_2
+        })
+
+        # Run cointegration tests
+        per_window = cointegration_test(aligned_log_prices['A'], aligned_log_prices['B'], window_sizes, sig_lvl)
+
+        # Skip if any window fails the p-value test
         if not per_window or any(r['p_value'] >= sig_lvl for r in per_window):
-            log_message(
-                f"Pair {pair}: Skipped because at least one p-value >= significance level ({sig_lvl})."
-            )
+            log_message(f"Pair {pair}: Skipped because at least one p-value >= significance level ({sig_lvl}).")
             continue
-        # Compute weighted parameters (only if all p-values are significant)
-        weighted = weighted_parameters(per_window, significance_level=sig_lvl)
+
+        # Store raw results only — beta selection handled later
         results[pair] = {
-            'per_window': per_window,
-            'weighted': weighted
+            'windows': window_sizes,
+            'per_window_results': per_window,
+            'log_prices': {
+                'A': aligned_log_prices['A'],
+                'B': aligned_log_prices['B']
+            }
         }
-        log_message(
-            f"Pair {pair}: Weighted α={weighted['alpha']}, β={weighted['beta']}, "
-            f"weights={weighted['weights']}, pvals={weighted['used_pvals']}"
-        )
+
+        log_message(f"Pair {pair}: Passed all p-value checks.")
+
     log_summary(
         f"Cointegration analysis complete for {len(results)} pairs. "
-        f"Each pair includes per-window results and weighted parameters."
+        f"Each pair includes per-window results and log prices."
     )
+
     return results
+
