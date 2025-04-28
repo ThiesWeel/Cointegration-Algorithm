@@ -1,0 +1,54 @@
+2025-04-28 19:02:47,237 - INFO - DEBUG: Keys in pre_processed: ['APA', 'AR', 'COP', 'CRC', 'CRK', 'CVX', 'DVN', 'EOG', 'EQT', 'FANG', 'GPOR', 'HES', 'MPC', 'MTDR', 'MUR', 'OXY', 'PSX', 'RRC', 'SM', 'VLO', 'WTI', 'XOM']
+2025-04-28 19:02:47,238 - INFO - Loading existing table from dev_database\bayesian1\Bayesian1_interference_table_2021-04-15_00-00-00.csv
+2025-04-28 19:02:47,243 - INFO - Calculating correlation between XOM and GPOR
+2025-04-28 19:02:47,244 - INFO - Calculating correlation between CVX and GPOR
+2025-04-28 19:02:47,246 - INFO - Calculating correlation between COP and GPOR
+2025-04-28 19:02:47,246 - INFO - Calculating correlation between OXY and GPOR
+2025-04-28 19:02:47,246 - INFO - Calculating correlation between PSX and GPOR
+2025-04-28 19:02:47,246 - INFO - Calculating correlation between MPC and GPOR
+2025-04-28 19:02:47,246 - INFO - Calculating correlation between VLO and GPOR
+2025-04-28 19:02:47,246 - INFO - Calculating correlation between EOG and GPOR
+2025-04-28 19:02:47,246 - INFO - Calculating correlation between DVN and GPOR
+2025-04-28 19:02:47,254 - INFO - Calculating correlation between HES and GPOR
+2025-04-28 19:02:47,255 - INFO - Calculating correlation between APA and GPOR
+2025-04-28 19:02:47,256 - INFO - Calculating correlation between MUR and GPOR
+2025-04-28 19:02:47,257 - INFO - Calculating correlation between FANG and GPOR
+2025-04-28 19:02:47,258 - INFO - Calculating correlation between EQT and GPOR
+2025-04-28 19:02:47,259 - INFO - Calculating correlation between RRC and GPOR
+2025-04-28 19:02:47,260 - INFO - Calculating correlation between GPOR and MTDR
+2025-04-28 19:02:47,261 - INFO - Calculating correlation between GPOR and SM
+2025-04-28 19:02:47,262 - INFO - Calculating correlation between GPOR and AR
+2025-04-28 19:02:47,262 - INFO - Calculating correlation between GPOR and WTI
+2025-04-28 19:02:47,262 - INFO - Calculating correlation between GPOR and CRC
+2025-04-28 19:02:47,262 - INFO - Calculating correlation between GPOR and CRK
+2025-04-28 19:02:47,290 - INFO - Final correlation table:
+           XOM      CVX       COP       OXY       PSX       MPC       VLO       EOG       DVN       HES       APA       MUR      FANG       EQT      RRC      GPOR      MTDR        SM        AR       WTI       CRC       CRK
+XOM   1.000000      NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN      NaN  0.244158       NaN       NaN       NaN       NaN       NaN       NaN
+CVX        NaN  1.00000       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN      NaN  0.194480       NaN       NaN       NaN       NaN       NaN       NaN
+COP        NaN      NaN  1.000000       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN      NaN  0.265508       NaN       NaN       NaN       NaN       NaN       NaN
+OXY        NaN      NaN       NaN  1.000000       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN      NaN  0.166427       NaN       NaN       NaN       NaN       NaN       NaN
+PSX        NaN      NaN       NaN       NaN  1.000000       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN      NaN  0.071543       NaN       NaN       NaN       NaN       NaN       NaN
+MPC        NaN      NaN       NaN       NaN       NaN  1.000000       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN      NaN  0.362553       NaN       NaN       NaN       NaN       NaN       NaN
+VLO        NaN      NaN       NaN       NaN       NaN       NaN  1.000000       NaN       NaN       NaN       NaN       NaN       NaN       NaN      NaN  0.155703       NaN       NaN       NaN       NaN       NaN       NaN
+EOG        NaN      NaN       NaN       NaN       NaN       NaN       NaN  1.000000       NaN       NaN       NaN       NaN       NaN       NaN      NaN  0.240183       NaN       NaN       NaN       NaN       NaN       NaN
+DVN        NaN      NaN       NaN       NaN       NaN       NaN       NaN       NaN  1.000000       NaN       NaN       NaN       NaN       NaN      NaN  0.332219       NaN       NaN       NaN       NaN       NaN       NaN
+HES        NaN      NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN  1.000000       NaN       NaN       NaN       NaN      NaN  0.302875       NaN       NaN       NaN       NaN       NaN       NaN
+APA        NaN      NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN  1.000000       NaN       NaN       NaN      NaN  0.283471       NaN       NaN       NaN       NaN       NaN       NaN
+MUR        NaN      NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN  1.000000       NaN       NaN      NaN  0.222247       NaN       NaN       NaN       NaN       NaN       NaN
+FANG       NaN      NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN  1.000000       NaN      NaN  0.279102       NaN       NaN       NaN       NaN       NaN       NaN
+EQT        NaN      NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN  1.000000      NaN  0.565043       NaN       NaN       NaN       NaN       NaN       NaN
+RRC        NaN      NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN  1.00000  0.637320       NaN       NaN       NaN       NaN       NaN       NaN
+GPOR  0.244158  0.19448  0.265508  0.166427  0.071543  0.362553  0.155703  0.240183  0.332219  0.302875  0.283471  0.222247  0.279102  0.565043  0.63732  1.000000  0.527707  0.280864  0.474868  0.213357  0.613239  0.032834
+MTDR       NaN      NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN      NaN  0.527707  1.000000       NaN       NaN       NaN       NaN       NaN
+SM         NaN      NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN      NaN  0.280864       NaN  1.000000       NaN       NaN       NaN       NaN
+AR         NaN      NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN      NaN  0.474868       NaN       NaN  1.000000       NaN       NaN       NaN
+WTI        NaN      NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN      NaN  0.213357       NaN       NaN       NaN  1.000000       NaN       NaN
+CRC        NaN      NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN      NaN  0.613239       NaN       NaN       NaN       NaN  1.000000       NaN
+CRK        NaN      NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN       NaN      NaN  0.032834       NaN       NaN       NaN       NaN       NaN  1.000000
+2025-04-28 19:02:47,290 - INFO - 
+Summary:
+Date range: 2021-04-15 00:00:00
+Total tickers processed: 22
+Correlated pairs identified: []
+Updated table saved to: dev_database\bayesian1\Bayesian1_interference_table_2021-04-15_00-00-00.csv
+

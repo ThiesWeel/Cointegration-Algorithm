@@ -1,0 +1,332 @@
+2025-04-28 21:08:24,292 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:24,303 - INFO - Win 250: α=1.4046, β=0.7279, p=0.7212, ADF=-1.596, ADF_p=0.4854, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:24,313 - INFO - Win 180: α=0.4806, β=0.9165, p=0.1597, ADF=-2.815, ADF_p=0.05619, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:24,313 - INFO - Pair ('CVX', 'HES'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:24,314 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:24,326 - INFO - Win 250: α=3.7542, β=0.3566, p=0.02572, ADF=-3.545, ADF_p=0.006911, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:24,334 - INFO - Win 180: α=3.7276, β=0.3631, p=0.1957, ADF=-2.683, ADF_p=0.07707, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:24,334 - INFO - Pair ('CVX', 'RRC'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:24,336 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:24,346 - INFO - Win 250: α=2.3881, β=0.5722, p=0.106, ADF=-3.012, ADF_p=0.03378, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:24,355 - INFO - Win 180: α=2.1725, β=0.6283, p=0.1733, ADF=-2.769, ADF_p=0.06279, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:24,355 - INFO - Pair ('COP', 'OXY'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:24,356 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:24,364 - INFO - Win 250: α=0.8125, β=0.7931, p=0.1524, ADF=-2.837, ADF_p=0.05312, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:24,373 - INFO - Win 180: α=1.4964, β=0.6498, p=0.181, ADF=-2.746, ADF_p=0.06638, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:24,373 - INFO - Pair ('COP', 'PSX'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:24,374 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:24,383 - INFO - Win 250: α=1.0141, β=0.7204, p=0.05696, ADF=-3.277, ADF_p=0.01593, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:24,390 - INFO - Win 180: α=1.4692, β=0.6289, p=0.1549, ADF=-2.827, ADF_p=0.05457, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:24,390 - INFO - Pair ('COP', 'MPC'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:24,392 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:24,400 - INFO - Win 250: α=0.8827, β=0.7667, p=0.04816, ADF=-3.344, ADF_p=0.01301, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:24,407 - INFO - Win 180: α=1.1270, β=0.7164, p=0.1174, ADF=-2.963, ADF_p=0.03848, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:24,407 - INFO - Pair ('COP', 'VLO'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:24,408 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:24,417 - INFO - Win 250: α=2.8236, β=0.4989, p=0.1202, ADF=-2.952, ADF_p=0.03958, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:24,423 - INFO - Win 180: α=2.7821, β=0.5111, p=0.2291, ADF=-2.612, ADF_p=0.09045, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:24,423 - INFO - Pair ('COP', 'DVN'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:24,424 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:24,432 - INFO - Win 250: α=-5.3544, β=1.8357, p=0.5665, ADF=-1.922, ADF_p=0.3217, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:24,439 - INFO - Win 180: α=-5.0159, β=1.7595, p=0.3874, ADF=-2.265, ADF_p=0.1834, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:24,439 - INFO - Pair ('APA', 'COP'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:24,440 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:24,449 - INFO - Win 250: α=3.2627, β=0.3991, p=0.02434, ADF=-3.599, ADF_p=0.005773, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:24,456 - INFO - Win 180: α=3.2618, β=0.3999, p=0.006194, ADF=-4.039, ADF_p=0.001218, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:24,456 - INFO - Pair ('COP', 'MUR'): Passed all p-value checks.
+2025-04-28 21:08:24,457 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:24,466 - INFO - Win 250: α=1.3625, β=0.6379, p=0.02998, ADF=-3.524, ADF_p=0.007393, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:24,473 - INFO - Win 180: α=1.7013, β=0.5708, p=0.07017, ADF=-3.19, ADF_p=0.02058, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:24,473 - INFO - Pair ('COP', 'FANG'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:24,474 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:24,482 - INFO - Win 250: α=2.4674, β=0.5463, p=0.422, ADF=-2.201, ADF_p=0.2058, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:24,489 - INFO - Win 180: α=3.0547, β=0.3956, p=0.6695, ADF=-1.71, ADF_p=0.4258, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:24,490 - INFO - Pair ('COP', 'MTDR'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:24,490 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:24,498 - INFO - Win 250: α=3.3437, β=0.3555, p=0.05861, ADF=-3.269, ADF_p=0.01634, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:24,505 - INFO - Win 180: α=3.5760, β=0.2889, p=0.06065, ADF=-3.249, ADF_p=0.0173, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:24,505 - INFO - Pair ('COP', 'SM'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:24,506 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:24,515 - INFO - Win 250: α=4.4145, β=0.3711, p=0.01179, ADF=-3.839, ADF_p=0.002534, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:24,522 - INFO - Win 180: α=4.4411, β=0.3101, p=0.005696, ADF=-4.058, ADF_p=0.001134, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:24,522 - INFO - Pair ('COP', 'WTI'): Passed all p-value checks.
+2025-04-28 21:08:24,523 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:24,532 - INFO - Win 250: α=-2.1189, β=1.2551, p=0.3471, ADF=-2.349, ADF_p=0.1567, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:24,540 - INFO - Win 180: α=-0.4950, β=0.9136, p=0.4534, ADF=-2.138, ADF_p=0.2295, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:24,540 - INFO - Pair ('OXY', 'PSX'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:24,541 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:24,550 - INFO - Win 250: α=2.2233, β=0.7146, p=0.0486, ADF=-3.34, ADF_p=0.01317, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:24,558 - INFO - Win 180: α=1.6245, β=0.8695, p=0.1451, ADF=-2.859, ADF_p=0.0503, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:24,558 - INFO - Pair ('MPC', 'OXY'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:24,559 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:24,568 - INFO - Win 250: α=-2.2601, β=1.2645, p=0.03148, ADF=-3.503, ADF_p=0.0079, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:24,574 - INFO - Win 180: α=-1.1279, β=1.0304, p=0.2218, ADF=-2.632, ADF_p=0.08649, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:24,575 - INFO - Pair ('OXY', 'VLO'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:24,576 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:24,584 - INFO - Win 250: α=-0.7780, β=1.1230, p=0.4929, ADF=-2.063, ADF_p=0.2598, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:24,591 - INFO - Win 180: α=-0.8646, β=1.1454, p=0.7392, ADF=-1.549, ADF_p=0.5091, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:24,591 - INFO - Pair ('DVN', 'OXY'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:24,592 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:24,600 - INFO - Win 250: α=-2.0122, β=1.3130, p=0.08387, ADF=-3.116, ADF_p=0.02539, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:24,607 - INFO - Win 180: α=-3.0588, β=1.5832, p=0.02193, ADF=-3.628, ADF_p=0.005241, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:24,607 - INFO - Pair ('APA', 'OXY'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:24,608 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:24,617 - INFO - Win 250: α=-2.1599, β=1.4259, p=0.2075, ADF=-2.673, ADF_p=0.07888, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:24,625 - INFO - Win 180: α=-2.5972, β=1.5389, p=0.3259, ADF=-2.391, ADF_p=0.1443, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:24,625 - INFO - Pair ('MUR', 'OXY'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:24,626 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:24,634 - INFO - Win 250: α=1.9073, β=0.8215, p=0.3174, ADF=-2.416, ADF_p=0.1372, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:24,641 - INFO - Win 180: α=0.7569, β=1.1185, p=0.2967, ADF=-2.452, ADF_p=0.1276, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:24,641 - INFO - Pair ('FANG', 'OXY'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:24,642 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:24,651 - INFO - Win 250: α=1.4052, β=0.6566, p=0.5434, ADF=-1.966, ADF_p=0.3016, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:24,659 - INFO - Win 180: α=1.0456, β=0.7497, p=0.7481, ADF=-1.528, ADF_p=0.5195, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:24,659 - INFO - Pair ('MTDR', 'OXY'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:24,660 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:24,668 - INFO - Win 250: α=1.9495, β=0.5456, p=0.4856, ADF=-2.082, ADF_p=0.2517, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:24,675 - INFO - Win 180: α=2.5118, β=0.3833, p=0.1484, ADF=-2.858, ADF_p=0.05049, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:24,675 - INFO - Pair ('OXY', 'SM'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:24,675 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:24,684 - INFO - Win 250: α=3.5895, β=0.5748, p=0.2782, ADF=-2.498, ADF_p=0.1161, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:24,691 - INFO - Win 180: α=3.6547, β=0.4197, p=0.06592, ADF=-3.215, ADF_p=0.01915, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:24,691 - INFO - Pair ('OXY', 'WTI'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:24,692 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:24,700 - INFO - Win 250: α=8.9856, β=-1.6117, p=0.136, ADF=-2.893, ADF_p=0.04613, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:24,706 - INFO - Win 180: α=10.1143, β=-1.9030, p=0.1496, ADF=-2.848, ADF_p=0.05177, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:24,706 - INFO - Pair ('CRK', 'OXY'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:24,707 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:24,715 - INFO - Win 250: α=-0.0336, β=1.0501, p=0.1045, ADF=-3.016, ADF_p=0.03347, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:24,722 - INFO - Win 180: α=0.3908, β=0.9611, p=0.6685, ADF=-1.712, ADF_p=0.4248, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:24,722 - INFO - Pair ('MPC', 'PSX'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:24,722 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:24,731 - INFO - Win 250: α=0.5258, β=0.8779, p=0.148, ADF=-2.698, ADF_p=0.07432, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:24,737 - INFO - Win 180: α=0.1184, β=0.9619, p=0.5364, ADF=-1.979, ADF_p=0.2958, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:24,737 - INFO - Pair ('PSX', 'VLO'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:24,738 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:24,747 - INFO - Win 250: α=-3.5887, β=1.4984, p=0.4003, ADF=-2.24, ADF_p=0.1919, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:24,754 - INFO - Win 180: α=-2.0552, β=1.1758, p=0.5273, ADF=-1.997, ADF_p=0.2881, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:24,754 - INFO - Pair ('DVN', 'PSX'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:24,755 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:24,763 - INFO - Win 250: α=-4.8578, β=1.6611, p=0.1906, ADF=-2.718, ADF_p=0.07098, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:24,769 - INFO - Win 180: α=-3.5535, β=1.3863, p=0.5856, ADF=-1.884, ADF_p=0.3397, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:24,769 - INFO - Pair ('APA', 'PSX'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:24,770 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:24,777 - INFO - Win 250: α=-5.1414, β=1.7815, p=0.4838, ADF=-2.082, ADF_p=0.252, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:24,784 - INFO - Win 180: α=-3.0939, β=1.3508, p=0.716, ADF=-1.607, ADF_p=0.4803, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:24,784 - INFO - Pair ('MUR', 'PSX'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:24,786 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:24,794 - INFO - Win 250: α=-0.0071, β=1.0669, p=0.3479, ADF=-2.347, ADF_p=0.1572, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:24,801 - INFO - Win 180: α=0.2347, β=1.0153, p=0.6489, ADF=-1.755, ADF_p=0.403, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:24,801 - INFO - Pair ('FANG', 'PSX'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:24,802 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:24,809 - INFO - Win 250: α=3.5762, β=0.3441, p=0.2604, ADF=-2.537, ADF_p=0.1067, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:24,816 - INFO - Win 180: α=3.7989, β=0.2800, p=0.4011, ADF=-1.997, ADF_p=0.2881, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:24,816 - INFO - Pair ('PSX', 'SM'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:24,817 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:24,825 - INFO - Win 250: α=4.5957, β=0.3853, p=0.08241, ADF=-3.123, ADF_p=0.02492, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:24,832 - INFO - Win 180: α=4.6176, β=0.3336, p=0.1988, ADF=-2.688, ADF_p=0.07617, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:24,832 - INFO - Pair ('PSX', 'WTI'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:24,833 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:24,840 - INFO - Win 250: α=0.0199, β=1.0231, p=0.1873, ADF=-2.73, ADF_p=0.06901, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:24,847 - INFO - Win 180: α=-0.2706, β=1.0832, p=0.3764, ADF=-2.287, ADF_p=0.1761, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:24,847 - INFO - Pair ('MPC', 'VLO'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:24,848 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:24,855 - INFO - Win 250: α=-3.2804, β=1.3755, p=0.03421, ADF=-3.473, ADF_p=0.008712, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:24,863 - INFO - Win 180: α=-2.2874, β=1.1744, p=0.04201, ADF=-3.394, ADF_p=0.01117, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:24,863 - INFO - Pair ('DVN', 'MPC'): Passed all p-value checks.
+2025-04-28 21:08:24,863 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:24,871 - INFO - Win 250: α=-4.7010, β=1.5613, p=0.08947, ADF=-3.088, ADF_p=0.02748, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:24,878 - INFO - Win 180: α=-4.2807, β=1.4750, p=0.1652, ADF=-2.792, ADF_p=0.05948, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:24,878 - INFO - Pair ('APA', 'MPC'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:24,879 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:24,888 - INFO - Win 250: α=3.3709, β=0.4825, p=0.03505, ADF=-3.464, ADF_p=0.008952, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:24,895 - INFO - Win 180: α=3.2752, β=0.5114, p=0.1794, ADF=-2.75, ADF_p=0.06576, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:24,895 - INFO - Pair ('MPC', 'MUR'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:24,896 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:24,904 - INFO - Win 250: α=0.1248, β=0.9966, p=0.09354, ADF=-3.069, ADF_p=0.02892, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:24,911 - INFO - Win 180: α=-0.2222, β=1.0651, p=0.2606, ADF=-2.535, ADF_p=0.1071, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:24,911 - INFO - Pair ('FANG', 'MPC'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:24,912 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:24,920 - INFO - Win 250: α=3.5162, β=0.4170, p=0.1165, ADF=-2.97, ADF_p=0.03783, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:24,927 - INFO - Win 180: α=3.7834, β=0.3402, p=0.336, ADF=-2.371, ADF_p=0.1502, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:24,927 - INFO - Pair ('MPC', 'SM'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:24,928 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:24,935 - INFO - Win 250: α=4.7582, β=0.4567, p=0.03283, ADF=-3.489, ADF_p=0.008269, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:24,942 - INFO - Win 180: α=4.7801, β=0.4021, p=0.07304, ADF=-3.173, ADF_p=0.02161, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:24,942 - INFO - Pair ('MPC', 'WTI'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:24,943 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:24,951 - INFO - Win 250: α=13.1321, β=-2.0838, p=0.09366, ADF=-3.068, ADF_p=0.02904, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:24,957 - INFO - Win 180: α=13.2204, β=-2.0991, p=0.2433, ADF=-2.577, ADF_p=0.09784, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:24,958 - INFO - Pair ('CRK', 'MPC'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:24,958 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:24,966 - INFO - Win 250: α=-3.5578, β=1.4692, p=0.05547, ADF=-3.288, ADF_p=0.01544, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:24,973 - INFO - Win 180: α=-2.5860, β=1.2682, p=0.664, ADF=-1.722, ADF_p=0.4196, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:24,973 - INFO - Pair ('DVN', 'VLO'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:24,973 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:24,982 - INFO - Win 250: α=-5.0811, β=1.6810, p=0.08382, ADF=-3.116, ADF_p=0.02537, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:24,990 - INFO - Win 180: α=-4.8873, β=1.6401, p=0.2922, ADF=-2.463, ADF_p=0.1247, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:24,990 - INFO - Pair ('APA', 'VLO'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:24,991 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:24,999 - INFO - Win 250: α=-5.2639, β=1.7791, p=0.1585, ADF=-2.817, ADF_p=0.05586, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:25,005 - INFO - Win 180: α=-3.9643, β=1.5103, p=0.5816, ADF=-1.891, ADF_p=0.3364, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:25,005 - INFO - Pair ('MUR', 'VLO'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:25,006 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:25,015 - INFO - Win 250: α=-0.0527, β=1.0598, p=0.1607, ADF=-2.81, ADF_p=0.05683, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:25,021 - INFO - Win 180: α=-0.7028, β=1.1931, p=0.6117, ADF=-1.834, ADF_p=0.3639, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:25,021 - INFO - Pair ('FANG', 'VLO'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:25,022 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:25,030 - INFO - Win 250: α=-0.5604, β=0.9282, p=0.3343, ADF=-2.375, ADF_p=0.149, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:25,036 - INFO - Win 180: α=-0.7926, β=0.9757, p=0.5841, ADF=-1.886, ADF_p=0.3386, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:25,036 - INFO - Pair ('MTDR', 'VLO'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:25,037 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:25,045 - INFO - Win 250: α=-4.4689, β=1.6584, p=0.5451, ADF=-1.963, ADF_p=0.303, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:25,051 - INFO - Win 180: α=-5.5878, β=1.8884, p=0.6136, ADF=-1.828, ADF_p=0.3667, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:25,051 - INFO - Pair ('SM', 'VLO'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:25,052 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:25,060 - INFO - Win 250: α=4.6712, β=0.3854, p=0.09881, ADF=-3.044, ADF_p=0.03102, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:25,067 - INFO - Win 180: α=4.7090, β=0.2942, p=0.04874, ADF=-3.335, ADF_p=0.01337, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:25,067 - INFO - Pair ('VLO', 'WTI'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:25,067 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:25,075 - INFO - Win 250: α=-0.7868, β=1.0834, p=0.7485, ADF=-1.526, ADF_p=0.5205, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:25,083 - INFO - Win 180: α=-0.9963, β=1.1419, p=0.8097, ADF=-1.355, ADF_p=0.6036, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:25,083 - INFO - Pair ('APA', 'DVN'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:25,083 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:25,093 - INFO - Win 250: α=1.0494, β=0.7514, p=0.5339, ADF=-1.983, ADF_p=0.2941, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:25,099 - INFO - Win 180: α=1.3033, β=0.6755, p=0.5807, ADF=-1.892, ADF_p=0.3357, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:25,099 - INFO - Pair ('DVN', 'MUR'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:25,100 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:25,109 - INFO - Win 250: α=-2.3566, β=1.1679, p=0.3964, ADF=-2.252, ADF_p=0.188, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:25,117 - INFO - Win 180: α=-1.1380, β=0.9262, p=0.6412, ADF=-1.799, ADF_p=0.3811, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:25,117 - INFO - Pair ('DVN', 'FANG'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:25,118 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:25,126 - INFO - Win 250: α=1.4788, β=0.5944, p=0.6544, ADF=-1.747, ADF_p=0.4069, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:25,133 - INFO - Win 180: α=2.1296, β=0.4068, p=0.5201, ADF=-2.029, ADF_p=0.2741, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:25,133 - INFO - Pair ('DVN', 'SM'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:25,134 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:25,142 - INFO - Win 250: α=3.2233, β=0.6908, p=0.2392, ADF=-2.589, ADF_p=0.09524, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:25,149 - INFO - Win 180: α=3.2888, β=0.5351, p=0.04697, ADF=-3.352, ADF_p=0.01273, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:25,149 - INFO - Pair ('DVN', 'WTI'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:25,151 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:25,159 - INFO - Win 250: α=8.0953, β=-1.4968, p=0.04907, ADF=-3.336, ADF_p=0.01336, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:25,165 - INFO - Win 180: α=9.1103, β=-1.7813, p=0.02487, ADF=-3.6, ADF_p=0.005767, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:25,165 - INFO - Pair ('CRK', 'DVN'): Passed all p-value checks.
+2025-04-28 21:08:25,166 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:25,174 - INFO - Win 250: α=0.0980, β=0.8861, p=0.1771, ADF=-2.759, ADF_p=0.06434, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:25,181 - INFO - Win 180: α=-0.0486, β=0.9297, p=0.3064, ADF=-2.433, ADF_p=0.1328, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:25,181 - INFO - Pair ('APA', 'MUR'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:25,181 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:25,191 - INFO - Win 250: α=-4.1732, β=1.4266, p=0.06346, ADF=-3.234, ADF_p=0.0181, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:25,197 - INFO - Win 180: α=-3.3621, β=1.2656, p=0.1049, ADF=-3.013, ADF_p=0.03373, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:25,197 - INFO - Pair ('APA', 'FANG'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:25,198 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:25,206 - INFO - Win 250: α=-1.5712, β=1.1888, p=0.8068, ADF=-1.369, ADF_p=0.5971, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:25,213 - INFO - Win 180: α=-0.3931, β=0.8853, p=0.7896, ADF=-1.417, ADF_p=0.5741, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:25,213 - INFO - Pair ('APA', 'MTDR'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:25,214 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:25,222 - INFO - Win 250: α=0.2702, β=0.7914, p=0.6911, ADF=-1.671, ADF_p=0.446, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:25,229 - INFO - Win 180: α=0.7180, β=0.6617, p=0.3633, ADF=-2.364, ADF_p=0.1522, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:25,229 - INFO - Pair ('APA', 'SM'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:25,229 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:25,238 - INFO - Win 250: α=2.6587, β=0.8194, p=0.09975, ADF=-3.04, ADF_p=0.03135, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:25,243 - INFO - Win 180: α=2.7172, β=0.6811, p=0.09655, ADF=-3.052, ADF_p=0.03036, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:25,244 - INFO - Pair ('APA', 'WTI'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:25,244 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:25,252 - INFO - Win 250: α=4.3907, β=-0.4608, p=0.06419, ADF=-3.221, ADF_p=0.01878, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:25,260 - INFO - Win 180: α=4.0215, β=-0.3343, p=0.1488, ADF=-2.383, ADF_p=0.1465, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:25,260 - INFO - Pair ('APA', 'CRK'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:25,261 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:25,269 - INFO - Win 250: α=3.1470, β=0.5774, p=0.06273, ADF=-3.244, ADF_p=0.01759, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:25,276 - INFO - Win 180: α=2.7353, β=0.7002, p=0.01271, ADF=-3.809, ADF_p=0.002816, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:25,276 - INFO - Pair ('FANG', 'MUR'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:25,276 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:25,287 - INFO - Win 250: α=2.4768, β=0.4385, p=0.4053, ADF=-2.224, ADF_p=0.1975, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:25,295 - INFO - Win 180: α=2.5093, β=0.4290, p=0.5474, ADF=-1.96, ADF_p=0.3045, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:25,295 - INFO - Pair ('MTDR', 'MUR'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:25,296 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:25,304 - INFO - Win 250: α=0.3313, β=0.8561, p=0.4654, ADF=-2.12, ADF_p=0.2365, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:25,311 - INFO - Win 180: α=0.9649, β=0.6732, p=0.2571, ADF=-2.567, ADF_p=0.1001, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:25,311 - INFO - Pair ('MUR', 'SM'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:25,311 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:25,319 - INFO - Win 250: α=2.9119, β=0.8909, p=0.09211, ADF=-3.077, ADF_p=0.02831, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:25,327 - INFO - Win 180: α=2.9862, β=0.7138, p=0.0408, ADF=-3.405, ADF_p=0.01078, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:25,327 - INFO - Pair ('MUR', 'WTI'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:25,327 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:25,336 - INFO - Win 250: α=6.7703, β=-1.1949, p=0.06284, ADF=-3.236, ADF_p=0.01797, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:25,343 - INFO - Win 180: α=7.3422, β=-1.3654, p=0.05978, ADF=-3.269, ADF_p=0.01634, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:25,343 - INFO - Pair ('CRK', 'MUR'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:25,344 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:25,352 - INFO - Win 250: α=2.0336, β=0.7810, p=0.8702, ADF=-1.149, ADF_p=0.6952, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:25,359 - INFO - Win 180: α=2.4885, β=0.6636, p=0.8657, ADF=-1.166, ADF_p=0.6881, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:25,359 - INFO - Pair ('FANG', 'MTDR'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:25,361 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:25,371 - INFO - Win 250: α=3.1585, β=0.5429, p=0.4393, ADF=-2.166, ADF_p=0.2189, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:25,378 - INFO - Win 180: α=3.2656, β=0.5114, p=0.1534, ADF=-2.839, ADF_p=0.05291, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:25,379 - INFO - Pair ('FANG', 'SM'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:25,380 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:25,389 - INFO - Win 250: α=4.7940, β=0.5667, p=0.01199, ADF=-3.832, ADF_p=0.0026, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:25,399 - INFO - Win 180: α=4.8108, β=0.5257, p=0.04145, ADF=-3.398, ADF_p=0.01102, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:25,399 - INFO - Pair ('FANG', 'WTI'): Passed all p-value checks.
+2025-04-28 21:08:25,400 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:25,411 - INFO - Win 250: α=12.0982, β=-1.8401, p=0.08679, ADF=-3.101, ADF_p=0.02645, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:25,418 - INFO - Win 180: α=11.2634, β=-1.6744, p=0.1363, ADF=-2.903, ADF_p=0.04504, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:25,419 - INFO - Pair ('CRK', 'FANG'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:25,420 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:25,430 - INFO - Win 250: α=-1.3712, β=1.4406, p=0.7941, ADF=-1.399, ADF_p=0.583, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:25,438 - INFO - Win 180: α=-1.7960, β=1.5731, p=0.3781, ADF=-2.26, ADF_p=0.1851, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:25,438 - INFO - Pair ('EQT', 'RRC'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:25,439 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:25,449 - INFO - Win 250: α=-4.3582, β=1.5890, p=0.2032, ADF=-2.683, ADF_p=0.07712, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:25,459 - INFO - Win 180: α=-4.2197, β=1.5637, p=0.4514, ADF=-2.139, ADF_p=0.2292, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:25,459 - INFO - Pair ('EQT', 'GPOR'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:25,460 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:25,470 - INFO - Win 250: α=0.8130, β=0.7166, p=0.6091, ADF=-1.837, ADF_p=0.3624, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:25,477 - INFO - Win 180: α=0.4891, β=0.7959, p=0.1776, ADF=-2.734, ADF_p=0.06831, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:25,477 - INFO - Pair ('AR', 'EQT'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:25,478 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:25,487 - INFO - Win 250: α=4.1556, β=-0.6705, p=0.2025, ADF=-2.686, ADF_p=0.0765, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:25,495 - INFO - Win 180: α=4.1831, β=-0.7299, p=0.3683, ADF=-2.303, ADF_p=0.1709, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:25,496 - INFO - Pair ('EQT', 'WTI'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:25,496 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:25,505 - INFO - Win 250: α=-3.0903, β=1.5294, p=0.458, ADF=-2.131, ADF_p=0.2323, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:25,512 - INFO - Win 180: α=-2.6981, β=1.4360, p=0.08741, ADF=-3.096, ADF_p=0.02683, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:25,513 - INFO - Pair ('CRK', 'EQT'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:25,513 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:25,522 - INFO - Win 250: α=2.0645, β=0.8543, p=0.5088, ADF=-2.032, ADF_p=0.2728, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:25,530 - INFO - Win 180: α=1.7646, β=0.9451, p=0.3087, ADF=-2.425, ADF_p=0.1347, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:25,530 - INFO - Pair ('GPOR', 'RRC'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:25,531 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:25,540 - INFO - Win 250: α=-1.1361, β=1.3061, p=0.004988, ADF=-4.101, ADF_p=0.0009651, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:25,547 - INFO - Win 180: α=-1.3043, β=1.3553, p=0.2434, ADF=-2.574, ADF_p=0.09844, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:25,547 - INFO - Pair ('AR', 'RRC'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:25,548 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:25,558 - INFO - Win 250: α=-4.1647, β=1.9137, p=0.9013, ADF=-0.9979, ADF_p=0.754, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:25,565 - INFO - Win 180: α=-5.3594, β=2.2823, p=0.3698, ADF=-2.278, ADF_p=0.1791, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:25,565 - INFO - Pair ('CRK', 'RRC'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:25,566 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:25,575 - INFO - Win 250: α=-2.7401, β=1.2233, p=0.4573, ADF=-2.132, ADF_p=0.2317, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:25,582 - INFO - Win 180: α=-3.1850, β=1.3065, p=0.4214, ADF=-2.2, ADF_p=0.2064, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:25,582 - INFO - Pair ('AR', 'GPOR'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:25,582 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:25,591 - INFO - Win 250: α=-9.8927, β=2.4572, p=0.3549, ADF=-2.33, ADF_p=0.1623, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:25,598 - INFO - Win 180: α=-8.9236, β=2.2780, p=0.2557, ADF=-2.544, ADF_p=0.1052, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:25,598 - INFO - Pair ('CRK', 'GPOR'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:25,599 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:25,607 - INFO - Win 250: α=2.2052, β=0.4881, p=0.3677, ADF=-2.307, ADF_p=0.1696, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:25,613 - INFO - Win 180: α=2.3433, β=0.4483, p=0.56, ADF=-1.934, ADF_p=0.3165, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:25,613 - INFO - Pair ('MTDR', 'SM'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:25,614 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:25,623 - INFO - Win 250: α=3.1152, β=0.8870, p=0.4034, ADF=-2.235, ADF_p=0.1937, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:25,629 - INFO - Win 180: α=3.1245, β=0.8565, p=0.6476, ADF=-1.756, ADF_p=0.4023, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:25,629 - INFO - Pair ('SM', 'WTI'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:25,630 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:25,638 - INFO - Win 250: α=2.3085, β=0.4275, p=0.5026, ADF=-2.045, ADF_p=0.2673, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:25,645 - INFO - Win 180: α=1.7761, β=0.5804, p=0.2689, ADF=-2.517, ADF_p=0.1113, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:25,646 - INFO - Pair ('CRC', 'SM'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:25,646 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:25,654 - INFO - Win 250: α=2.5018, β=0.3757, p=0.7234, ADF=-1.59, ADF_p=0.4887, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:25,662 - INFO - Win 180: α=2.0305, β=0.5371, p=0.07513, ADF=-3.154, ADF_p=0.02278, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:25,662 - INFO - Pair ('AR', 'CRK'): Skipped because at least one p-value >= significance level (0.05).
+2025-04-28 21:08:25,662 - INFO - Not enough data for window size 350. Skipping.
+2025-04-28 21:08:25,671 - INFO - Win 250: α=3.3811, β=-1.2022, p=0.0147, ADF=-3.765, ADF_p=0.003291, 2024-04-19 to 2025-04-17
+2025-04-28 21:08:25,678 - INFO - Win 180: α=3.3412, β=-1.1023, p=0.2386, ADF=-2.588, ADF_p=0.09547, 2024-07-31 to 2025-04-17
+2025-04-28 21:08:25,678 - INFO - Pair ('CRK', 'WTI'): Skipped because at least one p-value >= significance level (0.05).

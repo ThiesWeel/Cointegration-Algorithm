@@ -1,74 +1,62 @@
-'''
-This file is used to test various methods of spread simulation.
+"""
+This file is used to construct a dataset for training a meta-algorithm that selects the optimal spread simulation method.
 
-There are mutiple considerations on how we simulate the spread:
-    1. extracting a single beta value from the multiple windowframes.
-        1.1 We can weigh them according to there p-vales, this can be
-           linear, exponential, or based on regime detection.
-        1.2 We can use the average of the beta values.
-        1.3 We can just take the most recent beta value.
-        1.4 We can use the beta value with the most significant p-value.
-        1.6 we can do a Rolling Window Beta Estimation:
-        Run cointegration tests in steps (e.g., 60, 70, ..., 250)
-        Create a distribution of βs, then combine via: Average, PCA,
-        Clustering, Weighted average (by p-value or residual std)
-    2. residual simulation:
-        2.1 Emperical bootstrapping of the residuals.
-        2.2 Simulate the residuals using a GARCH model.
-        2.3 student-t distribution.
-        2.4 Normal distribution.
+The simulation process involves multiple steps:
 
-There are a lot of degrees of freedom in the simulation process, 
-also I think that the simulation process is sensitive for regimes.
-Regime detection can be done using:
-    1. Rolling std of spread  
-    2. ADF p-value of spread  
-    3. Z-score half-life  
-    4. Hurst exponent  
-    5. Hidden Markov Model (HMM)  
-    6. K-means on volatility + ADF  
+1. Extracting a single beta value from multiple windowframes:
+    1.1. Weighing beta estimates according to their p-values (e.g., exponential decay).
+    1.2. Using PCA to combine beta estimates across windows.
+    1.3. (Other methods such as selecting the most recent beta or highest significance beta could be considered, but are not prioritized.)
 
-After a regime is tested, the right simulation method can be chosen.
-Therefore a mappingis needed between the regime and the simulation method.
-E.g.:
-if regime == "mean-reverting":
-    beta = p_weighted_average_beta()
-    residual_model = bootstrap_residuals()
-elif regime == "trending":
-    beta = rolling_window_beta_trend_sensitive()
-    residual_model = GARCH()
-elif regime == "volatile":
-    beta = pca_beta_combination()
-    residual_model = student_t_sim()
+2. Fitting a spread model:
+    2.1. Fit an ECM(r) + ARMA(p,q) model to the spread series, optimizing (r,p,q) via BIC.
+    2.2. Extract residuals from the fitted model.
 
-In principle there are infinite consideration here, 
-So I do think setting the scope of the project is important.
+3. Residual simulation:
+    3.1. Block bootstrapping of residuals.
+    3.2. GARCH(p,q) modeling of residuals (with BIC-based parameter selection).
+
+4. Spread forecast generation:
+    4.1. Simulate 1000 Monte Carlo paths for each method over 5 days ahead.
+    4.2. Extract features comparing forecast distributions to the true spread path.
+
+5. Feature set construction:
+    5.1. Combine spread characteristics, beta selection uncertainties, regime statistics, and forecast evaluation metrics into a training set.
+    5.2. Label each method's performance for supervised learning.
+
+Regime detection (planned for future extensions):
+    - Rolling volatility (std) of spread
+    - ADF p-value rolling estimation
+    - Z-score half-life estimation
+    - Hurst exponent calculation
+    - Clustering methods (e.g., K-means on volatility and mean-reversion indicators)
+    - Hidden Markov Models (HMMs)
+
+The ultimate goal is to allow a meta-algorithm to dynamically choose the best simulation method based on observable features.
+
+---
 
 File setup:
     Arguments:
-        -A single beta value
+        - cointegration_res: dict of cointegration results per ticker pair.
+
+Spread modeling setup (ECM framework):
+    1. Compute spread:
+        y_t = log(P_A(t)) − β log(P_B(t))
+    2. Demean y_t over the largest windowframe:
+        y_t = log(P_A(t)) − β log(P_B(t)) − alpha_intercept
+        where alpha_intercept = mean(y_t) over the highest window.
+    3. Model spread evolution:
+        Δy_t = α_ECM y_{t−1} + ε_t
+        (or higher order ECM(r) models, r > 1)
+
+    4. Simulate ε_t using residual modeling techniques (block bootstrap, GARCH).
+
+"""
 
 
-ECM setup used:
-    1. we extract one beta value from the multiple windowframes.
-        y_t ​= log(P_A​(t)) − β log(P_B​(t))
 
-    2. we demean y_t over the hihest windowframe.
-        y_t ​= log(P_A​(t)) − β log(P_B​(t)) - alpha_int
-        alpha_int = mean(y_t) over the highest windowframe.
-
-    3. Next, we simulate the spread using:
-        Δy_t​ = α_ECM​ y_t−1 ​+ ε_t
-        (or higher order, ECM(3))
-    4. To tackle the regime aspect, we use rolling window to determine α_ECM​.
-        i.e. last X days. From this section we can also Bootsrap for eps_t simulation.
-
-
-'''
-
-
-# Section that extracts a single beta value from the multiple windowframes.
-
+#region 0: IMPORTS, logging configuration, and constants
 import pandas as pd
 import os
 import sys
@@ -77,16 +65,29 @@ import logging
 import numpy as np
 from scipy.stats import pearsonr
 from datetime import datetime, timedelta
-# Add the project root to sys.path so logger_factory can be imported
-#sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from scipy.stats import skew, kurtosis
 from cointegration import cointegration_test
-from logger_factory import get_logger 
+from logger_factory import get_logger  # type: ignore
 from sklearn.decomposition import PCA
 from statsmodels.tsa.stattools import coint, adfuller
+from arch import arch_model
+from statsmodels.tsa.arima.model import ARIMA
+from config import COINTEGRATION_DIR, TICKER_FILE, TICKERS_DIR, BASE_DATABASE # type: ignore
+import sys, os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from config import TICKERS_DIR, TICKER_FILE, BASE_DATABASE # type: ignore
+from data.loader import fetch_and_update_data_hdf5, fetch_data_hdf5_between_dates  # type: ignore # Import the function from loader.py
+from data.preprocessing import run_preprocessing_between_dates  # type: ignore # Import the function from preprocessing.py
+from models.bayesian_filter_cointegration import bayesian_interference_check  # type: ignore # Import the function from bayesian_filter_cointegration.py
+from models.cointegration import cointegration_checker  # type: ignore # Import the function from cointegration.py
+from datetime import datetime, timedelta  # Import datetime to define 'today'
+
+import warnings
+from datetime import datetime, timedelta
+warnings.filterwarnings("ignore", message=".*no associated frequency information.*")
 
 today = datetime.today().strftime('%Y-%m-%d')
-#sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from config import COINTEGRATION_DIR, TICKER_FILE, TICKERS_DIR, BASE_DATABASE
+
 
 # Configure loggers for file and terminal output
 file_logger = get_logger(
@@ -101,36 +102,314 @@ def log_message(msg):
 
 def log_summary(msg):
     summary_logger.info(msg)
-from statsmodels.tsa.arima.model import ARIMA
+#endregion
 
 
-# The fucntion used to fit the ECM-ARIMA model to the spread series.
-# spread_t = log(P_A(t)) - beta * log(P_B(t)) - alpha_intercept
-def fit_ecm_arma(spread_series):
+# Takes: single pair result (dict) from cointegration_checker[pair]
+# Returns: dict with beta, uncertainty, and method description
+
+#region 1st SECTION: BETA SELECTION METHODS 
+
+# The function used to estimate a single beta value from multiple window sizes using PCA
+def beta_rolling_window_PCA(single_pair_result):
     """
-    Fit ECM + ARMA(1,1) model to a stationary spread series.
-    
-    Parameters:
-        spread_series (pd.Series): The spread (should already be mean-reverting).
-        TAKE 120 days of the most recent spread data
+    Estimate a single beta value from multiple window sizes using PCA
+    on the beta vector extracted from one pair's cointegration results.
+
+    Args:
+        single_pair_result (dict): Cointegration result for a single ticker pair,
+                                   as returned by `cointegration_checker[pair]`.
 
     Returns:
-        model_fit: Fitted ARIMA(1,0,1) model with ECM term as exogenous regressor.
+        dict:
+            {
+                'beta': float,            # PCA-estimated beta (projection on PC1)
+                'uncertainty': float,     # Uncertainty (1 - explained variance of PC1)
+                'method': str             # Description tag for tracking
+            }
+    """
+    window_results = single_pair_result['per_window_results']
+
+    # Extract beta values across all windows
+    beta_values = np.array([r['beta'] for r in window_results]).reshape(-1, 1)
+
+    if len(beta_values) < 2:
+        log_message("Not enough beta values for PCA. Returning mean or None.", msg="warning")
+        return {
+            'beta': float(beta_values.mean()) if len(beta_values) > 0 else None,
+            'uncertainty': 1.0,
+            'method': 'rolling_window_PCA'
+        }
+
+    # Fit PCA
+    pca = PCA(n_components=1)
+    pca.fit(beta_values)
+
+    # Project all betas onto PC1 and take mean of projection as the beta
+    beta_estimate = beta_values.mean()
+
+    # Uncertainty = 1 - explained variance ratio of PC1
+    uncertainty = 1.0 - pca.explained_variance_ratio_[0]
+
+    return {
+        'beta': float(beta_estimate),
+        'uncertainty': float(uncertainty),
+        'method': 'rolling_window_PCA'
+    }
+
+def beta_rolling_window_PCA(single_pair_result):
+    window_results = single_pair_result['per_window_results']
+    betas = np.array([r['beta'] for r in window_results])
+    if len(betas) < 2:
+        log_message("Not enough beta values for PCA. Returning mean or None.", msg="warning")
+        return {
+            'beta': float(betas.mean()) if len(betas) > 0 else None,
+            'uncertainty': 1.0,
+            'method': 'rolling_window_PCA'
+        }
+    beta_estimate = betas.mean()
+    uncertainty = betas.std() / abs(beta_estimate) if beta_estimate != 0 else betas.std()
+    return {
+        'beta': float(beta_estimate),
+        'uncertainty': float(uncertainty),
+        'method': 'rolling_window_PCA'
+    }
+
+# The function used to calculate a single beta value using a p-value-based weighted average across window sizes.
+def beta_weighted_average(single_pair_result, k=10.0):
+    """
+    Calculate a single beta value using a p-value-based weighted average across window sizes.
+    Lower p-values are weighted more using exponential decay: weight = exp(-k * p_value)
+
+    Args:
+        single_pair_result (dict): Cointegration result for one ticker pair,
+                                   as returned by cointegration_checker[pair].
+        k (float): Exponential decay rate for p-value weighting. Default is 10.0. OPTIMIZE LATER, HOPEFULLY A STATIS VALUE IS SUFFICIENT
+
+    Returns:
+        dict:
+            {
+                'beta': float,            # Weighted average beta
+                'uncertainty': float,     # 1 - normalized avg weight (relative confidence)
+                'method': str             # Method description with k value
+            }
+    """
+    log_message("Starting p-value weighted beta estimation for pair.")
+    results = single_pair_result['per_window_results']
+    betas = np.array([r['beta'] for r in results])
+    pvals = np.array([r['p_value'] for r in results])
+
+    # Calculate exponential weights from p-values
+    weights = np.exp(-k * pvals)
+    total_weight = np.sum(weights)
+    log_message(f"Calculated weights for {len(weights)} betas (k={k}).")
+
+    beta = np.sum(betas * weights) / total_weight
+    uncertainty = 1.0 - (np.mean(weights) / np.max(weights))  # Normalized confidence spread
+    log_summary(f"Weighted beta: {beta:.4f}, uncertainty: {uncertainty:.4f}, k={k}")
+
+    return {
+        'beta': float(beta),
+        'uncertainty': float(uncertainty),
+        'method': f'pval_weighted_beta_exp_k={k}'
+    }
+
+#endregion
+
+#region 2nd SECTION: intial spread calculations and model fit, with BIC optimization
+# spread_t = log(P_A(t)) - beta * log(P_B(t)) - alpha_intercept
+import matplotlib.pyplot as plt 
+# function to fit the ECM(r) + ARMA(p,q) model to the spread series
+def fit_ecm_arma_bic(spread_series, r_candidates=[1, 2], p_candidates=[0, 1], q_candidates=[0, 1], plot=False):
+    """
+    Fit ECM(r) + ARMA(p,q) model to a stationary spread series, selecting r, p, q via BIC optimization.
+
+    Parameters:
+        spread_series (pd.Series): The spread (should already be stationary / mean-reverting).
+        r_candidates (list): Candidate lags for ECM term (default [1,2,3]).
+        p_candidates (list): Candidate AR orders.
+        q_candidates (list): Candidate MA orders.
+        plot (bool): Whether to plot the fitted vs actual ∆spread.
+
+    Returns:
+        model_fit: Final fitted ARIMA model object (ready for prediction).
+        best_config: (r, p, q) tuple describing the selected model.
     """
     spread = spread_series.dropna()
     delta_spread = spread.diff().dropna()
-    spread_lag = spread.shift(1).dropna()
 
-    # Align data
-    y = delta_spread.loc[spread_lag.index]
-    X = spread_lag.loc[y.index].to_frame(name='ecm_term')
+    best_bic = np.inf
+    best_config = None
 
-    # Fit ARIMA(1,0,1) with ECM term as exogenous input
-    model = ARIMA(endog=y, exog=X, order=(1, 0, 1))
-    model_fit = model.fit()
-    return model_fit
+    # First pass: find best (r, p, q)
+    for r in r_candidates:
+        spread_lagged = spread.shift(r).dropna()
+        y = delta_spread.loc[spread_lagged.index]
+        X = spread_lagged.loc[y.index].to_frame(name='ecm_term')
 
-# The function used to simulate the spread using the fitted model. SINGLE DETERMINISTIC FORECAST
+        for p in p_candidates:
+            for q in q_candidates:
+                try:
+                    model = ARIMA(endog=y, exog=X, order=(p, 0, q))
+                    fitted_model = model.fit()
+                    
+                    #log_message(f"ECM-ARMA fitting: r={r}, p={p}, q={q}, BIC={fitted_model.bic:.4f}")
+
+                    if fitted_model.bic < best_bic:
+                        best_bic = fitted_model.bic
+                        best_config = (r, p, q)
+
+                except Exception as e:
+                    log_message(f"ECM-ARMA fitting failed for r={r}, p={p}, q={q}. Error: {e}")
+                    continue  # Skip invalid models
+
+    if best_config is None:
+        raise ValueError("ECM-ARMA BIC optimization failed for all (r, p, q) combinations.")
+
+    # Second pass: fit final model with best (r, p, q)
+    r_best, p_best, q_best = best_config
+    spread_lagged = spread.shift(r_best).dropna()
+    y = delta_spread.loc[spread_lagged.index]
+    X = spread_lagged.loc[y.index].to_frame(name='ecm_term')
+
+    model_final = ARIMA(endog=y, exog=X, order=(p_best, 0, q_best))
+    model_fit = model_final.fit()
+
+    #log_message(f"Selected ECM-ARMA config: r={r_best}, p={p_best}, q={q_best}, BIC={model_fit.bic:.4f}")
+
+    if plot:
+        fitted_values = model_fit.fittedvalues
+        plt.figure(figsize=(10, 5))
+        plt.plot(y.index, y.values, 'o', label='Actual ∆Spread', markersize=4)
+        plt.plot(y.index, fitted_values, '--', label='Fitted ∆Spread', linewidth=2)
+        plt.title(f"ECM-ARMA Fit (r={r_best}, p={p_best}, q={q_best})")
+        plt.legend()
+        plt.grid(True)
+        plt.show()
+
+    return model_fit, best_config
+
+#endregion
+
+#region 3rd SECTION: RESIDUAL SIMULATION
+# used for forecasting the spread using the fitted model.
+
+
+# The function used to fit GARCH model and simulate residuals using that model.
+def GARCH(ecm_model_fit, n_days=5, n_sim=1000, p_candidates=[1, 2], q_candidates=[1, 2]):
+    # The function used to fit a GARCH(p, q) model to the residuals of the fitted ECM-ARMA model. 
+    def fit_garch_on_ecm_residuals(ecm_model_fit, p_candidates=[1, 2], q_candidates=[1, 2]):
+        residuals = ecm_model_fit.resid.dropna()
+        best_bic = np.inf
+        best_garch_config = None
+        best_model = None
+        best_arch_model = None
+
+        for p in p_candidates:
+            for q in q_candidates:
+                try:
+                    model = arch_model(residuals, vol='Garch', p=p, q=q, dist='normal')
+                    fitted_model = model.fit(disp="off")
+                    log_summary(f"Trying GARCH({p},{q}): BIC={fitted_model.bic:.4f}")
+                    if fitted_model.bic < best_bic:
+                        best_bic = fitted_model.bic
+                        best_garch_config = (p, q)
+                        best_model = fitted_model
+                        best_arch_model = model
+                        log_summary(f"New best GARCH config: (p={p}, q={q}), BIC={best_bic:.4f}")
+                except Exception as e:
+                    log_summary(f"GARCH({p},{q}) fitting failed: {e}")
+                    continue
+
+        if best_model is None or best_arch_model is None:
+            raise ValueError("GARCH model fitting failed on ECM residuals.")
+
+        return best_model, best_arch_model, best_garch_config
+
+    def simulate_from_garch_model(fitted_garch_model, arch_model_obj, n_days=5, n_sim=1000):
+        """
+        Simulate residuals using a fitted GARCH model.
+        """
+        if fitted_garch_model is None or arch_model_obj is None:
+            raise ValueError("No fitted GARCH model provided for simulation.")
+
+        sim = arch_model_obj.simulate(fitted_garch_model.params, nobs=n_days * n_sim)
+        innovations = sim['data'].values.reshape(n_sim, n_days)
+        return innovations
+
+    # Fit best GARCH(p,q) model on ECM residuals
+    fitted_garch_model, arch_model_obj, best_garch_config = fit_garch_on_ecm_residuals(
+        ecm_model_fit, p_candidates=p_candidates, q_candidates=q_candidates
+    )
+
+    # Simulate residuals
+    simulated_residuals = simulate_from_garch_model(
+        fitted_garch_model, arch_model_obj, n_days=n_days, n_sim=n_sim
+    )
+
+    # --- Log properties of historical and simulated residuals ---
+    hist_resid = ecm_model_fit.resid.dropna().values
+    sim_resid_flat = simulated_residuals.flatten()
+
+    log_message(
+        f"GARCH: Historical residuals: mean={np.mean(hist_resid):.4f}, std={np.std(hist_resid):.4f}, "
+        f"skewness={skew(hist_resid):.4f}, kurtosis={kurtosis(hist_resid):.4f}"
+    )
+    log_message(
+        f"GARCH: Simulated residuals: mean={np.mean(sim_resid_flat):.4f}, std={np.std(sim_resid_flat):.4f}, "
+        f"skewness={skew(sim_resid_flat):.4f}, kurtosis={kurtosis(sim_resid_flat):.4f}"
+    )
+
+    return simulated_residuals
+
+# The function used to simulate residuals using block bootstrap method.
+def block_bootstrap_resid(spread_series, n_days=5, n_sim=1000):
+    """
+    Block bootstrap residual simulation for spread series.
+
+    Parameters:
+        spread_series (pd.Series): The spread series to simulate from.
+        n_days (int): Number of days to forecast.
+        n_sim (int): Number of simulations.
+
+    Returns:
+        np.ndarray: Simulated residuals of shape (n_sim, n_days).
+    """
+    # Only use the last 50 days for bootstrapping
+    residuals = spread_series.diff().dropna().iloc[-50:]
+    residuals = residuals.values
+
+    block_size = 5
+    overlap = block_size - 1  # maximal overlap
+
+    blocks = []
+    for start_idx in range(0, len(residuals) - block_size + 1):
+        blocks.append(residuals[start_idx:start_idx + block_size])
+
+    blocks = np.array(blocks)
+    n_blocks = len(blocks)
+
+    innovations = np.zeros((n_sim, n_days))
+
+    for i in range(n_sim):
+        path = []
+        while len(path) < n_days:
+            block_idx = np.random.randint(0, n_blocks)
+            block = blocks[block_idx]
+            path.extend(block.tolist())
+        innovations[i, :] = np.array(path[:n_days])  # truncate to exactly n_days
+
+    return innovations
+
+resid_methods = {
+    'block_bootstrap': block_bootstrap_resid,
+    'garch': GARCH,
+}
+
+#endregion
+
+#region 4th SECTION: Spread forecast generation
+ # The function used to simulate the spread using the fitted model. SINGLE DETERMINISTIC FORECAST
 def ecm_arma_predict_5d(model_fit, spread_series, residuals=None):
     """
     Make a 5-day deterministic forecast using a fitted ARIMA(1,0,1) ECM model.
@@ -217,99 +496,15 @@ def extract_mc_vs_real_features(mc_forecast: np.ndarray, actual_path: np.ndarray
 
 
 
-def beta_rolling_window_PCA(single_pair_result):
-    """
-    Estimate a single beta value from multiple window sizes using PCA
-    on the beta vector extracted from one pair's cointegration results.
-
-    Args:
-        single_pair_result (dict): Cointegration result for a single ticker pair,
-                                   as returned by `cointegration_checker[pair]`.
-
-    Returns:
-        dict:
-            {
-                'beta': float,            # PCA-estimated beta (projection on PC1)
-                'uncertainty': float,     # Uncertainty (1 - explained variance of PC1)
-                'method': str             # Description tag for tracking
-            }
-    """
-    window_results = single_pair_result['per_window_results']
-
-    # Extract beta values across all windows
-    beta_values = np.array([r['beta'] for r in window_results]).reshape(-1, 1)
-
-    if len(beta_values) < 2:
-        log_message("Not enough beta values for PCA. Returning mean or None.", msg="warning")
-        return {
-            'beta': float(beta_values.mean()) if len(beta_values) > 0 else None,
-            'uncertainty': 1.0,
-            'method': 'rolling_window_PCA'
-        }
-
-    # Fit PCA
-    pca = PCA(n_components=1)
-    pca.fit(beta_values)
-
-    # Project all betas onto PC1 and take mean of projection as the beta
-    projected = pca.transform(beta_values)
-    beta_estimate = projected.mean()
-
-    # Uncertainty = 1 - explained variance ratio of PC1
-    uncertainty = 1.0 - pca.explained_variance_ratio_[0]
-
-    return {
-        'beta': float(beta_estimate),
-        'uncertainty': float(uncertainty),
-        'method': 'rolling_window_PCA'
-    }
-
-
-def beta_weighted_average(single_pair_result, k=10.0):
-    """
-    Calculate a single beta value using a p-value-based weighted average across window sizes.
-    Lower p-values are weighted more using exponential decay: weight = exp(-k * p_value)
-
-    Args:
-        single_pair_result (dict): Cointegration result for one ticker pair,
-                                   as returned by cointegration_checker[pair].
-        k (float): Exponential decay rate for p-value weighting. Default is 10.0. OPTIMIZE LATER, HOPEFULLY A STATIS VALUE IS SUFFICIENT
-
-    Returns:
-        dict:
-            {
-                'beta': float,            # Weighted average beta
-                'uncertainty': float,     # 1 - normalized avg weight (relative confidence)
-                'method': str             # Method description with k value
-            }
-    """
-    results = single_pair_result['per_window_results']
-    betas = np.array([r['beta'] for r in results])
-    pvals = np.array([r['p_value'] for r in results])
-
-    # Calculate exponential weights from p-values
-    weights = np.exp(-k * pvals)
-    total_weight = np.sum(weights)
-
-    beta = np.sum(betas * weights) / total_weight
-    uncertainty = 1.0 - (np.mean(weights) / np.max(weights))  # Normalized confidence spread
-
-    return {
-        'beta': float(beta),
-        'uncertainty': float(uncertainty),
-        'method': f'pval_weighted_beta_exp_k={k}'
-    }
-
-
-def calc_spread(log_prices: dict, beta: float, max_window: int, include_residuals: bool = True) -> dict:
+def calc_spread(log_prices: dict, beta: float, include_residuals: bool = True) -> dict:
     """
     Calculates the spread and related statistics from log prices and beta.
 
     Parameters:
-        log_prices (dict): Dictionary with keys 'A' and 'B' for log(P_A) and log(P_B)
-        beta (float): The selected beta value for this spread model
-        max_window (int): Largest window size used for cointegration, for alpha estimation
-        include_residuals (bool): Whether to include Δspread residuals
+        log_prices (dict): Dictionary with keys 'A' and 'B' for log(P_A) and log(P_B).
+                        The data provided should already be sliced to the desired window.
+        beta (float): The selected beta value for this spread model.
+        include_residuals (bool): Whether to include Δspread residuals.
 
     Returns:
         dict:
@@ -327,75 +522,95 @@ def calc_spread(log_prices: dict, beta: float, max_window: int, include_residual
                 'residuals': pd.Series (if include_residuals)
             }
     """
+    log_prices['A'] = log_prices['A'].asfreq('B')
+    log_prices['B'] = log_prices['B'].asfreq('B')
     # Core spread computation
     spread_raw = log_prices['A'] - beta * log_prices['B']
-    alpha_intercept = spread_raw.iloc[-max_window:].mean()
+    alpha_intercept = spread_raw.mean()
     spread = spread_raw - alpha_intercept
 
     # Spread stats
     spread_mean = spread.mean()
     spread_std = spread.std()
-    zscore = (spread.iloc[-1] - spread_mean) / spread_std
+    zscore = (spread.iloc[-1] - spread_mean) / spread_std if spread_std != 0 else 0.0
+
+    spread_z = (spread - spread_mean) / spread_std if spread_std != 0 else spread
 
     result = {
         'selected_parameters': {
             'beta': float(beta),
             'alpha': float(alpha_intercept)
         },
-        'spread': spread,
+        'spread': spread,  # raw spread series
+        'spread_z': spread_z,  # standardized spread (z-score)
         'spread_stats': {
-            'zscore': float(zscore), # Rely on this
+            'zscore': float(zscore),
             'spread_mean': float(spread_mean),
             'spread_std': float(spread_std)
         }
     }
 
-    result['residuals'] = spread.diff().dropna()
+    if include_residuals:
+        result['residuals'] = spread.diff().dropna()
 
     return result
 
 
-def block_bootstrap_resid(spread_series, n_days=5, n_sim=1000):
+def MC_simulation(cointegration_res, future_data, resid_methods, n_days=5, n_sim=100):
     """
-    Block bootstrap residual simulation for spread series.
+    Runs Monte Carlo simulations for each pair in the cointegration results using multiple beta and residual simulation methods.
 
-    Parameters:
-        spread_series (pd.Series): The spread series to simulate from.
-        n_days (int): Number of days to forecast.
-        n_sim (int): Number of simulations.
+    Args:
+        cointegration_res (dict): 
+            Format:
+                {
+                    pair: {
+                        'per_window_results': [
+                            {'beta': float, 'p_value': float, ...}, ...
+                        ],
+                        ... (other keys as needed)
+                    },
+                    ...
+                }
+            - 'pair' is typically a tuple of ticker symbols, e.g., ('AAPL', 'MSFT')
+            - 'per_window_results' is a list of dicts, each with at least 'beta' and 'p_value' keys
 
     Returns:
-        np.ndarray: Simulated residuals of shape (n_sim, n_days).
+        cointegration_res (dict): 
+            The input dict, updated in-place with the following additional keys for each pair:
+                'beta_models': {
+                    <beta_method>: {
+                        'beta': float,
+                        'uncertainty': float,
+                        'method': str
+                    },
+                    ...
+                },
+                'spread_models': {
+                    <beta_method>: {
+                        'selected_parameters': {...},
+                        'spread': pd.Series,
+                        'spread_stats': {...},
+                        'residuals': pd.Series (optional)
+                    },
+                    ...
+                },
+                'forecast_results': {
+                    <beta_method>_<resid_method>: {
+                        'forecast': np.ndarray,  # shape (n_sim, n_days)
+                        'resid_method': str,
+                        'beta_method': str
+                    },
+                    ...
+                }
     """
-    # Block size for bootstrap
-    block_size = 5 # Adjust as needed
-    overlap = 4
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-resid_methods = {
-    'block_bootstrap': block_bootstrap_resid,
-    'garch': GARCH,
-    'arma_resid': ARIMA
-}
-
-
-def MC_simulation(cointegration_res):
+    # Iterate over all ticker pairs in the cointegration results to process each pair individually
     for pair in cointegration_res.keys():
-        for beta_method in ['rolling_window_PCA', 'pval_weighted_beta_exp_k']:
+        ticker_A, ticker_B = pair  # Unpack the pair tuple
+        for i, win_res in enumerate(cointegration_res[pair]['per_window_results']):
+            print(f'beta value: # {i} : {win_res["beta"]}\n    p-val: {win_res["p_value"]}')
+
+        for beta_method in ['rolling_window_PCA', 'pval_weighted_beta_exp_k']:# , 'pval_weighted_beta_exp_k']: #for debugging purposes, only use PCA method
             # === 1. Get beta
             if beta_method == 'rolling_window_PCA':
                 beta_res = beta_rolling_window_PCA(cointegration_res[pair])
@@ -403,26 +618,226 @@ def MC_simulation(cointegration_res):
                 beta_res = beta_weighted_average(cointegration_res[pair], k=10.0)
             
             method_key = beta_res['method']
+            print(f"Beta method: {method_key}",
+                  f"Beta result: {'beta':<10} = {beta_res['beta']:.4f}, "
+                  f"{'uncertainty':<12} = {beta_res['uncertainty']:.8f}, ")
+            
             cointegration_res[pair].setdefault('beta_models', {})[method_key] = beta_res
 
-            # === 2. Calculate spread
-            spread_res = calc_spread(cointegration_res[pair], beta_res['beta'])
-            cointegration_res[pair].setdefault('spread_models', {})[method_key] = spread_res
-            spread_series = spread_res['spread']
+            # Correct way
+            log_prices = cointegration_res[pair]['log_prices']
 
-            # === 3. Run all residual simulations
+            # Calculate spread
+            log_summary(f"Calculating spread for {pair} using {method_key},model fit happening after this?")
+            spread_res = calc_spread(log_prices, beta_res['beta'])
+            cointegration_res[pair].setdefault('spread_models', {})[method_key] = spread_res
+            spread_series = spread_res['spread_z']  # Use z-score series for modeling and simulation
+            spread_mean = 0.0  # mean of z-score is always 0
+            spread_std = 1.0   # std of z-score is always 1
+
+            # === Fit ECM-ARMA model to the spread series
+            ecm_arma_model, best_config = fit_ecm_arma_bic(spread_series, plot=False)
+            r, p, q = best_config
+
+            # === Run all residual simulations
             for resid_method_name, resid_func in resid_methods.items():
-                forecast_array = resid_func(spread_series, n_days=5, n_sim=1000)
-                
-                # Store forecast (for training, evaluation, etc.)
+                if resid_method_name == 'garch':
+                    simulated_residuals = resid_func(ecm_arma_model, n_days=n_days, n_sim=n_sim)
+                    log_summary(f"Simulated GARCH residuals for {pair} using {method_key}. std = {simulated_residuals.std()}, mean = {simulated_residuals.mean()}")
+                else:
+                    simulated_residuals = resid_func(spread_series, n_days=n_days, n_sim=n_sim)
+
+                # --- Build Spread Paths ---
+                c = ecm_arma_model.params.get('const', 0.0)
+                gamma = ecm_arma_model.params.get('ecm_term', 0.0)
+                phi_coeffs = [ecm_arma_model.params.get(f'ar.L{i}', 0.0) for i in range(1, p + 1)]
+                theta_coeffs = [ecm_arma_model.params.get(f'ma.L{i}', 0.0) for i in range(1, q + 1)]
+
+                spread_last = spread_series.iloc[-r:]  # last r points
+                delta_spread_hist = []  # keep last p delta spreads
+                residual_hist = []      # keep last q residuals
+
+                n_sim, n_days = simulated_residuals.shape
+                spread_paths = np.zeros((n_sim, n_days))
+
+                for sim in range(n_sim):
+                    spread_hist = list(spread_last.values.copy())  # initialize with last known spread values
+                    delta_spread_path = []
+                    residual_path = []
+
+                    for t in range(n_days):
+                        # ecm_term uses lag r
+                        ecm_term = gamma * (spread_hist[-r] if len(spread_hist) >= r else spread_hist[-1])
+                        ar_term = np.dot(phi_coeffs, delta_spread_path[-p:][::-1]) if p > 0 and len(delta_spread_path) >= p else 0.0
+                        ma_term = np.dot(theta_coeffs, residual_path[-q:][::-1]) if q > 0 and len(residual_path) >= q else 0.0
+
+                        innovation = simulated_residuals[sim, t]
+
+                        delta_spread = c + ecm_term + ar_term + ma_term + innovation
+
+                        # Update paths
+                        spread_new = spread_hist[-1] + delta_spread
+
+                        spread_hist.append(spread_new)
+                        delta_spread_path.append(delta_spread)
+                        residual_path.append(innovation)
+
+                        spread_paths[sim, t] = spread_new
+
+
+                # Get the future index from one of the tickers (e.g., ticker_A)
+                future_index = future_data[ticker_A].index
+
+                if len(future_index) != n_days:
+                    print(f"Warning: future_index for {ticker_A} has length {len(future_index)}, expected {n_days}. Skipping this pair.")
+                    continue  # skip to next pair or method
+
+                spread_paths_df = pd.DataFrame(spread_paths, columns=future_index)
+
+                # Define a unique forecast key
                 forecast_key = f"{method_key}_{resid_method_name}"
+                # Save to the results dict
                 cointegration_res[pair].setdefault('forecast_results', {})[forecast_key] = {
-                    'forecast': forecast_array,
+                    'forecast': spread_paths_df,
                     'resid_method': resid_method_name,
                     'beta_method': method_key
-                    # You can later add true_path, likelihood, direction match, etc.
                 }
+                # Calculate the true spread path for the next 5 days using the actual future data
+                if ticker_A in future_data and ticker_B in future_data:
+                    log_prices_actual = {
+                        'A': future_data[ticker_A][f'Close_{ticker_A}'],
+                        'B': future_data[ticker_B][f'Close_{ticker_B}']
+                    }
+                    # Use the same beta and alpha as in the model
+                    alpha_intercept = spread_res['selected_parameters']['alpha']
+                    actual_spread = log_prices_actual['A'] - beta_res['beta'] * log_prices_actual['B']
+                    actual_spread = actual_spread - alpha_intercept
+                    spread_mean = spread_res['spread_stats']['spread_mean']
+                    spread_std = spread_res['spread_stats']['spread_std']
 
+                    # Standardize using historical mean and std
+                    actual_spread_z = (actual_spread.values - spread_mean) / spread_std
+                    actual_path = actual_spread_z
+                    # Save the true path for later feature extraction
+                    cointegration_res[pair]['forecast_results'][forecast_key]['actual_path'] = actual_path
+                # Plot historical spread (z-score) and all simulated spread paths
+                # Calculate the mean MC path change over 5 days
+                mean_mc_path = spread_paths_df.mean(axis=0)
+                mc_change = mean_mc_path.iloc[-1] - mean_mc_path.iloc[0]
+                log_message(f"Mean MC path change for {pair} ({method_key}, {resid_method_name}): {mc_change:.4f}")
+                log_summary(f"Mean MC path change for {pair} ({method_key}, {resid_method_name}): {mc_change:.4f}")
+                
+                
+                # Only plot if the mean MC path changes by at least ±0.9 in z-score
+                if abs(mc_change) >= 0.9:
+                    plt.figure(figsize=(12, 6))
+                    plt.plot(spread_series.index, spread_series.values, label='Historical Spread (z-score)', color='blue')
+                    for i in range(min(100, spread_paths_df.shape[0])):
+                        plt.plot(future_index, spread_paths_df.iloc[i], linestyle='--', color='gray', alpha=0.3)
+                    plt.plot(future_index, actual_path, label='Actual Spread (z-score)', color='red', linewidth=2)
+                    plt.title(f"Spread (z-score) and Simulated Paths for {pair} ({method_key}, {resid_method_name})")
+                    plt.xlabel("Time Index")
+                    plt.ylabel("Spread (z-score)")
+                    plt.legend()
+                    plt.grid(True)
+                    plt.tight_layout()
+                    plt.show()
+
+             
+
+
+def compare_forecast_to_actual(cointegration_res, future_data):
+    import matplotlib.pyplot as plt
+
+    for pair, pair_data in cointegration_res.items():
+        ticker_A, ticker_B = pair  # Unpack the pair tuple
+        if ticker_A not in future_data or ticker_B not in future_data:
+            continue  # Skip if missing
+
+        log_prices_actual = {
+            'A': future_data[ticker_A][f'Close_{ticker_A}'],
+            'B': future_data[ticker_B][f'Close_{ticker_B}']
+        }
+
+        for beta_method in ['rolling_window_PCA', 'pval_weighted_beta_exp_k=10.0']:
+            beta_models = pair_data.get('beta_models', {})
+            spread_models = pair_data.get('spread_models', {})
+            beta_res = beta_models.get(beta_method)
+            spread_res = spread_models.get(beta_method)
+
+            if beta_res is None or spread_res is None:
+                continue  # Skip if missing this beta method
+
+            alpha_intercept = spread_res['selected_parameters']['alpha']
+            spread_mean = spread_res['spread_stats']['spread_mean']
+            spread_std = spread_res['spread_stats']['spread_std']
+
+            # Calculate actual spread for future window
+            actual_spread = log_prices_actual['A'] - beta_res['beta'] * log_prices_actual['B']
+            actual_spread = actual_spread - alpha_intercept
+            actual_spread_z = (actual_spread.values - spread_mean) / spread_std if spread_std != 0 else actual_spread.values
+            actual_path = actual_spread_z
+
+            
+
+            for forecast_key, forecast_data in pair_data.get('forecast_results', {}).items():
+                if forecast_data['beta_method'] != beta_method:
+                    continue  # Match forecast to beta method
+
+                forecast_array = forecast_data['forecast']
+
+                log_summary(f"Actual path for {pair}: {actual_path}")
+                log_summary(f"Forecast array[0] for {pair}: {forecast_array[0]}")
+
+                if actual_path.shape[0] == forecast_array.shape[1]:
+                    log_summary(f"Extracting features for {pair} using {forecast_key}.")
+                    features = extract_mc_vs_real_features(forecast_array, actual_path)
+                    cointegration_res[pair]['forecast_results'][forecast_key]['features'] = features
+
+
+    for pair, pair_data in cointegration_res.items():
+        ticker_A, ticker_B = pair
+        if ticker_A not in future_data or ticker_B not in future_data:
+            continue
+
+        log_prices_actual = {
+            'A': future_data[ticker_A][f'Close_{ticker_A}'],
+            'B': future_data[ticker_B][f'Close_{ticker_B}']
+        }
+
+        for beta_method in ['rolling_window_PCA', 'pval_weighted_beta_exp_k=10.0']:
+            beta_models = pair_data.get('beta_models', {})
+            spread_models = pair_data.get('spread_models', {})
+            beta_res = beta_models.get(beta_method)
+            spread_res = spread_models.get(beta_method)
+
+            if beta_res is None or spread_res is None:
+                continue
+
+            alpha_intercept = spread_res['selected_parameters']['alpha']
+            spread_mean = spread_res['spread_stats']['spread_mean']
+            spread_std = spread_res['spread_stats']['spread_std']
+            actual_spread = log_prices_actual['A'] - beta_res['beta'] * log_prices_actual['B']
+            actual_spread = actual_spread - alpha_intercept
+            actual_spread_z = (actual_spread.values - spread_mean) / spread_std if spread_std != 0 else actual_spread.values
+            actual_path = actual_spread_z
+            future_index = log_prices_actual['A'].index
+
+            for forecast_key, forecast_data in pair_data.get('forecast_results', {}).items():
+                if forecast_data['beta_method'] != beta_method:
+                    continue
+
+                forecast_array = forecast_data['forecast']
+
+                
+
+                log_summary(f"Actual path for {pair}: {actual_path}")
+                log_summary(f"Forecast array[0] for {pair}: {forecast_array[0]}")
+
+                if actual_path.shape[0] == forecast_array.shape[1]:
+                    log_summary(f"Extracting features for {pair} using {forecast_key}.")
+                    features = extract_mc_vs_real_features(forecast_array, actual_path)
+                    cointegration_res[pair]['forecast_results'][forecast_key]['features'] = features
 
 
 # cointegration_test_res -> single beta selection method -> 
@@ -430,12 +845,98 @@ def MC_simulation(cointegration_res):
 # prediction of spread, N times MC simulation -> likelihood and similar features extraction ->
 # train meta algorithm SMSC 
 
-def rolling_window_feature_extraction():
+
+#region 5th SECTION: main function to run the simulation.
+
+# The function that builds a training sample for a given date and appends it to a CSV file.
+def build_training_sample_for_date(start_date_sample, end_date_sample, n_forecast_days=5, n_sim=1000, save_path="training_dataset.csv"):
+    """
+    Build one training sample for a given date and append it to a CSV file.
+
+    Parameters:
+        target_date (str): Date in 'YYYY-MM-DD' format. Simulation starts from here.
+        n_forecast_days (int): Forecast horizon (default 5).
+        n_sim (int): Number of Monte Carlo simulations per method.
+        save_path (str): Path to the output CSV file (appends if exists).
+    """
+        
+    # Load tickers from the TICKERS_DIR
+    def load_tickers(ticker_filename=TICKER_FILE):
+        """
+        Load tickers from a file in the TICKERS_DIR.
+        Assumes the file is named 'tickers.csv' and contains a column 'ticker'.
+        """
+        tickers_file = os.path.join(TICKERS_DIR, ticker_filename)
+        if os.path.exists(tickers_file):
+            tickers_df = pd.read_csv(tickers_file)
+            return tickers_df['ticker'].tolist()
+        else:
+            raise FileNotFoundError(f"Tickers file not found in {TICKERS_DIR}. Please ensure {ticker_filename} exists.")
+        
+    # 1. Load tickers
+    try:
+        tickers = load_tickers()
+    except FileNotFoundError as e:
+        print(e)
+        return
 
 
-    return {None, 
-            None
+   
+    # 2. Fetch data
+    data = fetch_data_hdf5_between_dates(tickers, start_date_sample, end_date_sample)
+    if data is None:    
+        log_message(f"No data available for tickers: {tickers} between {start_date_sample} and {end_date_sample}.")
+        return
+    log_message(f"Data fetched for tickers: {tickers} between {start_date_sample} and {end_date_sample}.")
+
+    # 3. Preprocessing
+    pre_processed = run_preprocessing_between_dates(data, start_date=start_date_sample, end_date=end_date_sample)
+
+    # 4. Split into two sets: 
+    # - one for cointegration checking (historical window)
+    # - one for true future path (5 days ahead)
+    # Extract first 250 rows (historical window) and first 5 rows after that (future window) for all stocks and all price/vol columns
+
+    historical_data = {}
+    future_data = {}
+    for ticker, df in pre_processed.items():
+        # Select first 250 rows for historical window
+        historical_data[ticker] = pre_processed[ticker].iloc[:250].copy()
+        historical_data[ticker] = historical_data[ticker].asfreq('B')  # set freq on dataframe
+        historical_data[ticker] = historical_data[ticker].dropna()
+
+        # Select next 5 rows for future window
+        future_data[ticker] = pre_processed[ticker].iloc[250:255].copy()
+        future_data[ticker] = future_data[ticker].asfreq('B')  
+        future_data[ticker] = future_data[ticker].dropna()
+
+    # Get the last date from the historical data DataFrame (assume all tickers aligned)
+    # Use the first ticker as reference
+    first_ticker = next(iter(historical_data))
+    historical_last_date = historical_data[first_ticker].index[-1]
+    log_message(f"Last date in historical window: {historical_last_date}")
+
+    # 5. Cointegration check
+    possible_cointegration_pairs = bayesian_interference_check(historical_data, end_date=historical_last_date)
+    cointegration_res = cointegration_checker(historical_data, possible_cointegration_pairs, window_sizes=[250, 70, 40], sig_lvl=0.05)
+    print(f"Cointegration results: {cointegration_res}")
+    # 6. Run the simulation for each pair and method
+    MC_simulation(cointegration_res, future_data, resid_methods, n_forecast_days, n_sim)
+
+    # 7. Compare forecast to actual
+    #compare_forecast_to_actual(cointegration_res, future_data)
     
 
-    }
 
+    
+#endregion
+
+start_date = datetime.strptime('2021-04-20', '%Y-%m-%d')
+end_date = datetime.strptime('2025-04-20', '%Y-%m-%d')
+current_date = start_date
+
+while current_date + timedelta(days=365) <= end_date:
+    sample_start = current_date.strftime('%Y-%m-%d')
+    sample_end = (current_date + timedelta(days=255)).strftime('%Y-%m-%d')
+    build_training_sample_for_date(sample_start, sample_end, n_forecast_days=5, n_sim=100, save_path="training_dataset.csv")
+    current_date += timedelta(days=7)

@@ -1,0 +1,10 @@
+2025-04-28 17:42:11,833 - INFO - Data fetched for tickers: ['XOM', 'CVX', 'COP', 'OXY', 'PSX', 'MPC', 'VLO', 'EOG', 'DVN', 'HES', 'APA', 'MRO', 'MUR', 'FANG', 'EQT', 'RRC', 'GPOR', 'MTDR', 'SM', 'AR', 'WTI', 'CRC', 'CRK'] between 2020-04-20 and 2025-04-20.
+2025-04-28 17:42:12,063 - INFO - Last date in historical window: 2021-04-15 00:00:00
+2025-04-28 17:42:17,993 - INFO - Starting p-value weighted beta estimation for pair.
+2025-04-28 17:42:17,993 - INFO - Calculated weights for 3 betas (k=10.0).
+2025-04-28 17:42:23,542 - INFO - Starting p-value weighted beta estimation for pair.
+2025-04-28 17:42:23,543 - INFO - Calculated weights for 3 betas (k=10.0).
+2025-04-28 17:42:29,323 - INFO - Starting p-value weighted beta estimation for pair.
+2025-04-28 17:42:29,323 - INFO - Calculated weights for 3 betas (k=10.0).
+2025-04-28 17:42:37,761 - INFO - Starting p-value weighted beta estimation for pair.
+2025-04-28 17:42:37,761 - INFO - Calculated weights for 3 betas (k=10.0).

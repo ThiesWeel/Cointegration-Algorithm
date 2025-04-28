@@ -1,0 +1,82 @@
+2025-04-28 18:58:38,905 - INFO - Starting data fetch for tickers: ['XOM', 'CVX', 'COP', 'OXY', 'PSX', 'MPC', 'VLO', 'EOG', 'DVN', 'HES', 'APA', 'MRO', 'MUR', 'FANG', 'EQT', 'RRC', 'GPOR', 'MTDR', 'SM', 'AR', 'WTI', 'CRC', 'CRK']
+2025-04-28 18:58:38,905 - INFO - Date range: 2020-04-20 to 2025-04-20
+2025-04-28 18:58:38,905 - INFO - Processing ticker: XOM
+2025-04-28 18:58:38,905 - INFO - Checking if data for XOM exists locally in HDF5 format within 'raw' subdirectory...
+2025-04-28 18:58:38,942 - INFO - Data for XOM found locally in 'raw' subdirectory.
+2025-04-28 18:58:38,966 - INFO - Processing ticker: CVX
+2025-04-28 18:58:38,966 - INFO - Checking if data for CVX exists locally in HDF5 format within 'raw' subdirectory...
+2025-04-28 18:58:38,966 - INFO - Data for CVX found locally in 'raw' subdirectory.
+2025-04-28 18:58:38,972 - INFO - Processing ticker: COP
+2025-04-28 18:58:38,972 - INFO - Checking if data for COP exists locally in HDF5 format within 'raw' subdirectory...
+2025-04-28 18:58:38,978 - INFO - Data for COP found locally in 'raw' subdirectory.
+2025-04-28 18:58:38,978 - INFO - Processing ticker: OXY
+2025-04-28 18:58:38,978 - INFO - Checking if data for OXY exists locally in HDF5 format within 'raw' subdirectory...
+2025-04-28 18:58:38,978 - INFO - Data for OXY found locally in 'raw' subdirectory.
+2025-04-28 18:58:38,990 - INFO - Processing ticker: PSX
+2025-04-28 18:58:38,990 - INFO - Checking if data for PSX exists locally in HDF5 format within 'raw' subdirectory...
+2025-04-28 18:58:38,990 - INFO - Data for PSX found locally in 'raw' subdirectory.
+2025-04-28 18:58:39,003 - INFO - Processing ticker: MPC
+2025-04-28 18:58:39,003 - INFO - Checking if data for MPC exists locally in HDF5 format within 'raw' subdirectory...
+2025-04-28 18:58:39,003 - INFO - Data for MPC found locally in 'raw' subdirectory.
+2025-04-28 18:58:39,015 - INFO - Processing ticker: VLO
+2025-04-28 18:58:39,015 - INFO - Checking if data for VLO exists locally in HDF5 format within 'raw' subdirectory...
+2025-04-28 18:58:39,015 - INFO - Data for VLO found locally in 'raw' subdirectory.
+2025-04-28 18:58:39,027 - INFO - Processing ticker: EOG
+2025-04-28 18:58:39,027 - INFO - Checking if data for EOG exists locally in HDF5 format within 'raw' subdirectory...
+2025-04-28 18:58:39,027 - INFO - Data for EOG found locally in 'raw' subdirectory.
+2025-04-28 18:58:39,039 - INFO - Processing ticker: DVN
+2025-04-28 18:58:39,039 - INFO - Checking if data for DVN exists locally in HDF5 format within 'raw' subdirectory...
+2025-04-28 18:58:39,039 - INFO - Data for DVN found locally in 'raw' subdirectory.
+2025-04-28 18:58:39,051 - INFO - Processing ticker: HES
+2025-04-28 18:58:39,051 - INFO - Checking if data for HES exists locally in HDF5 format within 'raw' subdirectory...
+2025-04-28 18:58:39,052 - INFO - Data for HES found locally in 'raw' subdirectory.
+2025-04-28 18:58:39,063 - INFO - Processing ticker: APA
+2025-04-28 18:58:39,063 - INFO - Checking if data for APA exists locally in HDF5 format within 'raw' subdirectory...
+2025-04-28 18:58:39,064 - INFO - Data for APA found locally in 'raw' subdirectory.
+2025-04-28 18:58:39,073 - INFO - Processing ticker: MRO
+2025-04-28 18:58:39,073 - INFO - Checking if data for MRO exists locally in HDF5 format within 'raw' subdirectory...
+2025-04-28 18:58:39,074 - INFO - No local data found for MRO in 'raw' subdirectory.
+2025-04-28 18:58:39,074 - INFO - No existing data found for MRO. Downloading data from 2020-04-20 to 2025-04-20.
+2025-04-28 18:58:39,074 - INFO - Downloading data for MRO from 2020-04-20 to 2025-04-20...
+2025-04-28 18:58:39,074 - INFO - Failed to download data for MRO: download() got an unexpected keyword argument 'show_errors'
+2025-04-28 18:58:39,074 - INFO - No data downloaded for MRO.
+2025-04-28 18:58:39,074 - INFO - Processing ticker: MUR
+2025-04-28 18:58:39,074 - INFO - Checking if data for MUR exists locally in HDF5 format within 'raw' subdirectory...
+2025-04-28 18:58:39,075 - INFO - Data for MUR found locally in 'raw' subdirectory.
+2025-04-28 18:58:39,084 - INFO - Processing ticker: FANG
+2025-04-28 18:58:39,084 - INFO - Checking if data for FANG exists locally in HDF5 format within 'raw' subdirectory...
+2025-04-28 18:58:39,085 - INFO - Data for FANG found locally in 'raw' subdirectory.
+2025-04-28 18:58:39,089 - INFO - Processing ticker: EQT
+2025-04-28 18:58:39,089 - INFO - Checking if data for EQT exists locally in HDF5 format within 'raw' subdirectory...
+2025-04-28 18:58:39,089 - INFO - Data for EQT found locally in 'raw' subdirectory.
+2025-04-28 18:58:39,100 - INFO - Processing ticker: RRC
+2025-04-28 18:58:39,100 - INFO - Checking if data for RRC exists locally in HDF5 format within 'raw' subdirectory...
+2025-04-28 18:58:39,100 - INFO - Data for RRC found locally in 'raw' subdirectory.
+2025-04-28 18:58:39,113 - INFO - Processing ticker: GPOR
+2025-04-28 18:58:39,113 - INFO - Checking if data for GPOR exists locally in HDF5 format within 'raw' subdirectory...
+2025-04-28 18:58:39,113 - INFO - Data for GPOR found locally in 'raw' subdirectory.
+2025-04-28 18:58:39,125 - INFO - Processing ticker: MTDR
+2025-04-28 18:58:39,125 - INFO - Checking if data for MTDR exists locally in HDF5 format within 'raw' subdirectory...
+2025-04-28 18:58:39,125 - INFO - Data for MTDR found locally in 'raw' subdirectory.
+2025-04-28 18:58:39,143 - INFO - Processing ticker: SM
+2025-04-28 18:58:39,143 - INFO - Checking if data for SM exists locally in HDF5 format within 'raw' subdirectory...
+2025-04-28 18:58:39,143 - INFO - Data for SM found locally in 'raw' subdirectory.
+2025-04-28 18:58:39,150 - INFO - Processing ticker: AR
+2025-04-28 18:58:39,150 - INFO - Checking if data for AR exists locally in HDF5 format within 'raw' subdirectory...
+2025-04-28 18:58:39,150 - INFO - Data for AR found locally in 'raw' subdirectory.
+2025-04-28 18:58:39,162 - INFO - Processing ticker: WTI
+2025-04-28 18:58:39,162 - INFO - Checking if data for WTI exists locally in HDF5 format within 'raw' subdirectory...
+2025-04-28 18:58:39,162 - INFO - Data for WTI found locally in 'raw' subdirectory.
+2025-04-28 18:58:39,174 - INFO - Processing ticker: CRC
+2025-04-28 18:58:39,174 - INFO - Checking if data for CRC exists locally in HDF5 format within 'raw' subdirectory...
+2025-04-28 18:58:39,174 - INFO - Data for CRC found locally in 'raw' subdirectory.
+2025-04-28 18:58:39,186 - INFO - Processing ticker: CRK
+2025-04-28 18:58:39,186 - INFO - Checking if data for CRK exists locally in HDF5 format within 'raw' subdirectory...
+2025-04-28 18:58:39,186 - INFO - Data for CRK found locally in 'raw' subdirectory.
+2025-04-28 18:58:39,198 - INFO - 
+Summary:
+Date range: 2020-04-20 to 2025-04-20
+Tickers loaded: ['XOM', 'CVX', 'COP', 'OXY', 'PSX', 'MPC', 'VLO', 'EOG', 'DVN', 'HES', 'APA', 'MUR', 'FANG', 'EQT', 'RRC', 'GPOR', 'MTDR', 'SM', 'AR', 'WTI', 'CRC', 'CRK']
+Unavailable tickers: ['MRO']
+
+2025-04-28 18:58:39,198 - INFO - Data fetch between dates completed.

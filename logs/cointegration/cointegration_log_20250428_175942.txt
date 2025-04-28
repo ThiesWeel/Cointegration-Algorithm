@@ -1,0 +1,84 @@
+2025-04-28 17:59:43,563 - INFO - Not enough data for window size 250. Skipping.
+2025-04-28 17:59:43,563 - INFO - Not enough data for window size 70. Skipping.
+2025-04-28 17:59:43,563 - INFO - Not enough data for window size 40. Skipping.
+2025-04-28 17:59:43,563 - INFO - Pair ('GPOR', 'XOM'): Skipped because at least one p-value >= significance level (0.1).
+2025-04-28 17:59:43,565 - INFO - Not enough data for window size 250. Skipping.
+2025-04-28 17:59:43,565 - INFO - Not enough data for window size 70. Skipping.
+2025-04-28 17:59:43,565 - INFO - Not enough data for window size 40. Skipping.
+2025-04-28 17:59:43,565 - INFO - Pair ('CVX', 'GPOR'): Skipped because at least one p-value >= significance level (0.1).
+2025-04-28 17:59:43,567 - INFO - Not enough data for window size 250. Skipping.
+2025-04-28 17:59:43,567 - INFO - Not enough data for window size 70. Skipping.
+2025-04-28 17:59:43,567 - INFO - Not enough data for window size 40. Skipping.
+2025-04-28 17:59:43,567 - INFO - Pair ('COP', 'GPOR'): Skipped because at least one p-value >= significance level (0.1).
+2025-04-28 17:59:43,570 - INFO - Not enough data for window size 250. Skipping.
+2025-04-28 17:59:43,570 - INFO - Not enough data for window size 70. Skipping.
+2025-04-28 17:59:43,570 - INFO - Not enough data for window size 40. Skipping.
+2025-04-28 17:59:43,570 - INFO - Pair ('GPOR', 'OXY'): Skipped because at least one p-value >= significance level (0.1).
+2025-04-28 17:59:43,572 - INFO - Not enough data for window size 250. Skipping.
+2025-04-28 17:59:43,572 - INFO - Not enough data for window size 70. Skipping.
+2025-04-28 17:59:43,572 - INFO - Not enough data for window size 40. Skipping.
+2025-04-28 17:59:43,572 - INFO - Pair ('GPOR', 'PSX'): Skipped because at least one p-value >= significance level (0.1).
+2025-04-28 17:59:43,572 - INFO - Not enough data for window size 250. Skipping.
+2025-04-28 17:59:43,572 - INFO - Not enough data for window size 70. Skipping.
+2025-04-28 17:59:43,572 - INFO - Not enough data for window size 40. Skipping.
+2025-04-28 17:59:43,572 - INFO - Pair ('GPOR', 'MPC'): Skipped because at least one p-value >= significance level (0.1).
+2025-04-28 17:59:43,574 - INFO - Not enough data for window size 250. Skipping.
+2025-04-28 17:59:43,574 - INFO - Not enough data for window size 70. Skipping.
+2025-04-28 17:59:43,574 - INFO - Not enough data for window size 40. Skipping.
+2025-04-28 17:59:43,574 - INFO - Pair ('GPOR', 'VLO'): Skipped because at least one p-value >= significance level (0.1).
+2025-04-28 17:59:43,575 - INFO - Not enough data for window size 250. Skipping.
+2025-04-28 17:59:43,575 - INFO - Not enough data for window size 70. Skipping.
+2025-04-28 17:59:43,575 - INFO - Not enough data for window size 40. Skipping.
+2025-04-28 17:59:43,575 - INFO - Pair ('EOG', 'GPOR'): Skipped because at least one p-value >= significance level (0.1).
+2025-04-28 17:59:43,575 - INFO - Not enough data for window size 250. Skipping.
+2025-04-28 17:59:43,575 - INFO - Not enough data for window size 70. Skipping.
+2025-04-28 17:59:43,575 - INFO - Not enough data for window size 40. Skipping.
+2025-04-28 17:59:43,575 - INFO - Pair ('DVN', 'GPOR'): Skipped because at least one p-value >= significance level (0.1).
+2025-04-28 17:59:43,575 - INFO - Not enough data for window size 250. Skipping.
+2025-04-28 17:59:43,575 - INFO - Not enough data for window size 70. Skipping.
+2025-04-28 17:59:43,575 - INFO - Not enough data for window size 40. Skipping.
+2025-04-28 17:59:43,575 - INFO - Pair ('GPOR', 'HES'): Skipped because at least one p-value >= significance level (0.1).
+2025-04-28 17:59:43,580 - INFO - Not enough data for window size 250. Skipping.
+2025-04-28 17:59:43,580 - INFO - Not enough data for window size 70. Skipping.
+2025-04-28 17:59:43,580 - INFO - Not enough data for window size 40. Skipping.
+2025-04-28 17:59:43,580 - INFO - Pair ('APA', 'GPOR'): Skipped because at least one p-value >= significance level (0.1).
+2025-04-28 17:59:43,582 - INFO - Not enough data for window size 250. Skipping.
+2025-04-28 17:59:43,582 - INFO - Not enough data for window size 70. Skipping.
+2025-04-28 17:59:43,582 - INFO - Not enough data for window size 40. Skipping.
+2025-04-28 17:59:43,582 - INFO - Pair ('GPOR', 'MUR'): Skipped because at least one p-value >= significance level (0.1).
+2025-04-28 17:59:43,583 - INFO - Not enough data for window size 250. Skipping.
+2025-04-28 17:59:43,583 - INFO - Not enough data for window size 70. Skipping.
+2025-04-28 17:59:43,583 - INFO - Not enough data for window size 40. Skipping.
+2025-04-28 17:59:43,583 - INFO - Pair ('FANG', 'GPOR'): Skipped because at least one p-value >= significance level (0.1).
+2025-04-28 17:59:43,585 - INFO - Not enough data for window size 250. Skipping.
+2025-04-28 17:59:43,585 - INFO - Not enough data for window size 70. Skipping.
+2025-04-28 17:59:43,585 - INFO - Not enough data for window size 40. Skipping.
+2025-04-28 17:59:43,585 - INFO - Pair ('EQT', 'GPOR'): Skipped because at least one p-value >= significance level (0.1).
+2025-04-28 17:59:43,586 - INFO - Not enough data for window size 250. Skipping.
+2025-04-28 17:59:43,586 - INFO - Not enough data for window size 70. Skipping.
+2025-04-28 17:59:43,586 - INFO - Not enough data for window size 40. Skipping.
+2025-04-28 17:59:43,586 - INFO - Pair ('GPOR', 'RRC'): Skipped because at least one p-value >= significance level (0.1).
+2025-04-28 17:59:43,587 - INFO - Not enough data for window size 250. Skipping.
+2025-04-28 17:59:43,587 - INFO - Not enough data for window size 70. Skipping.
+2025-04-28 17:59:43,587 - INFO - Not enough data for window size 40. Skipping.
+2025-04-28 17:59:43,587 - INFO - Pair ('GPOR', 'MTDR'): Skipped because at least one p-value >= significance level (0.1).
+2025-04-28 17:59:43,587 - INFO - Not enough data for window size 250. Skipping.
+2025-04-28 17:59:43,587 - INFO - Not enough data for window size 70. Skipping.
+2025-04-28 17:59:43,587 - INFO - Not enough data for window size 40. Skipping.
+2025-04-28 17:59:43,587 - INFO - Pair ('GPOR', 'SM'): Skipped because at least one p-value >= significance level (0.1).
+2025-04-28 17:59:43,587 - INFO - Not enough data for window size 250. Skipping.
+2025-04-28 17:59:43,587 - INFO - Not enough data for window size 70. Skipping.
+2025-04-28 17:59:43,587 - INFO - Not enough data for window size 40. Skipping.
+2025-04-28 17:59:43,587 - INFO - Pair ('AR', 'GPOR'): Skipped because at least one p-value >= significance level (0.1).
+2025-04-28 17:59:43,587 - INFO - Not enough data for window size 250. Skipping.
+2025-04-28 17:59:43,587 - INFO - Not enough data for window size 70. Skipping.
+2025-04-28 17:59:43,587 - INFO - Not enough data for window size 40. Skipping.
+2025-04-28 17:59:43,587 - INFO - Pair ('GPOR', 'WTI'): Skipped because at least one p-value >= significance level (0.1).
+2025-04-28 17:59:43,594 - INFO - Not enough data for window size 250. Skipping.
+2025-04-28 17:59:43,601 - INFO - Win 70: α=-3.0585, β=1.5208, p=0.6619, ADF=-2.267, ADF_p=0.1828, 2021-07-19 to 2021-10-25
+2025-04-28 17:59:43,606 - INFO - Win 40: α=0.8983, β=0.6236, p=0.3306, ADF=-2.35, ADF_p=0.1562, 2021-08-30 to 2021-10-25
+2025-04-28 17:59:43,607 - INFO - Pair ('CRC', 'GPOR'): Skipped because at least one p-value >= significance level (0.1).
+2025-04-28 17:59:43,609 - INFO - Not enough data for window size 250. Skipping.
+2025-04-28 17:59:43,609 - INFO - Not enough data for window size 70. Skipping.
+2025-04-28 17:59:43,609 - INFO - Not enough data for window size 40. Skipping.
+2025-04-28 17:59:43,609 - INFO - Pair ('CRK', 'GPOR'): Skipped because at least one p-value >= significance level (0.1).

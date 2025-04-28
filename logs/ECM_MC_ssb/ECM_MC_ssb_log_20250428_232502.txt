@@ -1,0 +1,30 @@
+2025-04-28 23:25:02,995 - INFO - Data fetched for tickers: ['XOM', 'CVX', 'COP', 'OXY', 'PSX', 'MPC', 'VLO', 'EOG', 'DVN', 'HES', 'APA', 'MRO', 'MUR', 'FANG', 'EQT', 'RRC', 'GPOR', 'MTDR', 'SM', 'AR', 'WTI', 'CRC', 'CRK'] between 2020-04-20 and 2025-04-20.
+2025-04-28 23:25:03,291 - INFO - Last date in historical window: 2021-04-15 00:00:00
+2025-04-28 23:25:06,138 - INFO - ECM-ARMA fitting: r=1, p=0, q=0, BIC=335.7482
+2025-04-28 23:25:06,164 - INFO - ECM-ARMA fitting: r=1, p=0, q=1, BIC=341.1119
+2025-04-28 23:25:06,203 - INFO - ECM-ARMA fitting: r=1, p=0, q=2, BIC=344.9869
+2025-04-28 23:25:06,215 - INFO - ECM-ARMA fitting: r=1, p=1, q=0, BIC=341.1418
+2025-04-28 23:25:06,324 - INFO - ECM-ARMA fitting: r=1, p=1, q=1, BIC=346.0302
+2025-04-28 23:25:06,395 - INFO - ECM-ARMA fitting: r=1, p=1, q=2, BIC=350.4636
+2025-04-28 23:25:06,414 - INFO - ECM-ARMA fitting: r=1, p=2, q=0, BIC=344.7943
+2025-04-28 23:25:06,484 - INFO - ECM-ARMA fitting: r=1, p=2, q=1, BIC=350.1885
+2025-04-28 23:25:06,696 - INFO - ECM-ARMA fitting: r=1, p=2, q=2, BIC=352.5103
+2025-04-28 23:25:06,714 - INFO - ECM-ARMA fitting: r=2, p=0, q=0, BIC=338.7304
+2025-04-28 23:25:06,734 - INFO - ECM-ARMA fitting: r=2, p=0, q=1, BIC=339.9284
+2025-04-28 23:25:06,804 - INFO - ECM-ARMA fitting: r=2, p=0, q=2, BIC=344.5898
+2025-04-28 23:25:06,822 - INFO - ECM-ARMA fitting: r=2, p=1, q=0, BIC=340.4844
+2025-04-28 23:25:06,895 - INFO - ECM-ARMA fitting: r=2, p=1, q=1, BIC=345.0679
+2025-04-28 23:25:06,994 - INFO - ECM-ARMA fitting: r=2, p=1, q=2, BIC=349.9531
+2025-04-28 23:25:07,034 - INFO - ECM-ARMA fitting: r=2, p=2, q=0, BIC=344.0589
+2025-04-28 23:25:07,091 - INFO - ECM-ARMA fitting: r=2, p=2, q=1, BIC=349.5479
+2025-04-28 23:25:07,264 - INFO - ECM-ARMA fitting: r=2, p=2, q=2, BIC=349.8238
+2025-04-28 23:25:07,305 - INFO - ECM-ARMA fitting: r=3, p=0, q=0, BIC=346.9297
+2025-04-28 23:25:07,448 - INFO - ECM-ARMA fitting: r=3, p=0, q=1, BIC=345.6368
+2025-04-28 23:25:07,665 - INFO - ECM-ARMA fitting: r=3, p=0, q=2, BIC=343.1216
+2025-04-28 23:25:07,685 - INFO - ECM-ARMA fitting: r=3, p=1, q=0, BIC=348.3588
+2025-04-28 23:25:07,748 - INFO - ECM-ARMA fitting: r=3, p=1, q=1, BIC=346.1493
+2025-04-28 23:25:07,818 - INFO - ECM-ARMA fitting: r=3, p=1, q=2, BIC=348.5404
+2025-04-28 23:25:07,848 - INFO - ECM-ARMA fitting: r=3, p=2, q=0, BIC=342.1596
+2025-04-28 23:25:07,945 - INFO - ECM-ARMA fitting: r=3, p=2, q=1, BIC=347.6330
+2025-04-28 23:25:08,016 - INFO - ECM-ARMA fitting: r=3, p=2, q=2, BIC=353.0951
+2025-04-28 23:25:08,038 - INFO - Selected ECM-ARMA config: r=1, p=0, q=0, BIC=335.7482

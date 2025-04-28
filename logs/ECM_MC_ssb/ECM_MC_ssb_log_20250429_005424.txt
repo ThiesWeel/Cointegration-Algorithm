@@ -1,0 +1,250 @@
+2025-04-29 00:54:24,646 - INFO - Data fetched for tickers: ['XOM', 'CVX', 'COP', 'OXY', 'PSX', 'MPC', 'VLO', 'EOG', 'DVN', 'HES', 'APA', 'MRO', 'MUR', 'FANG', 'EQT', 'RRC', 'GPOR', 'MTDR', 'SM', 'AR', 'WTI', 'CRC', 'CRK'] between 2021-04-20 and 2021-12-31.
+2025-04-29 00:54:24,934 - INFO - Last date in historical window: 2021-12-31 00:00:00
+2025-04-29 00:54:27,004 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.2561, skewness=0.2590, kurtosis=0.2527
+2025-04-29 00:54:27,005 - INFO - GARCH: Simulated residuals: mean=-0.0057, std=0.2353, skewness=-0.1224, kurtosis=0.1151
+2025-04-29 00:54:27,008 - INFO - Starting p-value weighted beta estimation for pair.
+2025-04-29 00:54:27,008 - INFO - Calculated weights for 2 betas (k=10.0).
+2025-04-29 00:54:27,488 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.2562, skewness=0.2590, kurtosis=0.2524
+2025-04-29 00:54:27,488 - INFO - GARCH: Simulated residuals: mean=-0.0071, std=0.2307, skewness=-0.1750, kurtosis=-0.0346
+2025-04-29 00:54:27,887 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.1212, skewness=0.1300, kurtosis=0.8205
+2025-04-29 00:54:27,889 - INFO - GARCH: Simulated residuals: mean=0.0089, std=0.1154, skewness=0.1100, kurtosis=0.3357
+2025-04-29 00:54:27,889 - INFO - Starting p-value weighted beta estimation for pair.
+2025-04-29 00:54:27,891 - INFO - Calculated weights for 2 betas (k=10.0).
+2025-04-29 00:54:28,269 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.1213, skewness=0.1301, kurtosis=0.8127
+2025-04-29 00:54:28,270 - INFO - GARCH: Simulated residuals: mean=0.0007, std=0.1198, skewness=0.1711, kurtosis=0.1227
+2025-04-29 00:54:28,560 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.2936, skewness=0.0526, kurtosis=1.5103
+2025-04-29 00:54:28,560 - INFO - GARCH: Simulated residuals: mean=-0.0121, std=0.3050, skewness=-0.0951, kurtosis=-0.2500
+2025-04-29 00:54:28,565 - INFO - Starting p-value weighted beta estimation for pair.
+2025-04-29 00:54:28,565 - INFO - Calculated weights for 2 betas (k=10.0).
+2025-04-29 00:54:28,863 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.2946, skewness=0.0512, kurtosis=1.5308
+2025-04-29 00:54:28,864 - INFO - GARCH: Simulated residuals: mean=-0.0047, std=0.3196, skewness=0.0019, kurtosis=1.0372
+2025-04-29 00:54:29,303 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.2725, skewness=0.4658, kurtosis=4.0499
+2025-04-29 00:54:29,304 - INFO - GARCH: Simulated residuals: mean=-0.0046, std=0.2801, skewness=-0.0144, kurtosis=0.3208
+2025-04-29 00:54:29,304 - INFO - Starting p-value weighted beta estimation for pair.
+2025-04-29 00:54:29,304 - INFO - Calculated weights for 2 betas (k=10.0).
+2025-04-29 00:54:29,740 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.2725, skewness=0.4675, kurtosis=4.0628
+2025-04-29 00:54:29,741 - INFO - GARCH: Simulated residuals: mean=0.0120, std=0.2718, skewness=0.0451, kurtosis=0.0868
+2025-04-29 00:54:30,083 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.2687, skewness=0.3973, kurtosis=1.3291
+2025-04-29 00:54:30,083 - INFO - GARCH: Simulated residuals: mean=-0.0017, std=0.2826, skewness=-0.0669, kurtosis=-0.0547
+2025-04-29 00:54:30,085 - INFO - Starting p-value weighted beta estimation for pair.
+2025-04-29 00:54:30,085 - INFO - Calculated weights for 2 betas (k=10.0).
+2025-04-29 00:54:30,409 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.2699, skewness=0.3899, kurtosis=1.3095
+2025-04-29 00:54:30,409 - INFO - GARCH: Simulated residuals: mean=0.0030, std=0.2589, skewness=0.1358, kurtosis=0.0503
+2025-04-29 00:54:30,713 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.4081, skewness=0.5326, kurtosis=2.2663
+2025-04-29 00:54:30,713 - INFO - GARCH: Simulated residuals: mean=-0.0022, std=0.4118, skewness=-0.0580, kurtosis=-0.0056
+2025-04-29 00:54:30,714 - INFO - Starting p-value weighted beta estimation for pair.
+2025-04-29 00:54:30,714 - INFO - Calculated weights for 2 betas (k=10.0).
+2025-04-29 00:54:31,038 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.4067, skewness=0.5216, kurtosis=2.1809
+2025-04-29 00:54:31,038 - INFO - GARCH: Simulated residuals: mean=0.0001, std=0.3901, skewness=-0.0873, kurtosis=-0.2204
+2025-04-29 00:54:31,383 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.3588, skewness=-0.3220, kurtosis=2.0751
+2025-04-29 00:54:31,384 - INFO - GARCH: Simulated residuals: mean=-0.0167, std=0.3634, skewness=0.1568, kurtosis=0.1831
+2025-04-29 00:54:31,386 - INFO - Starting p-value weighted beta estimation for pair.
+2025-04-29 00:54:31,386 - INFO - Calculated weights for 2 betas (k=10.0).
+2025-04-29 00:54:31,768 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.3587, skewness=-0.3148, kurtosis=2.1010
+2025-04-29 00:54:31,769 - INFO - GARCH: Simulated residuals: mean=-0.0230, std=0.3504, skewness=0.0962, kurtosis=0.3340
+2025-04-29 00:54:32,076 - INFO - Data fetched for tickers: ['XOM', 'CVX', 'COP', 'OXY', 'PSX', 'MPC', 'VLO', 'EOG', 'DVN', 'HES', 'APA', 'MRO', 'MUR', 'FANG', 'EQT', 'RRC', 'GPOR', 'MTDR', 'SM', 'AR', 'WTI', 'CRC', 'CRK'] between 2021-04-27 and 2022-01-07.
+2025-04-29 00:54:32,337 - INFO - Last date in historical window: 2022-01-07 00:00:00
+2025-04-29 00:54:34,635 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.2315, skewness=0.7110, kurtosis=1.9451
+2025-04-29 00:54:34,636 - INFO - GARCH: Simulated residuals: mean=-0.0032, std=0.2210, skewness=0.0988, kurtosis=0.1223
+2025-04-29 00:54:34,637 - INFO - Starting p-value weighted beta estimation for pair.
+2025-04-29 00:54:34,637 - INFO - Calculated weights for 2 betas (k=10.0).
+2025-04-29 00:54:36,318 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.2315, skewness=0.7115, kurtosis=1.9458
+2025-04-29 00:54:36,319 - INFO - GARCH: Simulated residuals: mean=0.0167, std=0.2342, skewness=-0.0404, kurtosis=-0.1485
+2025-04-29 00:54:36,662 - INFO - Data fetched for tickers: ['XOM', 'CVX', 'COP', 'OXY', 'PSX', 'MPC', 'VLO', 'EOG', 'DVN', 'HES', 'APA', 'MRO', 'MUR', 'FANG', 'EQT', 'RRC', 'GPOR', 'MTDR', 'SM', 'AR', 'WTI', 'CRC', 'CRK'] between 2021-05-04 and 2022-01-14.
+2025-04-29 00:54:37,018 - INFO - Last date in historical window: 2022-01-14 00:00:00
+2025-04-29 00:54:39,498 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.2112, skewness=-0.3371, kurtosis=1.4755
+2025-04-29 00:54:39,499 - INFO - GARCH: Simulated residuals: mean=0.0085, std=0.2476, skewness=0.1413, kurtosis=-0.0547
+2025-04-29 00:54:39,500 - INFO - Starting p-value weighted beta estimation for pair.
+2025-04-29 00:54:39,500 - INFO - Calculated weights for 2 betas (k=10.0).
+2025-04-29 00:54:40,639 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.2116, skewness=-0.3403, kurtosis=1.4818
+2025-04-29 00:54:40,639 - INFO - GARCH: Simulated residuals: mean=-0.0069, std=0.2577, skewness=-0.0243, kurtosis=-0.0041
+2025-04-29 00:54:41,135 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.1700, skewness=0.2677, kurtosis=0.1229
+2025-04-29 00:54:41,135 - INFO - GARCH: Simulated residuals: mean=-0.0005, std=0.1766, skewness=0.1027, kurtosis=-0.0977
+2025-04-29 00:54:41,135 - INFO - Starting p-value weighted beta estimation for pair.
+2025-04-29 00:54:41,135 - INFO - Calculated weights for 2 betas (k=10.0).
+2025-04-29 00:54:41,643 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.1699, skewness=0.2671, kurtosis=0.1218
+2025-04-29 00:54:41,643 - INFO - GARCH: Simulated residuals: mean=-0.0088, std=0.1794, skewness=-0.1195, kurtosis=0.0522
+2025-04-29 00:54:42,000 - INFO - Data fetched for tickers: ['XOM', 'CVX', 'COP', 'OXY', 'PSX', 'MPC', 'VLO', 'EOG', 'DVN', 'HES', 'APA', 'MRO', 'MUR', 'FANG', 'EQT', 'RRC', 'GPOR', 'MTDR', 'SM', 'AR', 'WTI', 'CRC', 'CRK'] between 2021-05-11 and 2022-01-21.
+2025-04-29 00:54:42,503 - INFO - Last date in historical window: 2022-01-21 00:00:00
+2025-04-29 00:54:44,743 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.2675, skewness=-0.1733, kurtosis=-0.0066
+2025-04-29 00:54:44,743 - INFO - GARCH: Simulated residuals: mean=-0.0160, std=0.2782, skewness=-0.0561, kurtosis=-0.1771
+2025-04-29 00:54:44,746 - INFO - Starting p-value weighted beta estimation for pair.
+2025-04-29 00:54:44,746 - INFO - Calculated weights for 2 betas (k=10.0).
+2025-04-29 00:54:45,119 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.2674, skewness=-0.1727, kurtosis=-0.0076
+2025-04-29 00:54:45,120 - INFO - GARCH: Simulated residuals: mean=-0.0099, std=0.2716, skewness=-0.0674, kurtosis=-0.3704
+2025-04-29 00:54:45,369 - INFO - Data fetched for tickers: ['XOM', 'CVX', 'COP', 'OXY', 'PSX', 'MPC', 'VLO', 'EOG', 'DVN', 'HES', 'APA', 'MRO', 'MUR', 'FANG', 'EQT', 'RRC', 'GPOR', 'MTDR', 'SM', 'AR', 'WTI', 'CRC', 'CRK'] between 2021-05-18 and 2022-01-28.
+2025-04-29 00:54:45,637 - INFO - Last date in historical window: 2022-01-28 00:00:00
+2025-04-29 00:54:47,383 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.1258, skewness=0.0979, kurtosis=0.9187
+2025-04-29 00:54:47,383 - INFO - GARCH: Simulated residuals: mean=-0.0054, std=0.2797, skewness=0.2328, kurtosis=0.1437
+2025-04-29 00:54:47,385 - INFO - Starting p-value weighted beta estimation for pair.
+2025-04-29 00:54:47,385 - INFO - Calculated weights for 2 betas (k=10.0).
+2025-04-29 00:54:47,761 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.1258, skewness=0.0979, kurtosis=0.9186
+2025-04-29 00:54:47,761 - INFO - GARCH: Simulated residuals: mean=-0.0029, std=0.2888, skewness=-0.0393, kurtosis=-0.1564
+2025-04-29 00:54:48,235 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.2899, skewness=0.1286, kurtosis=-0.1551
+2025-04-29 00:54:48,237 - INFO - GARCH: Simulated residuals: mean=0.0011, std=0.3024, skewness=0.0255, kurtosis=0.3583
+2025-04-29 00:54:48,239 - INFO - Starting p-value weighted beta estimation for pair.
+2025-04-29 00:54:48,239 - INFO - Calculated weights for 2 betas (k=10.0).
+2025-04-29 00:54:48,916 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.2899, skewness=0.1286, kurtosis=-0.1551
+2025-04-29 00:54:48,916 - INFO - GARCH: Simulated residuals: mean=0.0095, std=0.3055, skewness=0.0062, kurtosis=-0.0238
+2025-04-29 00:54:49,195 - INFO - Data fetched for tickers: ['XOM', 'CVX', 'COP', 'OXY', 'PSX', 'MPC', 'VLO', 'EOG', 'DVN', 'HES', 'APA', 'MRO', 'MUR', 'FANG', 'EQT', 'RRC', 'GPOR', 'MTDR', 'SM', 'AR', 'WTI', 'CRC', 'CRK'] between 2021-05-25 and 2022-02-04.
+2025-04-29 00:54:49,476 - INFO - Last date in historical window: 2022-02-04 00:00:00
+2025-04-29 00:54:51,426 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.2260, skewness=-0.0991, kurtosis=0.9882
+2025-04-29 00:54:51,426 - INFO - GARCH: Simulated residuals: mean=-0.0153, std=0.2302, skewness=0.0179, kurtosis=-0.1026
+2025-04-29 00:54:51,426 - INFO - Starting p-value weighted beta estimation for pair.
+2025-04-29 00:54:51,430 - INFO - Calculated weights for 2 betas (k=10.0).
+2025-04-29 00:54:51,844 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.2261, skewness=-0.1007, kurtosis=0.9902
+2025-04-29 00:54:51,844 - INFO - GARCH: Simulated residuals: mean=0.0038, std=0.2367, skewness=-0.0509, kurtosis=0.0309
+2025-04-29 00:54:52,538 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.1268, skewness=1.2320, kurtosis=4.7352
+2025-04-29 00:54:52,539 - INFO - GARCH: Simulated residuals: mean=-0.0039, std=0.1174, skewness=-0.0900, kurtosis=0.0582
+2025-04-29 00:54:52,540 - INFO - Starting p-value weighted beta estimation for pair.
+2025-04-29 00:54:52,540 - INFO - Calculated weights for 2 betas (k=10.0).
+2025-04-29 00:54:52,988 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.1268, skewness=1.2319, kurtosis=4.7351
+2025-04-29 00:54:52,988 - INFO - GARCH: Simulated residuals: mean=-0.0009, std=0.1115, skewness=-0.0233, kurtosis=-0.4017
+2025-04-29 00:54:53,394 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.1827, skewness=0.4679, kurtosis=1.2263
+2025-04-29 00:54:53,394 - INFO - GARCH: Simulated residuals: mean=0.0041, std=0.1976, skewness=-0.2728, kurtosis=0.2370
+2025-04-29 00:54:53,399 - INFO - Starting p-value weighted beta estimation for pair.
+2025-04-29 00:54:53,399 - INFO - Calculated weights for 2 betas (k=10.0).
+2025-04-29 00:54:53,820 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.1825, skewness=0.4679, kurtosis=1.2168
+2025-04-29 00:54:53,821 - INFO - GARCH: Simulated residuals: mean=-0.0065, std=0.1878, skewness=-0.0141, kurtosis=-0.0766
+2025-04-29 00:54:54,131 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.1655, skewness=-0.0813, kurtosis=1.7163
+2025-04-29 00:54:54,133 - INFO - GARCH: Simulated residuals: mean=0.0009, std=0.1582, skewness=0.1934, kurtosis=0.0313
+2025-04-29 00:54:54,134 - INFO - Starting p-value weighted beta estimation for pair.
+2025-04-29 00:54:54,134 - INFO - Calculated weights for 2 betas (k=10.0).
+2025-04-29 00:54:54,417 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.1655, skewness=-0.0815, kurtosis=1.7159
+2025-04-29 00:54:54,418 - INFO - GARCH: Simulated residuals: mean=-0.0025, std=0.1610, skewness=0.0407, kurtosis=-0.0826
+2025-04-29 00:54:54,687 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.3392, skewness=0.2499, kurtosis=1.0840
+2025-04-29 00:54:54,687 - INFO - GARCH: Simulated residuals: mean=0.0032, std=0.3436, skewness=-0.0431, kurtosis=0.2440
+2025-04-29 00:54:54,689 - INFO - Starting p-value weighted beta estimation for pair.
+2025-04-29 00:54:54,689 - INFO - Calculated weights for 2 betas (k=10.0).
+2025-04-29 00:54:54,958 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.3392, skewness=0.2504, kurtosis=1.0818
+2025-04-29 00:54:54,958 - INFO - GARCH: Simulated residuals: mean=0.0181, std=0.3496, skewness=-0.1165, kurtosis=-0.3355
+2025-04-29 00:54:55,366 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.1803, skewness=-0.0723, kurtosis=2.4027
+2025-04-29 00:54:55,366 - INFO - GARCH: Simulated residuals: mean=-0.0012, std=0.1693, skewness=0.0102, kurtosis=-0.4034
+2025-04-29 00:54:55,367 - INFO - Starting p-value weighted beta estimation for pair.
+2025-04-29 00:54:55,367 - INFO - Calculated weights for 2 betas (k=10.0).
+2025-04-29 00:54:55,755 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.1807, skewness=-0.0723, kurtosis=2.4025
+2025-04-29 00:54:55,756 - INFO - GARCH: Simulated residuals: mean=-0.0022, std=0.1873, skewness=-0.0278, kurtosis=-0.0061
+2025-04-29 00:54:56,024 - INFO - Data fetched for tickers: ['XOM', 'CVX', 'COP', 'OXY', 'PSX', 'MPC', 'VLO', 'EOG', 'DVN', 'HES', 'APA', 'MRO', 'MUR', 'FANG', 'EQT', 'RRC', 'GPOR', 'MTDR', 'SM', 'AR', 'WTI', 'CRC', 'CRK'] between 2021-06-01 and 2022-02-11.
+2025-04-29 00:54:56,320 - INFO - Last date in historical window: 2022-02-11 00:00:00
+2025-04-29 00:54:58,387 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.1311, skewness=0.1337, kurtosis=0.6278
+2025-04-29 00:54:58,388 - INFO - GARCH: Simulated residuals: mean=0.7027, std=49.8656, skewness=0.0406, kurtosis=-0.0162
+2025-04-29 00:54:58,389 - INFO - Starting p-value weighted beta estimation for pair.
+2025-04-29 00:54:58,389 - INFO - Calculated weights for 2 betas (k=10.0).
+2025-04-29 00:54:59,113 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.1311, skewness=0.1335, kurtosis=0.6282
+2025-04-29 00:54:59,114 - INFO - GARCH: Simulated residuals: mean=-3.9979, std=62.0877, skewness=0.1178, kurtosis=-0.2315
+2025-04-29 00:54:59,960 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.2138, skewness=0.2197, kurtosis=0.4316
+2025-04-29 00:54:59,961 - INFO - GARCH: Simulated residuals: mean=-0.0002, std=0.2534, skewness=-0.0493, kurtosis=-0.0094
+2025-04-29 00:54:59,961 - INFO - Starting p-value weighted beta estimation for pair.
+2025-04-29 00:54:59,963 - INFO - Calculated weights for 2 betas (k=10.0).
+2025-04-29 00:55:00,496 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.2135, skewness=0.2152, kurtosis=0.4210
+2025-04-29 00:55:00,497 - INFO - GARCH: Simulated residuals: mean=0.0113, std=0.2454, skewness=-0.0092, kurtosis=-0.1628
+2025-04-29 00:55:00,900 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.2338, skewness=0.3260, kurtosis=0.6003
+2025-04-29 00:55:00,901 - INFO - GARCH: Simulated residuals: mean=347.8094, std=20238.2411, skewness=-0.0258, kurtosis=0.2530
+2025-04-29 00:55:00,903 - INFO - Starting p-value weighted beta estimation for pair.
+2025-04-29 00:55:00,903 - INFO - Calculated weights for 2 betas (k=10.0).
+2025-04-29 00:55:01,364 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.2334, skewness=0.3233, kurtosis=0.5970
+2025-04-29 00:55:01,365 - INFO - GARCH: Simulated residuals: mean=-0.0201, std=0.4521, skewness=0.0193, kurtosis=0.0435
+2025-04-29 00:55:01,902 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.2144, skewness=0.4407, kurtosis=0.4348
+2025-04-29 00:55:01,902 - INFO - GARCH: Simulated residuals: mean=-0.0067, std=0.2194, skewness=-0.2233, kurtosis=-0.0625
+2025-04-29 00:55:01,904 - INFO - Starting p-value weighted beta estimation for pair.
+2025-04-29 00:55:01,904 - INFO - Calculated weights for 2 betas (k=10.0).
+2025-04-29 00:55:02,357 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.2142, skewness=0.4409, kurtosis=0.4365
+2025-04-29 00:55:02,357 - INFO - GARCH: Simulated residuals: mean=-0.0042, std=0.2131, skewness=0.0470, kurtosis=-0.1722
+2025-04-29 00:55:02,736 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.3307, skewness=0.4303, kurtosis=0.7571
+2025-04-29 00:55:02,737 - INFO - GARCH: Simulated residuals: mean=0.0227, std=0.6970, skewness=0.0889, kurtosis=0.0277
+2025-04-29 00:55:02,737 - INFO - Starting p-value weighted beta estimation for pair.
+2025-04-29 00:55:02,737 - INFO - Calculated weights for 2 betas (k=10.0).
+2025-04-29 00:55:03,226 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.3307, skewness=0.4303, kurtosis=0.7568
+2025-04-29 00:55:03,227 - INFO - GARCH: Simulated residuals: mean=371.2016, std=9616.9274, skewness=0.1389, kurtosis=-0.2674
+2025-04-29 00:55:03,470 - INFO - Data fetched for tickers: ['XOM', 'CVX', 'COP', 'OXY', 'PSX', 'MPC', 'VLO', 'EOG', 'DVN', 'HES', 'APA', 'MRO', 'MUR', 'FANG', 'EQT', 'RRC', 'GPOR', 'MTDR', 'SM', 'AR', 'WTI', 'CRC', 'CRK'] between 2021-06-08 and 2022-02-18.
+2025-04-29 00:55:03,771 - INFO - Last date in historical window: 2022-02-18 00:00:00
+2025-04-29 00:55:06,395 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.1300, skewness=0.2240, kurtosis=0.5065
+2025-04-29 00:55:06,396 - INFO - GARCH: Simulated residuals: mean=0.0007, std=0.1306, skewness=0.0620, kurtosis=-0.0223
+2025-04-29 00:55:06,397 - INFO - Starting p-value weighted beta estimation for pair.
+2025-04-29 00:55:06,397 - INFO - Calculated weights for 2 betas (k=10.0).
+2025-04-29 00:55:06,802 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.1299, skewness=0.2257, kurtosis=0.5030
+2025-04-29 00:55:06,803 - INFO - GARCH: Simulated residuals: mean=0.0020, std=0.1264, skewness=-0.0946, kurtosis=-0.1005
+2025-04-29 00:55:07,146 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.3839, skewness=0.0427, kurtosis=0.2080
+2025-04-29 00:55:07,146 - INFO - GARCH: Simulated residuals: mean=0.0071, std=0.3579, skewness=-0.1852, kurtosis=0.7595
+2025-04-29 00:55:07,147 - INFO - Starting p-value weighted beta estimation for pair.
+2025-04-29 00:55:07,147 - INFO - Calculated weights for 2 betas (k=10.0).
+2025-04-29 00:55:08,208 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.3839, skewness=0.0427, kurtosis=0.2082
+2025-04-29 00:55:08,210 - INFO - GARCH: Simulated residuals: mean=-0.0057, std=0.3745, skewness=0.0161, kurtosis=-0.0966
+2025-04-29 00:55:08,738 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.1744, skewness=0.1564, kurtosis=-0.1521
+2025-04-29 00:55:08,738 - INFO - GARCH: Simulated residuals: mean=0.0056, std=0.1818, skewness=-0.0080, kurtosis=-0.5310
+2025-04-29 00:55:08,742 - INFO - Starting p-value weighted beta estimation for pair.
+2025-04-29 00:55:08,742 - INFO - Calculated weights for 2 betas (k=10.0).
+2025-04-29 00:55:09,362 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.1747, skewness=0.1578, kurtosis=-0.1501
+2025-04-29 00:55:09,362 - INFO - GARCH: Simulated residuals: mean=0.0002, std=0.1734, skewness=-0.2460, kurtosis=0.1146
+2025-04-29 00:55:09,773 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.1791, skewness=-0.1552, kurtosis=0.1784
+2025-04-29 00:55:09,774 - INFO - GARCH: Simulated residuals: mean=0.0122, std=0.1873, skewness=-0.0368, kurtosis=-0.2275
+2025-04-29 00:55:09,775 - INFO - Starting p-value weighted beta estimation for pair.
+2025-04-29 00:55:09,775 - INFO - Calculated weights for 2 betas (k=10.0).
+2025-04-29 00:55:10,088 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.1790, skewness=-0.1546, kurtosis=0.1770
+2025-04-29 00:55:10,088 - INFO - GARCH: Simulated residuals: mean=0.0056, std=0.1764, skewness=0.0135, kurtosis=-0.2073
+2025-04-29 00:55:10,471 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.2508, skewness=-0.1311, kurtosis=2.2742
+2025-04-29 00:55:10,471 - INFO - GARCH: Simulated residuals: mean=-0.0101, std=0.2500, skewness=-0.1417, kurtosis=-0.0219
+2025-04-29 00:55:10,478 - INFO - Starting p-value weighted beta estimation for pair.
+2025-04-29 00:55:10,478 - INFO - Calculated weights for 2 betas (k=10.0).
+2025-04-29 00:55:10,811 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.2509, skewness=-0.1312, kurtosis=2.2730
+2025-04-29 00:55:10,811 - INFO - GARCH: Simulated residuals: mean=-0.0026, std=0.2551, skewness=-0.0012, kurtosis=0.0412
+2025-04-29 00:55:11,411 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.2224, skewness=0.1944, kurtosis=0.3910
+2025-04-29 00:55:11,412 - INFO - GARCH: Simulated residuals: mean=-0.0077, std=0.2239, skewness=0.2045, kurtosis=0.1968
+2025-04-29 00:55:11,413 - INFO - Starting p-value weighted beta estimation for pair.
+2025-04-29 00:55:11,413 - INFO - Calculated weights for 2 betas (k=10.0).
+2025-04-29 00:55:11,795 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.2224, skewness=0.1942, kurtosis=0.3906
+2025-04-29 00:55:11,796 - INFO - GARCH: Simulated residuals: mean=-0.0003, std=0.2228, skewness=0.2174, kurtosis=0.3725
+2025-04-29 00:55:12,182 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.2366, skewness=0.0502, kurtosis=0.4009
+2025-04-29 00:55:12,184 - INFO - GARCH: Simulated residuals: mean=-0.0050, std=0.2284, skewness=-0.0969, kurtosis=-0.1332
+2025-04-29 00:55:12,184 - INFO - Starting p-value weighted beta estimation for pair.
+2025-04-29 00:55:12,184 - INFO - Calculated weights for 2 betas (k=10.0).
+2025-04-29 00:55:12,594 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.2366, skewness=0.0502, kurtosis=0.4013
+2025-04-29 00:55:12,595 - INFO - GARCH: Simulated residuals: mean=0.0067, std=0.2351, skewness=-0.0152, kurtosis=-0.2823
+2025-04-29 00:55:12,935 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.3122, skewness=0.2268, kurtosis=0.9210
+2025-04-29 00:55:12,936 - INFO - GARCH: Simulated residuals: mean=0.0173, std=0.3192, skewness=-0.0642, kurtosis=-0.1147
+2025-04-29 00:55:12,937 - INFO - Starting p-value weighted beta estimation for pair.
+2025-04-29 00:55:12,937 - INFO - Calculated weights for 2 betas (k=10.0).
+2025-04-29 00:55:13,279 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.3119, skewness=0.2280, kurtosis=0.9239
+2025-04-29 00:55:13,279 - INFO - GARCH: Simulated residuals: mean=-0.0283, std=0.3086, skewness=0.2618, kurtosis=0.0115
+2025-04-29 00:55:13,967 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.1268, skewness=0.1191, kurtosis=0.0746
+2025-04-29 00:55:13,967 - INFO - GARCH: Simulated residuals: mean=0.0031, std=0.1248, skewness=-0.1130, kurtosis=-0.0880
+2025-04-29 00:55:13,970 - INFO - Starting p-value weighted beta estimation for pair.
+2025-04-29 00:55:13,970 - INFO - Calculated weights for 2 betas (k=10.0).
+2025-04-29 00:55:14,545 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.1268, skewness=0.1175, kurtosis=0.0702
+2025-04-29 00:55:14,554 - INFO - GARCH: Simulated residuals: mean=0.0022, std=0.1405, skewness=0.1402, kurtosis=-0.0964
+2025-04-29 00:55:14,892 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.2560, skewness=0.3874, kurtosis=0.3898
+2025-04-29 00:55:14,892 - INFO - GARCH: Simulated residuals: mean=-0.0031, std=0.2442, skewness=-0.1123, kurtosis=-0.0484
+2025-04-29 00:55:14,896 - INFO - Starting p-value weighted beta estimation for pair.
+2025-04-29 00:55:14,896 - INFO - Calculated weights for 2 betas (k=10.0).
+2025-04-29 00:55:15,272 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.2554, skewness=0.3871, kurtosis=0.3895
+2025-04-29 00:55:15,273 - INFO - GARCH: Simulated residuals: mean=0.0192, std=0.2541, skewness=0.1171, kurtosis=0.1037
+2025-04-29 00:55:15,778 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.2164, skewness=0.5112, kurtosis=0.4490
+2025-04-29 00:55:15,778 - INFO - GARCH: Simulated residuals: mean=0.0036, std=0.2201, skewness=0.0951, kurtosis=-0.0787
+2025-04-29 00:55:15,783 - INFO - Starting p-value weighted beta estimation for pair.
+2025-04-29 00:55:15,783 - INFO - Calculated weights for 2 betas (k=10.0).
+2025-04-29 00:55:16,207 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.2162, skewness=0.5113, kurtosis=0.4508
+2025-04-29 00:55:16,208 - INFO - GARCH: Simulated residuals: mean=-0.0038, std=0.2259, skewness=0.0667, kurtosis=0.1267
+2025-04-29 00:55:16,611 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.2016, skewness=-0.3272, kurtosis=1.7862
+2025-04-29 00:55:16,612 - INFO - GARCH: Simulated residuals: mean=0.0127, std=0.1920, skewness=0.0862, kurtosis=0.0327
+2025-04-29 00:55:16,613 - INFO - Starting p-value weighted beta estimation for pair.
+2025-04-29 00:55:16,613 - INFO - Calculated weights for 2 betas (k=10.0).
+2025-04-29 00:55:17,029 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.2022, skewness=-0.3271, kurtosis=1.7852
+2025-04-29 00:55:17,029 - INFO - GARCH: Simulated residuals: mean=0.0090, std=0.2005, skewness=-0.2237, kurtosis=0.4946
+2025-04-29 00:55:17,354 - INFO - Data fetched for tickers: ['XOM', 'CVX', 'COP', 'OXY', 'PSX', 'MPC', 'VLO', 'EOG', 'DVN', 'HES', 'APA', 'MRO', 'MUR', 'FANG', 'EQT', 'RRC', 'GPOR', 'MTDR', 'SM', 'AR', 'WTI', 'CRC', 'CRK'] between 2021-06-15 and 2022-02-25.
+2025-04-29 00:55:17,687 - INFO - Last date in historical window: 2022-02-25 00:00:00
+2025-04-29 00:55:20,583 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.3844, skewness=-0.0265, kurtosis=0.1172
+2025-04-29 00:55:20,584 - INFO - GARCH: Simulated residuals: mean=0.0167, std=0.3651, skewness=-0.0346, kurtosis=-0.1928
+2025-04-29 00:55:20,585 - INFO - Starting p-value weighted beta estimation for pair.
+2025-04-29 00:55:20,585 - INFO - Calculated weights for 2 betas (k=10.0).
+2025-04-29 00:55:20,971 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.3845, skewness=-0.0262, kurtosis=0.1162
+2025-04-29 00:55:20,971 - INFO - GARCH: Simulated residuals: mean=0.0189, std=0.3698, skewness=-0.1129, kurtosis=0.0976
+2025-04-29 00:55:21,629 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.2900, skewness=0.1326, kurtosis=-0.1119
+2025-04-29 00:55:21,629 - INFO - GARCH: Simulated residuals: mean=0.0023, std=0.0008, skewness=0.1005, kurtosis=0.0819
+2025-04-29 00:55:21,629 - INFO - Starting p-value weighted beta estimation for pair.
+2025-04-29 00:55:21,629 - INFO - Calculated weights for 2 betas (k=10.0).
+2025-04-29 00:55:22,329 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.2906, skewness=0.1329, kurtosis=-0.1116
+2025-04-29 00:55:22,329 - INFO - GARCH: Simulated residuals: mean=0.0022, std=0.0007, skewness=-0.0906, kurtosis=-0.5805
+2025-04-29 00:55:23,159 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.1729, skewness=0.1346, kurtosis=-0.1463
+2025-04-29 00:55:23,159 - INFO - GARCH: Simulated residuals: mean=0.0060, std=0.1511, skewness=-0.0156, kurtosis=-0.0990
+2025-04-29 00:55:23,162 - INFO - Starting p-value weighted beta estimation for pair.
+2025-04-29 00:55:23,162 - INFO - Calculated weights for 2 betas (k=10.0).

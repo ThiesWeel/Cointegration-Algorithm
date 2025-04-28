@@ -77,7 +77,9 @@ def bayesian_interference_check(pre_processed, end_date):
     3. If it does not exist, create a new CSV file using tickers from TICKER_FILE.
     """
     log_message(f"DEBUG: Keys in pre_processed: {list(pre_processed.keys())}")
-    DATA_FILE = f'Bayesian1_interference_table_{end_date}.csv'
+    # Sanitize end_date for filename (remove spaces, colons, keep only date part)
+    safe_end_date = str(end_date).replace(":", "-").replace(" ", "_").split(" ")[0]
+    DATA_FILE = f'Bayesian1_interference_table_{safe_end_date}.csv'
     table_path = os.path.join(BAYESIAN1_DIR, DATA_FILE)
 
     # Scenario 1: table for this data already exists, with most recent data.
@@ -142,6 +144,7 @@ def bayesian_interference_check(pre_processed, end_date):
 
     # Save the updated table
     post_table = prior_table
+    os.makedirs(BAYESIAN1_DIR, exist_ok=True)
     post_table.to_csv(os.path.join(BAYESIAN1_DIR, DATA_FILE), index=True)
 
     # Identify correlated pairs

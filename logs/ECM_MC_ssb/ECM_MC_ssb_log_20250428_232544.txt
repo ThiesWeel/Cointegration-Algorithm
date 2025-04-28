@@ -1,0 +1,64 @@
+2025-04-28 23:25:44,534 - INFO - Data fetched for tickers: ['XOM', 'CVX', 'COP', 'OXY', 'PSX', 'MPC', 'VLO', 'EOG', 'DVN', 'HES', 'APA', 'MRO', 'MUR', 'FANG', 'EQT', 'RRC', 'GPOR', 'MTDR', 'SM', 'AR', 'WTI', 'CRC', 'CRK'] between 2020-04-20 and 2025-04-20.
+2025-04-28 23:25:44,831 - INFO - Last date in historical window: 2021-04-15 00:00:00
+2025-04-28 23:25:47,738 - INFO - ECM-ARMA fitting: r=1, p=0, q=0, BIC=335.7482
+2025-04-28 23:25:47,764 - INFO - ECM-ARMA fitting: r=1, p=0, q=1, BIC=341.1119
+2025-04-28 23:25:47,804 - INFO - ECM-ARMA fitting: r=1, p=0, q=2, BIC=344.9869
+2025-04-28 23:25:47,824 - INFO - ECM-ARMA fitting: r=1, p=1, q=0, BIC=341.1418
+2025-04-28 23:25:47,883 - INFO - ECM-ARMA fitting: r=1, p=1, q=1, BIC=346.0302
+2025-04-28 23:25:47,954 - INFO - ECM-ARMA fitting: r=1, p=1, q=2, BIC=350.4636
+2025-04-28 23:25:47,985 - INFO - ECM-ARMA fitting: r=1, p=2, q=0, BIC=344.7943
+2025-04-28 23:25:48,053 - INFO - ECM-ARMA fitting: r=1, p=2, q=1, BIC=350.1885
+2025-04-28 23:25:48,306 - INFO - ECM-ARMA fitting: r=1, p=2, q=2, BIC=352.5103
+2025-04-28 23:25:48,323 - INFO - ECM-ARMA fitting: r=2, p=0, q=0, BIC=338.7304
+2025-04-28 23:25:48,345 - INFO - ECM-ARMA fitting: r=2, p=0, q=1, BIC=339.9284
+2025-04-28 23:25:48,404 - INFO - ECM-ARMA fitting: r=2, p=0, q=2, BIC=344.5898
+2025-04-28 23:25:48,419 - INFO - ECM-ARMA fitting: r=2, p=1, q=0, BIC=340.4844
+2025-04-28 23:25:48,475 - INFO - ECM-ARMA fitting: r=2, p=1, q=1, BIC=345.0679
+2025-04-28 23:25:48,596 - INFO - ECM-ARMA fitting: r=2, p=1, q=2, BIC=349.9531
+2025-04-28 23:25:48,644 - INFO - ECM-ARMA fitting: r=2, p=2, q=0, BIC=344.0589
+2025-04-28 23:25:48,694 - INFO - ECM-ARMA fitting: r=2, p=2, q=1, BIC=349.5479
+2025-04-28 23:25:49,064 - INFO - ECM-ARMA fitting: r=2, p=2, q=2, BIC=349.8238
+2025-04-28 23:25:49,103 - INFO - ECM-ARMA fitting: r=3, p=0, q=0, BIC=346.9297
+2025-04-28 23:25:49,124 - INFO - ECM-ARMA fitting: r=3, p=0, q=1, BIC=345.6368
+2025-04-28 23:25:49,614 - INFO - ECM-ARMA fitting: r=3, p=0, q=2, BIC=343.1216
+2025-04-28 23:25:49,634 - INFO - ECM-ARMA fitting: r=3, p=1, q=0, BIC=348.3588
+2025-04-28 23:25:49,744 - INFO - ECM-ARMA fitting: r=3, p=1, q=1, BIC=346.1493
+2025-04-28 23:25:49,813 - INFO - ECM-ARMA fitting: r=3, p=1, q=2, BIC=348.5404
+2025-04-28 23:25:49,834 - INFO - ECM-ARMA fitting: r=3, p=2, q=0, BIC=342.1596
+2025-04-28 23:25:49,952 - INFO - ECM-ARMA fitting: r=3, p=2, q=1, BIC=347.6330
+2025-04-28 23:25:50,024 - INFO - ECM-ARMA fitting: r=3, p=2, q=2, BIC=353.0951
+2025-04-28 23:25:50,044 - INFO - Selected ECM-ARMA config: r=1, p=0, q=0, BIC=335.7482
+2025-04-28 23:26:19,068 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.4593, skewness=-0.0839, kurtosis=1.0516
+2025-04-28 23:26:19,069 - INFO - GARCH: Simulated residuals: mean=-0.0077, std=0.3682, skewness=-0.0190, kurtosis=-0.1305
+2025-04-28 23:26:25,716 - INFO - Starting p-value weighted beta estimation for pair.
+2025-04-28 23:26:25,716 - INFO - Calculated weights for 3 betas (k=10.0).
+2025-04-28 23:26:25,757 - INFO - ECM-ARMA fitting: r=1, p=0, q=0, BIC=336.3857
+2025-04-28 23:26:25,813 - INFO - ECM-ARMA fitting: r=1, p=0, q=1, BIC=341.7396
+2025-04-28 23:26:25,872 - INFO - ECM-ARMA fitting: r=1, p=0, q=2, BIC=345.6199
+2025-04-28 23:26:25,893 - INFO - ECM-ARMA fitting: r=1, p=1, q=0, BIC=341.7713
+2025-04-28 23:26:25,975 - INFO - ECM-ARMA fitting: r=1, p=1, q=1, BIC=346.6409
+2025-04-28 23:26:26,054 - INFO - ECM-ARMA fitting: r=1, p=1, q=2, BIC=351.0897
+2025-04-28 23:26:26,085 - INFO - ECM-ARMA fitting: r=1, p=2, q=0, BIC=345.4340
+2025-04-28 23:26:26,164 - INFO - ECM-ARMA fitting: r=1, p=2, q=1, BIC=350.8121
+2025-04-28 23:26:26,374 - INFO - ECM-ARMA fitting: r=1, p=2, q=2, BIC=353.0435
+2025-04-28 23:26:26,385 - INFO - ECM-ARMA fitting: r=2, p=0, q=0, BIC=339.3218
+2025-04-28 23:26:26,425 - INFO - ECM-ARMA fitting: r=2, p=0, q=1, BIC=340.5656
+2025-04-28 23:26:26,486 - INFO - ECM-ARMA fitting: r=2, p=0, q=2, BIC=345.2326
+2025-04-28 23:26:26,504 - INFO - ECM-ARMA fitting: r=2, p=1, q=0, BIC=341.1150
+2025-04-28 23:26:26,581 - INFO - ECM-ARMA fitting: r=2, p=1, q=1, BIC=345.7144
+2025-04-28 23:26:26,665 - INFO - ECM-ARMA fitting: r=2, p=1, q=2, BIC=350.5840
+2025-04-28 23:26:26,694 - INFO - ECM-ARMA fitting: r=2, p=2, q=0, BIC=344.6835
+2025-04-28 23:26:26,765 - INFO - ECM-ARMA fitting: r=2, p=2, q=1, BIC=350.1648
+2025-04-28 23:26:26,954 - INFO - ECM-ARMA fitting: r=2, p=2, q=2, BIC=350.3923
+2025-04-28 23:26:26,976 - INFO - ECM-ARMA fitting: r=3, p=0, q=0, BIC=347.4891
+2025-04-28 23:26:27,004 - INFO - ECM-ARMA fitting: r=3, p=0, q=1, BIC=346.2136
+2025-04-28 23:26:27,074 - INFO - ECM-ARMA fitting: r=3, p=0, q=2, BIC=343.7322
+2025-04-28 23:26:27,097 - INFO - ECM-ARMA fitting: r=3, p=1, q=0, BIC=348.9239
+2025-04-28 23:26:27,385 - INFO - ECM-ARMA fitting: r=3, p=1, q=1, BIC=346.7913
+2025-04-28 23:26:27,879 - INFO - ECM-ARMA fitting: r=3, p=1, q=2, BIC=349.1381
+2025-04-28 23:26:27,968 - INFO - ECM-ARMA fitting: r=3, p=2, q=0, BIC=342.7174
+2025-04-28 23:26:28,085 - INFO - ECM-ARMA fitting: r=3, p=2, q=1, BIC=348.2035
+2025-04-28 23:26:28,281 - INFO - ECM-ARMA fitting: r=3, p=2, q=2, BIC=353.6623
+2025-04-28 23:26:28,304 - INFO - Selected ECM-ARMA config: r=1, p=0, q=0, BIC=336.3857
+2025-04-28 23:26:34,164 - INFO - GARCH: Historical residuals: mean=0.0000, std=0.4599, skewness=-0.0948, kurtosis=1.0428
+2025-04-28 23:26:34,165 - INFO - GARCH: Simulated residuals: mean=-0.0059, std=0.3671, skewness=0.0103, kurtosis=-0.0301

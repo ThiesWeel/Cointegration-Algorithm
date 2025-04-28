@@ -1,0 +1,81 @@
+2025-04-28 21:18:11,942 - INFO - Starting preprocessing (between dates)...
+2025-04-28 21:18:11,942 - INFO - Starting NaN handling...
+2025-04-28 21:18:11,943 - INFO - Starting NaN handling...
+2025-04-28 21:18:11,943 - INFO - Ticker: XOM - Found 0 NaN dates.
+2025-04-28 21:18:11,943 - INFO - Ticker: CVX - Found 0 NaN dates.
+2025-04-28 21:18:11,944 - INFO - Ticker: COP - Found 0 NaN dates.
+2025-04-28 21:18:11,944 - INFO - Ticker: OXY - Found 0 NaN dates.
+2025-04-28 21:18:11,944 - INFO - Ticker: PSX - Found 0 NaN dates.
+2025-04-28 21:18:11,944 - INFO - Ticker: MPC - Found 0 NaN dates.
+2025-04-28 21:18:11,946 - INFO - Ticker: VLO - Found 0 NaN dates.
+2025-04-28 21:18:11,946 - INFO - Ticker: EOG - Found 0 NaN dates.
+2025-04-28 21:18:11,946 - INFO - Ticker: DVN - Found 0 NaN dates.
+2025-04-28 21:18:11,946 - INFO - Ticker: HES - Found 0 NaN dates.
+2025-04-28 21:18:11,947 - INFO - Ticker: APA - Found 0 NaN dates.
+2025-04-28 21:18:11,947 - INFO - Ticker: MUR - Found 0 NaN dates.
+2025-04-28 21:18:11,947 - INFO - Ticker: FANG - Found 0 NaN dates.
+2025-04-28 21:18:11,947 - INFO - Ticker: EQT - Found 0 NaN dates.
+2025-04-28 21:18:11,947 - INFO - Ticker: RRC - Found 0 NaN dates.
+2025-04-28 21:18:11,947 - INFO - Ticker: MTDR - Found 0 NaN dates.
+2025-04-28 21:18:11,947 - INFO - Ticker: SM - Found 0 NaN dates.
+2025-04-28 21:18:11,947 - INFO - Ticker: AR - Found 0 NaN dates.
+2025-04-28 21:18:11,947 - INFO - Ticker: WTI - Found 0 NaN dates.
+2025-04-28 21:18:11,949 - INFO - Ticker: CRC - Found 0 NaN dates.
+2025-04-28 21:18:11,949 - INFO - Ticker: CRK - Found 0 NaN dates.
+2025-04-28 21:18:11,949 - INFO - Total NaN dates to remove: 0
+2025-04-28 21:18:11,950 - INFO - Ticker: XOM - Rows after NaN removal: 250
+2025-04-28 21:18:11,950 - INFO - Ticker: CVX - Rows after NaN removal: 250
+2025-04-28 21:18:11,950 - INFO - Ticker: COP - Rows after NaN removal: 250
+2025-04-28 21:18:11,951 - INFO - Ticker: OXY - Rows after NaN removal: 250
+2025-04-28 21:18:11,951 - INFO - Ticker: PSX - Rows after NaN removal: 250
+2025-04-28 21:18:11,951 - INFO - Ticker: MPC - Rows after NaN removal: 250
+2025-04-28 21:18:11,952 - INFO - Ticker: VLO - Rows after NaN removal: 250
+2025-04-28 21:18:11,952 - INFO - Ticker: EOG - Rows after NaN removal: 250
+2025-04-28 21:18:11,952 - INFO - Ticker: DVN - Rows after NaN removal: 250
+2025-04-28 21:18:11,952 - INFO - Ticker: HES - Rows after NaN removal: 250
+2025-04-28 21:18:11,953 - INFO - Ticker: APA - Rows after NaN removal: 250
+2025-04-28 21:18:11,953 - INFO - Ticker: MUR - Rows after NaN removal: 250
+2025-04-28 21:18:11,953 - INFO - Ticker: FANG - Rows after NaN removal: 250
+2025-04-28 21:18:11,954 - INFO - Ticker: EQT - Rows after NaN removal: 250
+2025-04-28 21:18:11,954 - INFO - Ticker: RRC - Rows after NaN removal: 250
+2025-04-28 21:18:11,954 - INFO - Ticker: MTDR - Rows after NaN removal: 250
+2025-04-28 21:18:11,954 - INFO - Ticker: SM - Rows after NaN removal: 250
+2025-04-28 21:18:11,954 - INFO - Ticker: AR - Rows after NaN removal: 250
+2025-04-28 21:18:11,955 - INFO - Ticker: WTI - Rows after NaN removal: 250
+2025-04-28 21:18:11,955 - INFO - Ticker: CRC - Rows after NaN removal: 116
+2025-04-28 21:18:11,955 - INFO - Ticker: CRK - Rows after NaN removal: 250
+2025-04-28 21:18:11,955 - INFO - NaN handling completed.
+2025-04-28 21:18:11,955 - INFO - Slicing data between start_date and end_date...
+2025-04-28 21:18:11,956 - INFO - Ticker: XOM - Final row count after slicing: 250
+2025-04-28 21:18:11,957 - INFO - Ticker: CVX - Final row count after slicing: 250
+2025-04-28 21:18:11,957 - INFO - Ticker: COP - Final row count after slicing: 250
+2025-04-28 21:18:11,958 - INFO - Ticker: OXY - Final row count after slicing: 250
+2025-04-28 21:18:11,958 - INFO - Ticker: PSX - Final row count after slicing: 250
+2025-04-28 21:18:11,959 - INFO - Ticker: MPC - Final row count after slicing: 250
+2025-04-28 21:18:11,960 - INFO - Ticker: VLO - Final row count after slicing: 250
+2025-04-28 21:18:11,960 - INFO - Ticker: EOG - Final row count after slicing: 250
+2025-04-28 21:18:11,961 - INFO - Ticker: DVN - Final row count after slicing: 250
+2025-04-28 21:18:11,962 - INFO - Ticker: HES - Final row count after slicing: 250
+2025-04-28 21:18:11,962 - INFO - Ticker: APA - Final row count after slicing: 250
+2025-04-28 21:18:11,963 - INFO - Ticker: MUR - Final row count after slicing: 250
+2025-04-28 21:18:11,963 - INFO - Ticker: FANG - Final row count after slicing: 250
+2025-04-28 21:18:11,964 - INFO - Ticker: EQT - Final row count after slicing: 250
+2025-04-28 21:18:11,964 - INFO - Ticker: RRC - Final row count after slicing: 250
+2025-04-28 21:18:11,964 - INFO - Ticker: MTDR - Final row count after slicing: 250
+2025-04-28 21:18:11,965 - INFO - Ticker: SM - Final row count after slicing: 250
+2025-04-28 21:18:11,966 - INFO - Ticker: AR - Final row count after slicing: 250
+2025-04-28 21:18:11,966 - INFO - Ticker: WTI - Final row count after slicing: 250
+2025-04-28 21:18:11,967 - INFO - Ticker: CRC - Final row count after slicing: 116
+2025-04-28 21:18:11,967 - INFO - Ticker: CRK - Final row count after slicing: 250
+2025-04-28 21:18:11,967 - INFO - Data preprocessing (between dates) completed.
+2025-04-28 21:18:11,967 - INFO - Saving data to 2020-04-20_to_2021-04-15_processed.h5 in HDF5 format...
+2025-04-28 21:18:12,348 - INFO - Data successfully saved to dev_database\preprocessed\2020-04-20_to_2021-04-15_processed.h5.
+2025-04-28 21:18:12,348 - INFO - Preprocessed data saved to 2020-04-20_to_2021-04-15_processed.h5.
+2025-04-28 21:18:12,348 - INFO - 
+Summary:
+Date range: 2020-04-20 to 2021-04-15
+Tickers processed: ['XOM', 'CVX', 'COP', 'OXY', 'PSX', 'MPC', 'VLO', 'EOG', 'DVN', 'HES', 'APA', 'MUR', 'FANG', 'EQT', 'RRC', 'MTDR', 'SM', 'AR', 'WTI', 'CRC', 'CRK']
+Rows removed due to NaN values: {'XOM': 0, 'CVX': 0, 'COP': 0, 'OXY': 0, 'PSX': 0, 'MPC': 0, 'VLO': 0, 'EOG': 0, 'DVN': 0, 'HES': 0, 'APA': 0, 'MUR': 0, 'FANG': 0, 'EQT': 0, 'RRC': 0, 'MTDR': 0, 'SM': 0, 'AR': 0, 'WTI': 0, 'CRC': 0, 'CRK': 0}
+Rows remaining after slicing: {'XOM': 250, 'CVX': 250, 'COP': 250, 'OXY': 250, 'PSX': 250, 'MPC': 250, 'VLO': 250, 'EOG': 250, 'DVN': 250, 'HES': 250, 'APA': 250, 'MUR': 250, 'FANG': 250, 'EQT': 250, 'RRC': 250, 'MTDR': 250, 'SM': 250, 'AR': 250, 'WTI': 250, 'CRC': 116, 'CRK': 250}
+Preprocessed data saved to: 2020-04-20_to_2021-04-15_processed.h5
+

@@ -212,3 +212,60 @@ def fetch_and_update_data_hdf5(tickers, start_date):
 
     log_message("Data fetch and update completed.")
     return data_dict
+
+def fetch_data_hdf5_between_dates(tickers, start_date, end_date):
+    """
+    Fetch data for a list of tickers between start_date and end_date using HDF5.
+    Does NOT update, only loads or downloads the data for the given range.
+    Returns a dictionary of DataFrames for the tickers.
+    """
+    log_message(f"Starting data fetch for tickers: {tickers}")
+    log_message(f"Date range: {start_date} to {end_date}")
+
+    data_dict = {}
+    loaded_tickers = []
+    unavailable_tickers = []
+
+    for ticker in tickers:
+        log_message(f"Processing ticker: {ticker}")
+        try:
+            existing_data = check_existing_data_hdf5(ticker)
+            if existing_data is not None:
+                # Slice the data to the requested date range
+                sliced_data = existing_data.loc[(existing_data.index >= start_date) & (existing_data.index <= end_date)]
+                if not sliced_data.empty:
+                    data_dict[ticker] = sliced_data
+                    loaded_tickers.append(ticker)
+                else:
+                    log_message(f"No data in requested range for {ticker}.")
+                    unavailable_tickers.append(ticker)
+            else:
+                # Download data for the requested range
+                log_message(f"No existing data found for {ticker}. Downloading data from {start_date} to {end_date}.")
+                new_data = download_data(ticker, start_date, end_date)
+                if new_data is not None and not new_data.empty:
+                    if isinstance(new_data.columns, pd.MultiIndex):
+                        log_message(f"Flattening multi-index columns for new data of {ticker}.")
+                        new_data.columns = ['_'.join(map(str, col)).strip() for col in new_data.columns]
+                    save_data_hdf5(ticker, new_data)
+                    data_dict[ticker] = new_data
+                    loaded_tickers.append(ticker)
+                else:
+                    log_message(f"No data downloaded for {ticker}.")
+                    unavailable_tickers.append(ticker)
+        except Exception as e:
+            log_message(f"Error processing ticker {ticker}: {e}")
+            unavailable_tickers.append(ticker)
+
+    # Write a concise summary to the log file
+    summary = (
+        f"\nSummary:\n"
+        f"Date range: {start_date} to {end_date}\n"
+        f"Tickers loaded: {loaded_tickers}\n"
+        f"Unavailable tickers: {unavailable_tickers}\n"
+    )
+    log_message(summary)
+    log_summary(summary)
+
+    log_message("Data fetch between dates completed.")
+    return data_dict

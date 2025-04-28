@@ -1,0 +1,75 @@
+2025-04-28 18:45:32,239 - INFO - DEBUG: Keys in pre_processed: ['APA', 'AR', 'COP', 'CRC', 'CRK', 'CVX', 'DVN', 'EOG', 'EQT', 'FANG', 'GPOR', 'HES', 'MPC', 'MTDR', 'MUR', 'OXY', 'PSX', 'RRC', 'SM', 'VLO', 'WTI', 'XOM']
+2025-04-28 18:45:32,239 - INFO - Loading existing table from dev_database\bayesian1\Bayesian1_interference_table_2021-04-15_00-00-00.csv
+2025-04-28 18:45:32,248 - INFO - Calculating correlation between XOM and GPOR
+2025-04-28 18:45:32,248 - INFO - ERROR: ValueError while calculating correlation for XOM and GPOR: `x` and `y` must have the same length along `axis`.
+2025-04-28 18:45:32,248 - INFO - Calculating correlation between CVX and GPOR
+2025-04-28 18:45:32,248 - INFO - ERROR: ValueError while calculating correlation for CVX and GPOR: `x` and `y` must have the same length along `axis`.
+2025-04-28 18:45:32,249 - INFO - Calculating correlation between COP and GPOR
+2025-04-28 18:45:32,249 - INFO - ERROR: ValueError while calculating correlation for COP and GPOR: `x` and `y` must have the same length along `axis`.
+2025-04-28 18:45:32,249 - INFO - Calculating correlation between OXY and GPOR
+2025-04-28 18:45:32,249 - INFO - ERROR: ValueError while calculating correlation for OXY and GPOR: `x` and `y` must have the same length along `axis`.
+2025-04-28 18:45:32,249 - INFO - Calculating correlation between PSX and GPOR
+2025-04-28 18:45:32,249 - INFO - ERROR: ValueError while calculating correlation for PSX and GPOR: `x` and `y` must have the same length along `axis`.
+2025-04-28 18:45:32,249 - INFO - Calculating correlation between MPC and GPOR
+2025-04-28 18:45:32,249 - INFO - ERROR: ValueError while calculating correlation for MPC and GPOR: `x` and `y` must have the same length along `axis`.
+2025-04-28 18:45:32,249 - INFO - Calculating correlation between VLO and GPOR
+2025-04-28 18:45:32,251 - INFO - ERROR: ValueError while calculating correlation for VLO and GPOR: `x` and `y` must have the same length along `axis`.
+2025-04-28 18:45:32,251 - INFO - Calculating correlation between EOG and GPOR
+2025-04-28 18:45:32,251 - INFO - ERROR: ValueError while calculating correlation for EOG and GPOR: `x` and `y` must have the same length along `axis`.
+2025-04-28 18:45:32,251 - INFO - Calculating correlation between DVN and GPOR
+2025-04-28 18:45:32,251 - INFO - ERROR: ValueError while calculating correlation for DVN and GPOR: `x` and `y` must have the same length along `axis`.
+2025-04-28 18:45:32,251 - INFO - Calculating correlation between HES and GPOR
+2025-04-28 18:45:32,251 - INFO - ERROR: ValueError while calculating correlation for HES and GPOR: `x` and `y` must have the same length along `axis`.
+2025-04-28 18:45:32,252 - INFO - Calculating correlation between APA and GPOR
+2025-04-28 18:45:32,252 - INFO - ERROR: ValueError while calculating correlation for APA and GPOR: `x` and `y` must have the same length along `axis`.
+2025-04-28 18:45:32,252 - INFO - Calculating correlation between MUR and GPOR
+2025-04-28 18:45:32,252 - INFO - ERROR: ValueError while calculating correlation for MUR and GPOR: `x` and `y` must have the same length along `axis`.
+2025-04-28 18:45:32,252 - INFO - Calculating correlation between FANG and GPOR
+2025-04-28 18:45:32,252 - INFO - ERROR: ValueError while calculating correlation for FANG and GPOR: `x` and `y` must have the same length along `axis`.
+2025-04-28 18:45:32,252 - INFO - Calculating correlation between EQT and GPOR
+2025-04-28 18:45:32,252 - INFO - ERROR: ValueError while calculating correlation for EQT and GPOR: `x` and `y` must have the same length along `axis`.
+2025-04-28 18:45:32,252 - INFO - Calculating correlation between RRC and GPOR
+2025-04-28 18:45:32,252 - INFO - ERROR: ValueError while calculating correlation for RRC and GPOR: `x` and `y` must have the same length along `axis`.
+2025-04-28 18:45:32,253 - INFO - Calculating correlation between GPOR and MTDR
+2025-04-28 18:45:32,253 - INFO - ERROR: ValueError while calculating correlation for GPOR and MTDR: `x` and `y` must have the same length along `axis`.
+2025-04-28 18:45:32,253 - INFO - Calculating correlation between GPOR and SM
+2025-04-28 18:45:32,253 - INFO - ERROR: ValueError while calculating correlation for GPOR and SM: `x` and `y` must have the same length along `axis`.
+2025-04-28 18:45:32,253 - INFO - Calculating correlation between GPOR and AR
+2025-04-28 18:45:32,253 - INFO - ERROR: ValueError while calculating correlation for GPOR and AR: `x` and `y` must have the same length along `axis`.
+2025-04-28 18:45:32,253 - INFO - Calculating correlation between GPOR and WTI
+2025-04-28 18:45:32,253 - INFO - ERROR: ValueError while calculating correlation for GPOR and WTI: `x` and `y` must have the same length along `axis`.
+2025-04-28 18:45:32,253 - INFO - Calculating correlation between GPOR and CRC
+2025-04-28 18:45:32,253 - INFO - ERROR: ValueError while calculating correlation for GPOR and CRC: `x` and `y` must have the same length along `axis`.
+2025-04-28 18:45:32,253 - INFO - Calculating correlation between GPOR and CRK
+2025-04-28 18:45:32,253 - INFO - ERROR: ValueError while calculating correlation for GPOR and CRK: `x` and `y` must have the same length along `axis`.
+2025-04-28 18:45:32,284 - INFO - Final correlation table:
+      XOM  CVX  COP  OXY  PSX  MPC  VLO  EOG  DVN  HES  APA  MUR  FANG  EQT  RRC  GPOR  MTDR   SM   AR  WTI  CRC  CRK
+XOM   1.0  NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN   NaN  NaN  NaN   0.8   NaN  NaN  NaN  NaN  NaN  NaN
+CVX   NaN  1.0  NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN   NaN  NaN  NaN   0.8   NaN  NaN  NaN  NaN  NaN  NaN
+COP   NaN  NaN  1.0  NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN   NaN  NaN  NaN   0.8   NaN  NaN  NaN  NaN  NaN  NaN
+OXY   NaN  NaN  NaN  1.0  NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN   NaN  NaN  NaN   0.8   NaN  NaN  NaN  NaN  NaN  NaN
+PSX   NaN  NaN  NaN  NaN  1.0  NaN  NaN  NaN  NaN  NaN  NaN  NaN   NaN  NaN  NaN   0.8   NaN  NaN  NaN  NaN  NaN  NaN
+MPC   NaN  NaN  NaN  NaN  NaN  1.0  NaN  NaN  NaN  NaN  NaN  NaN   NaN  NaN  NaN   0.8   NaN  NaN  NaN  NaN  NaN  NaN
+VLO   NaN  NaN  NaN  NaN  NaN  NaN  1.0  NaN  NaN  NaN  NaN  NaN   NaN  NaN  NaN   0.8   NaN  NaN  NaN  NaN  NaN  NaN
+EOG   NaN  NaN  NaN  NaN  NaN  NaN  NaN  1.0  NaN  NaN  NaN  NaN   NaN  NaN  NaN   0.8   NaN  NaN  NaN  NaN  NaN  NaN
+DVN   NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN  1.0  NaN  NaN  NaN   NaN  NaN  NaN   0.8   NaN  NaN  NaN  NaN  NaN  NaN
+HES   NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN  1.0  NaN  NaN   NaN  NaN  NaN   0.8   NaN  NaN  NaN  NaN  NaN  NaN
+APA   NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN  1.0  NaN   NaN  NaN  NaN   0.8   NaN  NaN  NaN  NaN  NaN  NaN
+MUR   NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN  1.0   NaN  NaN  NaN   0.8   NaN  NaN  NaN  NaN  NaN  NaN
+FANG  NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN   1.0  NaN  NaN   0.8   NaN  NaN  NaN  NaN  NaN  NaN
+EQT   NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN   NaN  1.0  NaN   0.8   NaN  NaN  NaN  NaN  NaN  NaN
+RRC   NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN   NaN  NaN  1.0   0.8   NaN  NaN  NaN  NaN  NaN  NaN
+GPOR  0.8  0.8  0.8  0.8  0.8  0.8  0.8  0.8  0.8  0.8  0.8  0.8   0.8  0.8  0.8   1.0   0.8  0.8  0.8  0.8  0.8  0.8
+MTDR  NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN   NaN  NaN  NaN   0.8   1.0  NaN  NaN  NaN  NaN  NaN
+SM    NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN   NaN  NaN  NaN   0.8   NaN  1.0  NaN  NaN  NaN  NaN
+AR    NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN   NaN  NaN  NaN   0.8   NaN  NaN  1.0  NaN  NaN  NaN
+WTI   NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN   NaN  NaN  NaN   0.8   NaN  NaN  NaN  1.0  NaN  NaN
+CRC   NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN   NaN  NaN  NaN   0.8   NaN  NaN  NaN  NaN  1.0  NaN
+CRK   NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN  NaN   NaN  NaN  NaN   0.8   NaN  NaN  NaN  NaN  NaN  1.0
+2025-04-28 18:45:32,284 - INFO - 
+Summary:
+Date range: 2021-04-15 00:00:00
+Total tickers processed: 22
+Correlated pairs identified: [('GPOR', 'XOM'), ('CVX', 'GPOR'), ('COP', 'GPOR'), ('GPOR', 'OXY'), ('GPOR', 'PSX'), ('GPOR', 'MPC'), ('GPOR', 'VLO'), ('EOG', 'GPOR'), ('DVN', 'GPOR'), ('GPOR', 'HES'), ('APA', 'GPOR'), ('GPOR', 'MUR'), ('FANG', 'GPOR'), ('EQT', 'GPOR'), ('GPOR', 'RRC'), ('GPOR', 'MTDR'), ('GPOR', 'SM'), ('AR', 'GPOR'), ('GPOR', 'WTI'), ('CRC', 'GPOR'), ('CRK', 'GPOR')]
+Updated table saved to: dev_database\bayesian1\Bayesian1_interference_table_2021-04-15_00-00-00.csv
+
